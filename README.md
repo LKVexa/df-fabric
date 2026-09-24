@@ -14,10 +14,12 @@ physical QPU execution are not implemented or certified by this release.
 
 ## Run local checks
 
-Python **3.10 or later** is required; runtime and default checks use the standard
-library. From the repository root:
+Python **3.10 or later** is required. Photon, PK and integrity tests use the
+standard library; the fabric core additionally requires NumPy. Use a virtual
+environment and install the pinned compatible wheels from the repository root:
 
 ```sh
+python -m pip install --only-binary=:all: -r REQUIREMENTS.txt
 python -B tools/validate_release.py
 python -B adapter/dfabric/cli.py fabric-verify
 python -B PHOTON/PHOTON_STATUS.py --json

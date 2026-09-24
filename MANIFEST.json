@@ -15,7 +15,7 @@
     "RUN": "./RUN [bundle.pal] [--profile ...] (RUN.cmd)",
     "VERIFY": "./VERIFY [--full] (VERIFY.cmd)"
   },
-  "file_count": 967,
+  "file_count": 968,
   "files": [
     {
       "path": ".gitattributes",
@@ -24,8 +24,8 @@
     },
     {
       "path": ".github/workflows/ci.yml",
-      "bytes": 720,
-      "sha256": "8403533812004846bc73ac648b30b2ea85562096dcdf90e73cde7661079b5336"
+      "bytes": 871,
+      "sha256": "cdd001bc972f3e38fb5ee55907c754ea88a6fc4651bc28b40bf6174360c008a6"
     },
     {
       "path": ".github/workflows/import-source.yml",
@@ -39,8 +39,8 @@
     },
     {
       "path": "AUDIT.md",
-      "bytes": 2905,
-      "sha256": "58fd2df09ca7562932d3efe9d9b39d8c49012c952c5c48e655ed11e9970e7811"
+      "bytes": 3370,
+      "sha256": "220be3560ef63a6deb9c9e4513eb38891f4b0b6b71e6ec4e772da4323777e2b1"
     },
     {
       "path": "BUILD",
@@ -1679,8 +1679,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 2681,
-      "sha256": "cedb6bdbcd26ac300b7bcc811862071484d5f0fbdb1fcd281f019cfdb4f86ad0"
+      "bytes": 2859,
+      "sha256": "a23a8b8e3ac2b30c70fe09ad328212053c92298d41a1ba5197ac049e7c32f167"
     },
     {
       "path": "README_START_HERE.md",
@@ -1689,8 +1689,8 @@
     },
     {
       "path": "REQUIREMENTS.txt",
-      "bytes": 527,
-      "sha256": "d4dc7451c405c90c2428b50767a6a3c8bb37988ed56596bf8e481e6180d2d422"
+      "bytes": 732,
+      "sha256": "572da2bbac34a06def634d7ddb528d3c826cb4479192ee4219a2498fcfd30018"
     },
     {
       "path": "RUN",
@@ -1706,6 +1706,11 @@
       "path": "SECURITY.md",
       "bytes": 1076,
       "sha256": "83f88d0c8f720745b8f75eb86f2e12add1781d5bd1e7e93a4fe8fe52999b3113"
+    },
+    {
+      "path": "THIRD-PARTY-NOTICES.md",
+      "bytes": 533,
+      "sha256": "a1535c55f71b41da2ffe9f0b693c774ac07a1956f6a05d5db13941730db2c817"
     },
     {
       "path": "VERIFY",
@@ -4939,6 +4944,6 @@
     "pacore_tree_sha256": "046a9930c61b1d5a8a98de87b65feb933f8c5979351289953ea72dead5e304a0",
     "root": "Desktop/PA21.2"
   },
-  "total_bytes": 19392915,
+  "total_bytes": 19394447,
   "release_note": "Full static tree inventoried including Photon and PK; original native evidence remains historical."
 }

@@ -22,6 +22,13 @@ this distribution was repaired in a separate working copy.
   archives without executable mode bits.
 - Added README, Apache-2.0 LICENSE/NOTICE naming RUSSELL PHILIP SMITHSON,
   security guidance, release version 1.0.1 and pinned Windows/Linux CI.
+- Clean-runner testing exposed undeclared NumPy imports in the pinned fabric
+  core. REQUIREMENTS.txt is now pip-installable with Python-specific version
+  pins: 2.2.6 for Python 3.10, 2.4.6 for Python 3.11, and 2.5.3 for 3.12+.
+  Versions and Python requirements were checked against official PyPI metadata:
+  [2.2.6](https://pypi.org/project/numpy/2.2.6/),
+  [2.4.6](https://pypi.org/project/numpy/2.4.6/),
+  [2.5.3](https://pypi.org/project/numpy/2.5.3/).
 
 ## Validation
 
@@ -38,7 +45,7 @@ tree digest remains `f9d0991b6175e3bd7b33c4915f69078c36cd67c22bd7dad8d9737033425
 
 JSON, Python and JavaScript syntax checks and targeted token/private-key scans
 are part of preparation. CI runs these portable suites on Windows and Linux
-with Python 3.10 and 3.14. Consult the actual workflow result for each platform.
+with Python 3.10, 3.11 and 3.14. Consult the actual workflow result for each platform.
 
 These checks validate this local reference distribution. They do not certify
 native VM behavior, four-node execution, cross-host networking or hardware
