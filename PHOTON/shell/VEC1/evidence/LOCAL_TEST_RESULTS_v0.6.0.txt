@@ -1,0 +1,110 @@
+test_app_self_disables_bytecode_before_runtime_imports (test_release_integrity.ReleaseIntegrityTests.test_app_self_disables_bytecode_before_runtime_imports) ... ok
+test_browser_default_profile_fallback_can_be_explicitly_enabled (test_release_integrity.ReleaseIntegrityTests.test_browser_default_profile_fallback_can_be_explicitly_enabled) ... ok
+test_browser_default_profile_fallback_is_opt_in (test_release_integrity.ReleaseIntegrityTests.test_browser_default_profile_fallback_is_opt_in) ... ok
+test_duplicate_manifest_keys_are_rejected (test_release_integrity.ReleaseIntegrityTests.test_duplicate_manifest_keys_are_rejected) ... ok
+test_fabric_cmd_is_fail_closed (test_release_integrity.ReleaseIntegrityTests.test_fabric_cmd_is_fail_closed) ... ok
+test_invalid_utf8_version_returns_structured_failure (test_release_integrity.ReleaseIntegrityTests.test_invalid_utf8_version_returns_structured_failure) ... ok
+test_manifest_semantic_tamper_is_detected (test_release_integrity.ReleaseIntegrityTests.test_manifest_semantic_tamper_is_detected) ... ok
+test_nonfinite_manifest_json_is_rejected (test_release_integrity.ReleaseIntegrityTests.test_nonfinite_manifest_json_is_rejected) ... ok
+test_normal_startup_fails_closed_on_release_integrity (test_release_integrity.ReleaseIntegrityTests.test_normal_startup_fails_closed_on_release_integrity) ... REFUSED: VEC1 release integrity verification failed before startup.
+{
+  "ok": false,
+  "errors": [
+    "synthetic"
+  ]
+}
+ok
+test_runtime_state_is_dynamic (test_release_integrity.ReleaseIntegrityTests.test_runtime_state_is_dynamic) ... ok
+test_tamper_is_detected (test_release_integrity.ReleaseIntegrityTests.test_tamper_is_detected) ... ok
+test_unexpected_static_file_is_detected (test_release_integrity.ReleaseIntegrityTests.test_unexpected_static_file_is_detected) ... ok
+test_valid_release_passes (test_release_integrity.ReleaseIntegrityTests.test_valid_release_passes) ... ok
+test_windows_cmd_forwards_arguments_and_has_fallbacks (test_release_integrity.ReleaseIntegrityTests.test_windows_cmd_forwards_arguments_and_has_fallbacks) ... ok
+test_windows_path_profile_detects_case_collision (test_release_integrity.ReleaseIntegrityTests.test_windows_path_profile_detects_case_collision) ... ok
+test_windows_path_profile_detects_reserved_component (test_release_integrity.ReleaseIntegrityTests.test_windows_path_profile_detects_reserved_component) ... ok
+test_windows_path_profile_reports_budget (test_release_integrity.ReleaseIntegrityTests.test_windows_path_profile_reports_budget) ... ok
+test_cross_origin_refused (test_service_http.HttpTests.test_cross_origin_refused) ... [VEC1] "POST /api/electrons HTTP/1.1" 403 -
+ok
+test_deeply_nested_json_is_rejected_as_bad_request (test_service_http.HttpTests.test_deeply_nested_json_is_rejected_as_bad_request) ... [VEC1] "POST /api/electrons HTTP/1.1" 400 -
+ok
+test_dns_rebinding_host_refused (test_service_http.HttpTests.test_dns_rebinding_host_refused) ... [VEC1] "GET /api/status HTTP/1.1" 421 -
+ok
+test_duplicate_json_keys_are_rejected (test_service_http.HttpTests.test_duplicate_json_keys_are_rejected) ... [VEC1] "POST /api/electrons HTTP/1.1" 400 -
+ok
+test_full_flow (test_service_http.HttpTests.test_full_flow) ... [VEC1] "POST /api/electrons HTTP/1.1" 201 -
+[VEC1] "POST /api/electrons/e-024cf296dcb6057d/operate HTTP/1.1" 200 -
+[VEC1] "POST /api/electrons/e-024cf296dcb6057d/operate HTTP/1.1" 400 -
+[VEC1] "POST /api/electrons/e-024cf296dcb6057d/operate HTTP/1.1" 200 -
+[VEC1] "GET /api/electrons/nope HTTP/1.1" 404 -
+[VEC1] "GET /api/events?limit=5 HTTP/1.1" 200 -
+ok
+test_index_carries_token_and_csp (test_service_http.HttpTests.test_index_carries_token_and_csp) ... [VEC1] "GET / HTTP/1.1" 200 -
+ok
+test_method_not_allowed (test_service_http.HttpTests.test_method_not_allowed) ... [VEC1] "DELETE /api/electrons HTTP/1.1" 405 -
+ok
+test_non_object_body_is_400 (test_service_http.HttpTests.test_non_object_body_is_400) ... [VEC1] "POST /api/electrons HTTP/1.1" 400 -
+ok
+test_nonstandard_nan_json_is_rejected (test_service_http.HttpTests.test_nonstandard_nan_json_is_rejected) ... [VEC1] "POST /api/electrons HTTP/1.1" 400 -
+ok
+test_post_requires_token (test_service_http.HttpTests.test_post_requires_token) ... [VEC1] "POST /api/electrons HTTP/1.1" 403 -
+ok
+test_semantically_oversized_json_is_rejected_as_bad_request (test_service_http.HttpTests.test_semantically_oversized_json_is_rejected_as_bad_request) ... [VEC1] "POST /api/electrons HTTP/1.1" 400 -
+ok
+test_simple_request_content_type_refused (test_service_http.HttpTests.test_simple_request_content_type_refused) ... [VEC1] "POST /api/electrons HTTP/1.1" 415 -
+ok
+test_static_traversal_refused (test_service_http.HttpTests.test_static_traversal_refused) ... [VEC1] "GET /..%2f..%2fapp.py HTTP/1.1" 404 -
+ok
+test_exact_and_step_interpolation (test_service_http.LedgerAndModelTests.test_exact_and_step_interpolation) ... ok
+test_ledger_detects_out_of_band_tamper_before_append (test_service_http.LedgerAndModelTests.test_ledger_detects_out_of_band_tamper_before_append) ... ok
+test_ledger_rejects_duplicate_json_keys_even_when_effective_hash_matches (test_service_http.LedgerAndModelTests.test_ledger_rejects_duplicate_json_keys_even_when_effective_hash_matches) ... ok
+test_ledger_reopen_continues_chain (test_service_http.LedgerAndModelTests.test_ledger_reopen_continues_chain) ... ok
+test_ledger_tail_across_block_boundary (test_service_http.LedgerAndModelTests.test_ledger_tail_across_block_boundary) ... ok
+test_ledger_tail_returns_latest_bounded_events (test_service_http.LedgerAndModelTests.test_ledger_tail_returns_latest_bounded_events) ... ok
+test_bad_ids_and_names (test_service_http.ServiceTests.test_bad_ids_and_names) ... ok
+test_checkpoint_metadata_tick_mismatch_fails_verification (test_service_http.ServiceTests.test_checkpoint_metadata_tick_mismatch_fails_verification) ... ok
+test_clone_collision_is_conflict_and_preserves_existing_electron (test_service_http.ServiceTests.test_clone_collision_is_conflict_and_preserves_existing_electron) ... ok
+test_clone_lineage_and_ledger (test_service_http.ServiceTests.test_clone_lineage_and_ledger) ... ok
+test_delete_object_drops_keyframes (test_service_http.ServiceTests.test_delete_object_drops_keyframes) ... ok
+test_duplicate_persisted_state_keys_are_rejected (test_service_http.ServiceTests.test_duplicate_persisted_state_keys_are_rejected) ... ok
+test_empty_precondition_is_rejected_not_bypassed (test_service_http.ServiceTests.test_empty_precondition_is_rejected_not_bypassed) ... ok
+test_fabric_diagnostic_enforces_capability (test_service_http.ServiceTests.test_fabric_diagnostic_enforces_capability) ... ok
+test_keyframe_replacement_allowed_at_limit (test_service_http.ServiceTests.test_keyframe_replacement_allowed_at_limit) ... ok
+test_name_and_object_identifiers_require_strings (test_service_http.ServiceTests.test_name_and_object_identifiers_require_strings) ... ok
+test_nonfinite_payload_rejected (test_service_http.ServiceTests.test_nonfinite_payload_rejected) ... ok
+test_object_id_cannot_be_overridden (test_service_http.ServiceTests.test_object_id_cannot_be_overridden) ... ok
+test_ocr_boolean_confidence_rejected (test_service_http.ServiceTests.test_ocr_boolean_confidence_rejected) ... ok
+test_ocr_commit_respects_object_limit (test_service_http.ServiceTests.test_ocr_commit_respects_object_limit) ... ok
+test_ocr_provenance_changes_observation_identity (test_service_http.ServiceTests.test_ocr_provenance_changes_observation_identity) ... ok
+test_ocr_text_and_engine_require_strings (test_service_http.ServiceTests.test_ocr_text_and_engine_require_strings) ... ok
+test_precondition_conflict (test_service_http.ServiceTests.test_precondition_conflict) ... ok
+test_present_fabric_node_without_passing_checksum_fails_verification (test_service_http.ServiceTests.test_present_fabric_node_without_passing_checksum_fails_verification) ... ok
+test_rehashed_schema_invalid_state_is_rejected (test_service_http.ServiceTests.test_rehashed_schema_invalid_state_is_rejected) ... ok
+test_require_all_must_be_boolean (test_service_http.ServiceTests.test_require_all_must_be_boolean) ... ok
+test_restore_keeps_later_checkpoints (test_service_http.ServiceTests.test_restore_keeps_later_checkpoints) ... ok
+test_restore_rejects_path_traversal (test_service_http.ServiceTests.test_restore_rejects_path_traversal) ... ok
+test_restore_rejects_tampered_checkpoint (test_service_http.ServiceTests.test_restore_rejects_tampered_checkpoint) ... ok
+test_retired_is_immutable_and_uncloneable (test_service_http.ServiceTests.test_retired_is_immutable_and_uncloneable) ... ok
+test_status_uses_cached_ledger_health_not_full_verify (test_service_http.ServiceTests.test_status_uses_cached_ledger_health_not_full_verify) ... ok
+test_suspended_blocks_mutation_until_resume (test_service_http.ServiceTests.test_suspended_blocks_mutation_until_resume) ... ok
+test_unknown_method_is_bad_request (test_service_http.ServiceTests.test_unknown_method_is_bad_request) ... ok
+test_verify_all_detects_referenced_checkpoint_tamper (test_service_http.ServiceTests.test_verify_all_detects_referenced_checkpoint_tamper) ... ok
+test_verify_all_detects_state_tamper (test_service_http.ServiceTests.test_verify_all_detects_state_tamper) ... ok
+test_verify_all_rejects_failed_fabric_attestation (test_service_http.ServiceTests.test_verify_all_rejects_failed_fabric_attestation) ... ok
+test_animation_interpolation (test_vec1.Tests.test_animation_interpolation) ... ok
+test_canonical_hash_order (test_vec1.Tests.test_canonical_hash_order) ... ok
+test_cross_target_fails_closed_on_attestation_error (test_vec1.Tests.test_cross_target_fails_closed_on_attestation_error) ... ok
+test_cross_target_require_all_ignores_unknown_bound_node (test_vec1.Tests.test_cross_target_require_all_ignores_unknown_bound_node) ... ok
+test_cross_target_routes_adapter_output_outside_sealed_tree (test_vec1.Tests.test_cross_target_routes_adapter_output_outside_sealed_tree) ... ok
+test_diagnostic_nonzero_returncode_cannot_pass (test_vec1.Tests.test_diagnostic_nonzero_returncode_cannot_pass) ... ok
+test_diagnostic_requires_known_agreement_and_replay_tokens (test_vec1.Tests.test_diagnostic_requires_known_agreement_and_replay_tokens) ... ok
+test_explicit_empty_capability_set_is_deny_all (test_vec1.Tests.test_explicit_empty_capability_set_is_deny_all) ... ok
+test_ledger_chain (test_vec1.Tests.test_ledger_chain) ... ok
+test_lowerers_embed_same_witness (test_vec1.Tests.test_lowerers_embed_same_witness) ... ok
+test_sandbox (test_vec1.Tests.test_sandbox) ... ok
+test_scheduler (test_vec1.Tests.test_scheduler) ... ok
+test_single_instance_lock_refuses_second_owner (test_vec1.Tests.test_single_instance_lock_refuses_second_owner) ... ok
+test_witness_is_actual_digest_low64 (test_vec1.Tests.test_witness_is_actual_digest_low64) ... ok
+
+----------------------------------------------------------------------
+Ran 80 tests in 0.615s
+
+OK

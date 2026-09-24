@@ -1,0 +1,20 @@
+{
+  "package": "VEC1_Prompt_Workflow_Series_Animation_ObjectEdit_OCR",
+  "version": "3.1.0",
+  "source_version": "3.0.0",
+  "source_archive": "VEC1_Prompt_Workflow_Series_Animation_ObjectEdit_OCR_v3.0.0(1).zip",
+  "source_archive_sha256": "14619999eaa6d39cdaefbab41fe5b529f584db832479d58a148b114e2ff42ad1",
+  "components": 110,
+  "parent_items": 24420,
+  "nested_items": 488400,
+  "total_items": 512820,
+  "stable_ids_preserved": true,
+  "master_contract": "MASTER_EXECUTION_CONTRACT_v3.1.0.md",
+  "schemas": [
+    "schemas/work_item_result.schema.json",
+    "schemas/evidence_record.schema.json",
+    "schemas/run_ledger.schema.json"
+  ],
+  "audit_report": "AUDIT_HARDENING_REPORT_v3.1.0.md",
+  "validation": "PASS"
+}

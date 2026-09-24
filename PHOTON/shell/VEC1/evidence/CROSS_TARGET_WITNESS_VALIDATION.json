@@ -1,0 +1,62 @@
+{
+  "all_four_bound": true,
+  "bound_nodes": [
+    "N_LARGE",
+    "N_MEDIUM",
+    "N_SMALL",
+    "N_XLARGE"
+  ],
+  "claim": "Verifies a deterministic canonical payload witness across the available VM adapters. It does not claim full semantic lowering of VEC object/animation/OCR operations into every VM ISA.",
+  "normalization": "target-specific result register -> result_low64",
+  "payload_sha256": "fa285b67b2423f3701f9b0ef1840f74962f091699c38318c43023ecc7ee16a07",
+  "require_all": true,
+  "results": {
+    "N_LARGE": {
+      "expected_low64": 4196948839,
+      "guest_dialect": "LCTLC/1.2 (columned-lctl/4.3, Python compiler tools/lctl430.py)",
+      "image_sha256": "0b40fdc4b0012dc37dd24b8ec94372261ce7d18d9c2cec768edbe73f71ce5117",
+      "node_returncode": 0,
+      "normalized_result_low64": 4196948839,
+      "result_register": "R2",
+      "signed_image_sha256": "3ec841028267a08bf00bf59282d7cc550c2888e1aef76176cfb990cd63b4cf6f",
+      "source_sha256": "b0323f81df3f804fc1d9cd7d16165224f40f1d8c155af2453e4307cbc2b658ec",
+      "status": "PASS"
+    },
+    "N_MEDIUM": {
+      "expected_low64": 4196948839,
+      "guest_dialect": "LCTLC/1.1 (Columned LCTL, native C compiler brlctlc)",
+      "image_sha256": "ad1a3776e712c978d048cdfd118cc6fd6dea1b5f0a7d5aec37bd03b8f09604c2",
+      "node_returncode": 0,
+      "normalized_result_low64": 4196948839,
+      "result_register": "R2",
+      "signed_image_sha256": "bada5f52d3122e4b40bf46675e3a00f6b2d3004b5dc3c9be23cca71a8e74020c",
+      "source_sha256": "5033e636e8ba1080864f917cf97538cb3c241801fd9902efc99419e10569f44b",
+      "status": "PASS"
+    },
+    "N_SMALL": {
+      "expected_low64": 4196948839,
+      "guest_dialect": "MSSL/ASM-1",
+      "image_sha256": "6d450e4eb5ef3ce71c7392dce3eb1936fe48267c26dc7aa824721fa1f4342d36",
+      "node_returncode": 0,
+      "normalized_result_low64": 4196948839,
+      "result_register": "R2",
+      "signed_image_sha256": "6da34fb13261e7fc9f00905e81cd85928974d0b0850b2db192b21aae950125dc",
+      "source_sha256": "01193700f39cb842dafadc0db4cae245e0a1c52fdad6185def03526e89a666d6",
+      "status": "PASS"
+    },
+    "N_XLARGE": {
+      "expected_low64": 4196948839,
+      "guest_dialect": "LCTLC/1.0 (COLUMNED LCTL QVM Profile 1; vm-lane REG rows)",
+      "image_sha256": "ae893c0880d6912d7c9ffc281295de55b93ed1b0c1c4ffd3e05076c53155db07",
+      "node_returncode": 0,
+      "normalized_result_low64": 4196948839,
+      "result_register": "R0",
+      "signed_image_sha256": "c5e5691d1df34cdf73f3a50842d27aacffc1dce6ec18dd4d2f918e650c58e7dc",
+      "source_sha256": "f224b8cccb83f8b8f46356e88c1c8133e7719677e660d0747e69d1c51905c4ef",
+      "status": "PASS"
+    }
+  },
+  "schema": "VEC1/CROSS_TARGET_VERIFICATION/1",
+  "status": "PASS",
+  "witness_low64": 4196948839
+}

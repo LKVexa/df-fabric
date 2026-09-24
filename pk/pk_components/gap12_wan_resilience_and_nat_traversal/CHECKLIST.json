@@ -1,0 +1,607 @@
+{
+  "element": "GAP-12",
+  "name": "WAN resilience and NAT traversal",
+  "item_count": 100,
+  "items": [
+    {
+      "check_id": "GAP-12-C001",
+      "ordinal": 1,
+      "dimension": "Architecture & Scope",
+      "requirement": "Define the exact production responsibility of WAN resilience and NAT traversal."
+    },
+    {
+      "check_id": "GAP-12-C002",
+      "ordinal": 2,
+      "dimension": "Architecture & Scope",
+      "requirement": "Document what WAN resilience and NAT traversal owns and explicitly does not own."
+    },
+    {
+      "check_id": "GAP-12-C003",
+      "ordinal": 3,
+      "dimension": "Architecture & Scope",
+      "requirement": "Identify upstream, downstream, and peer dependencies of WAN resilience and NAT traversal."
+    },
+    {
+      "check_id": "GAP-12-C004",
+      "ordinal": 4,
+      "dimension": "Architecture & Scope",
+      "requirement": "Define the authoritative source of truth used by WAN resilience and NAT traversal."
+    },
+    {
+      "check_id": "GAP-12-C005",
+      "ordinal": 5,
+      "dimension": "Architecture & Scope",
+      "requirement": "Document assumptions WAN resilience and NAT traversal makes about nodes, runtimes, networks, storage, and control planes."
+    },
+    {
+      "check_id": "GAP-12-C006",
+      "ordinal": 6,
+      "dimension": "Architecture & Scope",
+      "requirement": "Define tenant, environment, site, and workload boundaries relevant to WAN resilience and NAT traversal."
+    },
+    {
+      "check_id": "GAP-12-C007",
+      "ordinal": 7,
+      "dimension": "Architecture & Scope",
+      "requirement": "Separate mandatory WAN resilience and NAT traversal capabilities from optional optimizations."
+    },
+    {
+      "check_id": "GAP-12-C008",
+      "ordinal": 8,
+      "dimension": "Architecture & Scope",
+      "requirement": "Document unsupported deployment patterns and non-goals for WAN resilience and NAT traversal."
+    },
+    {
+      "check_id": "GAP-12-C009",
+      "ordinal": 9,
+      "dimension": "Architecture & Scope",
+      "requirement": "Assign an accountable owner and escalation path for WAN resilience and NAT traversal."
+    },
+    {
+      "check_id": "GAP-12-C010",
+      "ordinal": 10,
+      "dimension": "Architecture & Scope",
+      "requirement": "Approve an architecture decision record for WAN resilience and NAT traversal, its technologies (Production subsystem identified by architecture-gap analysis), and its function (Provide reliable connectivity, traversal, relays, reconnection, and degraded modes across difficult edge networks.)."
+    },
+    {
+      "check_id": "GAP-12-C011",
+      "ordinal": 11,
+      "dimension": "Requirements & Semantics",
+      "requirement": "Translate the source function of WAN resilience and NAT traversal \u2014 Provide reliable connectivity, traversal, relays, reconnection, and degraded modes across difficult edge networks. \u2014 into testable SHALL-level requirements."
+    },
+    {
+      "check_id": "GAP-12-C012",
+      "ordinal": 12,
+      "dimension": "Requirements & Semantics",
+      "requirement": "Define functional requirements for WAN resilience and NAT traversal across cloud, datacenter, near-edge, and far-edge contexts where applicable."
+    },
+    {
+      "check_id": "GAP-12-C013",
+      "ordinal": 13,
+      "dimension": "Requirements & Semantics",
+      "requirement": "Define non-functional requirements for latency, availability, durability, consistency, isolation, or determinism as applicable."
+    },
+    {
+      "check_id": "GAP-12-C014",
+      "ordinal": 14,
+      "dimension": "Requirements & Semantics",
+      "requirement": "Define success, partial success, degraded operation, retryable failure, and terminal failure semantics for WAN resilience and NAT traversal."
+    },
+    {
+      "check_id": "GAP-12-C015",
+      "ordinal": 15,
+      "dimension": "Requirements & Semantics",
+      "requirement": "Define lifecycle states and legal state transitions managed or exposed by WAN resilience and NAT traversal."
+    },
+    {
+      "check_id": "GAP-12-C016",
+      "ordinal": 16,
+      "dimension": "Requirements & Semantics",
+      "requirement": "Define versioning and backward-compatibility requirements for WAN resilience and NAT traversal."
+    },
+    {
+      "check_id": "GAP-12-C017",
+      "ordinal": 17,
+      "dimension": "Requirements & Semantics",
+      "requirement": "Define capacity ceilings, quotas, and fairness semantics relevant to WAN resilience and NAT traversal."
+    },
+    {
+      "check_id": "GAP-12-C018",
+      "ordinal": 18,
+      "dimension": "Requirements & Semantics",
+      "requirement": "Define behavior when network connectivity is intermittent or absent."
+    },
+    {
+      "check_id": "GAP-12-C019",
+      "ordinal": 19,
+      "dimension": "Requirements & Semantics",
+      "requirement": "Define precedence rules when WAN resilience and NAT traversal requirements conflict with security, residency, SLO, or cost constraints."
+    },
+    {
+      "check_id": "GAP-12-C020",
+      "ordinal": 20,
+      "dimension": "Requirements & Semantics",
+      "requirement": "Maintain a requirements traceability matrix from each WAN resilience and NAT traversal requirement to implementation and verification evidence."
+    },
+    {
+      "check_id": "GAP-12-C021",
+      "ordinal": 21,
+      "dimension": "Interfaces & Integration",
+      "requirement": "Enumerate every API, WIT contract, RPC, event, file, device, hypervisor, or control-plane boundary exposed by WAN resilience and NAT traversal."
+    },
+    {
+      "check_id": "GAP-12-C022",
+      "ordinal": 22,
+      "dimension": "Interfaces & Integration",
+      "requirement": "Use versioned typed schemas for all externally visible WAN resilience and NAT traversal contracts."
+    },
+    {
+      "check_id": "GAP-12-C023",
+      "ordinal": 23,
+      "dimension": "Interfaces & Integration",
+      "requirement": "Define authentication requirements at each WAN resilience and NAT traversal boundary."
+    },
+    {
+      "check_id": "GAP-12-C024",
+      "ordinal": 24,
+      "dimension": "Interfaces & Integration",
+      "requirement": "Define authorization and explicit capability requirements at each WAN resilience and NAT traversal boundary."
+    },
+    {
+      "check_id": "GAP-12-C025",
+      "ordinal": 25,
+      "dimension": "Interfaces & Integration",
+      "requirement": "Define timeout, cancellation, retry, idempotency, and backpressure semantics for WAN resilience and NAT traversal."
+    },
+    {
+      "check_id": "GAP-12-C026",
+      "ordinal": 26,
+      "dimension": "Interfaces & Integration",
+      "requirement": "Define structured failure codes and machine-readable error details for WAN resilience and NAT traversal."
+    },
+    {
+      "check_id": "GAP-12-C027",
+      "ordinal": 27,
+      "dimension": "Interfaces & Integration",
+      "requirement": "Define compatibility behavior when peers use different supported versions."
+    },
+    {
+      "check_id": "GAP-12-C028",
+      "ordinal": 28,
+      "dimension": "Interfaces & Integration",
+      "requirement": "Document payload, concurrency, queue, connection, or resource limits at WAN resilience and NAT traversal interfaces."
+    },
+    {
+      "check_id": "GAP-12-C029",
+      "ordinal": 29,
+      "dimension": "Interfaces & Integration",
+      "requirement": "Provide reference examples and conformance fixtures for WAN resilience and NAT traversal."
+    },
+    {
+      "check_id": "GAP-12-C030",
+      "ordinal": 30,
+      "dimension": "Interfaces & Integration",
+      "requirement": "Create automated integration tests proving WAN resilience and NAT traversal interoperates with adjacent architectural layers."
+    },
+    {
+      "check_id": "GAP-12-C031",
+      "ordinal": 31,
+      "dimension": "Implementation & Configuration",
+      "requirement": "Select and pin approved implementations, versions, or specifications for WAN resilience and NAT traversal: Production subsystem identified by architecture-gap analysis."
+    },
+    {
+      "check_id": "GAP-12-C032",
+      "ordinal": 32,
+      "dimension": "Implementation & Configuration",
+      "requirement": "Separate immutable artifacts from mutable configuration and state for WAN resilience and NAT traversal."
+    },
+    {
+      "check_id": "GAP-12-C033",
+      "ordinal": 33,
+      "dimension": "Implementation & Configuration",
+      "requirement": "Define declarative configuration and secure defaults for WAN resilience and NAT traversal."
+    },
+    {
+      "check_id": "GAP-12-C034",
+      "ordinal": 34,
+      "dimension": "Implementation & Configuration",
+      "requirement": "Validate configuration before activation and fail closed on security-critical errors."
+    },
+    {
+      "check_id": "GAP-12-C035",
+      "ordinal": 35,
+      "dimension": "Implementation & Configuration",
+      "requirement": "Support site- and environment-specific configuration without rebuilding immutable artifacts."
+    },
+    {
+      "check_id": "GAP-12-C036",
+      "ordinal": 36,
+      "dimension": "Implementation & Configuration",
+      "requirement": "Record configuration provenance, version, author, and activation time."
+    },
+    {
+      "check_id": "GAP-12-C037",
+      "ordinal": 37,
+      "dimension": "Implementation & Configuration",
+      "requirement": "Apply atomic or transactional configuration updates where partial application is unsafe."
+    },
+    {
+      "check_id": "GAP-12-C038",
+      "ordinal": 38,
+      "dimension": "Implementation & Configuration",
+      "requirement": "Define automatic and operator-driven rollback for failed WAN resilience and NAT traversal changes."
+    },
+    {
+      "check_id": "GAP-12-C039",
+      "ordinal": 39,
+      "dimension": "Implementation & Configuration",
+      "requirement": "Keep credentials and secret material out of ordinary WAN resilience and NAT traversal configuration and diagnostics."
+    },
+    {
+      "check_id": "GAP-12-C040",
+      "ordinal": 40,
+      "dimension": "Implementation & Configuration",
+      "requirement": "Provide a deterministic bootstrap path from an empty node/environment to healthy WAN resilience and NAT traversal operation."
+    },
+    {
+      "check_id": "GAP-12-C041",
+      "ordinal": 41,
+      "dimension": "Security, Trust & Isolation",
+      "requirement": "Threat-model WAN resilience and NAT traversal against malicious tenants, compromised workloads, hostile inputs, supply-chain compromise, and control-plane abuse."
+    },
+    {
+      "check_id": "GAP-12-C042",
+      "ordinal": 42,
+      "dimension": "Security, Trust & Isolation",
+      "requirement": "Apply least privilege to every identity and capability used by WAN resilience and NAT traversal."
+    },
+    {
+      "check_id": "GAP-12-C043",
+      "ordinal": 43,
+      "dimension": "Security, Trust & Isolation",
+      "requirement": "Eliminate ambient filesystem, network, device, kernel, and secret authority wherever WAN resilience and NAT traversal permits."
+    },
+    {
+      "check_id": "GAP-12-C044",
+      "ordinal": 44,
+      "dimension": "Security, Trust & Isolation",
+      "requirement": "Authenticate nodes, peers, artifacts, providers, and control-plane actors before trust is granted."
+    },
+    {
+      "check_id": "GAP-12-C045",
+      "ordinal": 45,
+      "dimension": "Security, Trust & Isolation",
+      "requirement": "Verify signatures, digests, provenance, and approved versions for executable or policy artifacts consumed by WAN resilience and NAT traversal."
+    },
+    {
+      "check_id": "GAP-12-C046",
+      "ordinal": 46,
+      "dimension": "Security, Trust & Isolation",
+      "requirement": "Enforce tenant/workload isolation across WAN resilience and NAT traversal execution, memory, state, network, and device boundaries as applicable."
+    },
+    {
+      "check_id": "GAP-12-C047",
+      "ordinal": 47,
+      "dimension": "Security, Trust & Isolation",
+      "requirement": "Encrypt sensitive WAN resilience and NAT traversal data in transit and at rest with managed key rotation."
+    },
+    {
+      "check_id": "GAP-12-C048",
+      "ordinal": 48,
+      "dimension": "Security, Trust & Isolation",
+      "requirement": "Define safe behavior when identity, attestation, policy, key, or time services are unavailable."
+    },
+    {
+      "check_id": "GAP-12-C049",
+      "ordinal": 49,
+      "dimension": "Security, Trust & Isolation",
+      "requirement": "Emit tamper-evident audit events for security-sensitive WAN resilience and NAT traversal operations."
+    },
+    {
+      "check_id": "GAP-12-C050",
+      "ordinal": 50,
+      "dimension": "Security, Trust & Isolation",
+      "requirement": "Run adversarial tests for privilege escalation, injection, replay, spoofing, escape, side channels, and resource exhaustion."
+    },
+    {
+      "check_id": "GAP-12-C051",
+      "ordinal": 51,
+      "dimension": "Resilience & Failure Handling",
+      "requirement": "Enumerate component, process, VM, node, site, network, provider, dependency, and control-plane failures affecting WAN resilience and NAT traversal."
+    },
+    {
+      "check_id": "GAP-12-C052",
+      "ordinal": 52,
+      "dimension": "Resilience & Failure Handling",
+      "requirement": "Define automated health and stall detection thresholds for WAN resilience and NAT traversal."
+    },
+    {
+      "check_id": "GAP-12-C053",
+      "ordinal": 53,
+      "dimension": "Resilience & Failure Handling",
+      "requirement": "Implement bounded retry with backoff and jitter only where operations are safe to retry."
+    },
+    {
+      "check_id": "GAP-12-C054",
+      "ordinal": 54,
+      "dimension": "Resilience & Failure Handling",
+      "requirement": "Implement admission control, load shedding, or circuit breaking to prevent WAN resilience and NAT traversal failure cascades."
+    },
+    {
+      "check_id": "GAP-12-C055",
+      "ordinal": 55,
+      "dimension": "Resilience & Failure Handling",
+      "requirement": "Define failover behavior without violating isolation, residency, or consistency requirements."
+    },
+    {
+      "check_id": "GAP-12-C056",
+      "ordinal": 56,
+      "dimension": "Resilience & Failure Handling",
+      "requirement": "Provide degraded operation when noncritical dependencies are unavailable."
+    },
+    {
+      "check_id": "GAP-12-C057",
+      "ordinal": 57,
+      "dimension": "Resilience & Failure Handling",
+      "requirement": "Define crash-consistency, restart, resume, or replay semantics for mutable WAN resilience and NAT traversal state."
+    },
+    {
+      "check_id": "GAP-12-C058",
+      "ordinal": 58,
+      "dimension": "Resilience & Failure Handling",
+      "requirement": "Protect against split-brain, duplicate ownership, stale controllers, or duplicate execution where relevant."
+    },
+    {
+      "check_id": "GAP-12-C059",
+      "ordinal": 59,
+      "dimension": "Resilience & Failure Handling",
+      "requirement": "Provide quarantine, freeze, disable, or isolation controls for unsafe WAN resilience and NAT traversal behavior."
+    },
+    {
+      "check_id": "GAP-12-C060",
+      "ordinal": 60,
+      "dimension": "Resilience & Failure Handling",
+      "requirement": "Run fault-injection tests proving WAN resilience and NAT traversal recovery against documented objectives."
+    },
+    {
+      "check_id": "GAP-12-C061",
+      "ordinal": 61,
+      "dimension": "Performance & Resource Efficiency",
+      "requirement": "Establish reproducible baselines for WAN resilience and NAT traversal latency, throughput, startup, CPU, memory, storage, network, and power overhead."
+    },
+    {
+      "check_id": "GAP-12-C062",
+      "ordinal": 62,
+      "dimension": "Performance & Resource Efficiency",
+      "requirement": "Define p50, p95, p99, and worst-case performance thresholds for WAN resilience and NAT traversal."
+    },
+    {
+      "check_id": "GAP-12-C063",
+      "ordinal": 63,
+      "dimension": "Performance & Resource Efficiency",
+      "requirement": "Measure WAN resilience and NAT traversal under steady load, burst load, overload, scale-out, scale-in, and recovery."
+    },
+    {
+      "check_id": "GAP-12-C064",
+      "ordinal": 64,
+      "dimension": "Performance & Resource Efficiency",
+      "requirement": "Measure per-workload and per-tenant overhead introduced by WAN resilience and NAT traversal."
+    },
+    {
+      "check_id": "GAP-12-C065",
+      "ordinal": 65,
+      "dimension": "Performance & Resource Efficiency",
+      "requirement": "Identify avoidable serialization, copies, context switches, network hops, duplicated images, or duplicated state in WAN resilience and NAT traversal."
+    },
+    {
+      "check_id": "GAP-12-C066",
+      "ordinal": 66,
+      "dimension": "Performance & Resource Efficiency",
+      "requirement": "Apply locality, caching, direct composition, batching, zero-copy, or kernel-bypass optimizations where semantics permit."
+    },
+    {
+      "check_id": "GAP-12-C067",
+      "ordinal": 67,
+      "dimension": "Performance & Resource Efficiency",
+      "requirement": "Bound memory growth, queue depth, buffer size, concurrency, and resource fan-out."
+    },
+    {
+      "check_id": "GAP-12-C068",
+      "ordinal": 68,
+      "dimension": "Performance & Resource Efficiency",
+      "requirement": "Measure power and thermal impact on constrained edge nodes where relevant."
+    },
+    {
+      "check_id": "GAP-12-C069",
+      "ordinal": 69,
+      "dimension": "Performance & Resource Efficiency",
+      "requirement": "Define capacity models and saturation signals that predict when WAN resilience and NAT traversal needs more resources."
+    },
+    {
+      "check_id": "GAP-12-C070",
+      "ordinal": 70,
+      "dimension": "Performance & Resource Efficiency",
+      "requirement": "Block releases that regress approved WAN resilience and NAT traversal startup, density, throughput, or tail-latency thresholds."
+    },
+    {
+      "check_id": "GAP-12-C071",
+      "ordinal": 71,
+      "dimension": "Observability & Explainability",
+      "requirement": "Expose WAN resilience and NAT traversal health, readiness, version, configuration, dependency status, and active capability set."
+    },
+    {
+      "check_id": "GAP-12-C072",
+      "ordinal": 72,
+      "dimension": "Observability & Explainability",
+      "requirement": "Emit structured metrics for rate, errors, latency, saturation, backlog, and resource use."
+    },
+    {
+      "check_id": "GAP-12-C073",
+      "ordinal": 73,
+      "dimension": "Observability & Explainability",
+      "requirement": "Emit structured logs with stable node, tenant, workload, component, and operation identifiers."
+    },
+    {
+      "check_id": "GAP-12-C074",
+      "ordinal": 74,
+      "dimension": "Observability & Explainability",
+      "requirement": "Propagate trace context across all relevant WAN resilience and NAT traversal boundaries."
+    },
+    {
+      "check_id": "GAP-12-C075",
+      "ordinal": 75,
+      "dimension": "Observability & Explainability",
+      "requirement": "Expose high-cardinality diagnostic detail safely without leaking tenant or secret data."
+    },
+    {
+      "check_id": "GAP-12-C076",
+      "ordinal": 76,
+      "dimension": "Observability & Explainability",
+      "requirement": "Record the reason for every automated decision made by WAN resilience and NAT traversal."
+    },
+    {
+      "check_id": "GAP-12-C077",
+      "ordinal": 77,
+      "dimension": "Observability & Explainability",
+      "requirement": "Provide an operator-readable explain view linking decisions to input state, policies, topology, and constraints."
+    },
+    {
+      "check_id": "GAP-12-C078",
+      "ordinal": 78,
+      "dimension": "Observability & Explainability",
+      "requirement": "Correlate WAN resilience and NAT traversal events with application release lineage and the live infrastructure graph."
+    },
+    {
+      "check_id": "GAP-12-C079",
+      "ordinal": 79,
+      "dimension": "Observability & Explainability",
+      "requirement": "Define telemetry retention, sampling, privacy, and export policy."
+    },
+    {
+      "check_id": "GAP-12-C080",
+      "ordinal": 80,
+      "dimension": "Observability & Explainability",
+      "requirement": "Create dashboards and alerts distinguishing ordinary load, degradation, policy rejection, dependency failure, attack, and software defect."
+    },
+    {
+      "check_id": "GAP-12-C081",
+      "ordinal": 81,
+      "dimension": "Testing & Certification",
+      "requirement": "Create unit tests for deterministic WAN resilience and NAT traversal logic and state transitions."
+    },
+    {
+      "check_id": "GAP-12-C082",
+      "ordinal": 82,
+      "dimension": "Testing & Certification",
+      "requirement": "Create contract tests for every public WAN resilience and NAT traversal interface."
+    },
+    {
+      "check_id": "GAP-12-C083",
+      "ordinal": 83,
+      "dimension": "Testing & Certification",
+      "requirement": "Create integration tests with every supported adjacent layer and execution tier."
+    },
+    {
+      "check_id": "GAP-12-C084",
+      "ordinal": 84,
+      "dimension": "Testing & Certification",
+      "requirement": "Create compatibility tests across supported CPU architectures, runtimes, hypervisors, providers, and protocol versions relevant to WAN resilience and NAT traversal."
+    },
+    {
+      "check_id": "GAP-12-C085",
+      "ordinal": 85,
+      "dimension": "Testing & Certification",
+      "requirement": "Fuzz parsers, schemas, protocol handlers, WIT/RPC boundaries, or untrusted inputs handled by WAN resilience and NAT traversal."
+    },
+    {
+      "check_id": "GAP-12-C086",
+      "ordinal": 86,
+      "dimension": "Testing & Certification",
+      "requirement": "Create concurrency and race-condition tests for shared/distributed WAN resilience and NAT traversal state."
+    },
+    {
+      "check_id": "GAP-12-C087",
+      "ordinal": 87,
+      "dimension": "Testing & Certification",
+      "requirement": "Create security tests derived directly from the WAN resilience and NAT traversal threat model."
+    },
+    {
+      "check_id": "GAP-12-C088",
+      "ordinal": 88,
+      "dimension": "Testing & Certification",
+      "requirement": "Create benchmark, soak, burst, and fleet-scale tests appropriate to WAN resilience and NAT traversal."
+    },
+    {
+      "check_id": "GAP-12-C089",
+      "ordinal": 89,
+      "dimension": "Testing & Certification",
+      "requirement": "Create disaster, partition, reconnect, and degraded-control-plane tests."
+    },
+    {
+      "check_id": "GAP-12-C090",
+      "ordinal": 90,
+      "dimension": "Testing & Certification",
+      "requirement": "Require machine-readable acceptance evidence before certifying a WAN resilience and NAT traversal release for production."
+    },
+    {
+      "check_id": "GAP-12-C091",
+      "ordinal": 91,
+      "dimension": "Operations, Release & Governance",
+      "requirement": "Define production SLOs, error budgets, and support commitments for WAN resilience and NAT traversal."
+    },
+    {
+      "check_id": "GAP-12-C092",
+      "ordinal": 92,
+      "dimension": "Operations, Release & Governance",
+      "requirement": "Define canary, staged rollout, rollback, and emergency-disable procedures for WAN resilience and NAT traversal."
+    },
+    {
+      "check_id": "GAP-12-C093",
+      "ordinal": 93,
+      "dimension": "Operations, Release & Governance",
+      "requirement": "Maintain a supported-version compatibility matrix for WAN resilience and NAT traversal and adjacent dependencies."
+    },
+    {
+      "check_id": "GAP-12-C094",
+      "ordinal": 94,
+      "dimension": "Operations, Release & Governance",
+      "requirement": "Define patching, vulnerability response, and end-of-life SLAs for WAN resilience and NAT traversal."
+    },
+    {
+      "check_id": "GAP-12-C095",
+      "ordinal": 95,
+      "dimension": "Operations, Release & Governance",
+      "requirement": "Provide backup, restore, migration, or reconstruction procedures for WAN resilience and NAT traversal state where applicable."
+    },
+    {
+      "check_id": "GAP-12-C096",
+      "ordinal": 96,
+      "dimension": "Operations, Release & Governance",
+      "requirement": "Create day-0 bootstrap, day-1 deployment, and day-2 operation runbooks."
+    },
+    {
+      "check_id": "GAP-12-C097",
+      "ordinal": 97,
+      "dimension": "Operations, Release & Governance",
+      "requirement": "Define incident severity, paging, escalation, containment, and recovery procedures."
+    },
+    {
+      "check_id": "GAP-12-C098",
+      "ordinal": 98,
+      "dimension": "Operations, Release & Governance",
+      "requirement": "Perform recurring access, policy, dependency, configuration, and architecture reviews."
+    },
+    {
+      "check_id": "GAP-12-C099",
+      "ordinal": 99,
+      "dimension": "Operations, Release & Governance",
+      "requirement": "Track exceptions, waivers, technical debt, and deprecated behaviors with owners and expiry dates."
+    },
+    {
+      "check_id": "GAP-12-C100",
+      "ordinal": 100,
+      "dimension": "Operations, Release & Governance",
+      "requirement": "Require a formal production exit gate confirming architecture, requirements, interfaces, implementation, security, resilience, performance, observability, testing, rollback, and ownership readiness."
+    }
+  ]
+}

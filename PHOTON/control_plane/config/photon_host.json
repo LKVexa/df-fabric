@@ -1,0 +1,19 @@
+{
+  "binding_contract": "PHOTON/bridge/BRIDGE_CONTRACT.md",
+  "binding_note": "This is the DF_Fabric the vendored Photon was originally written against. Binding here is the shortest path of the six: point dfbridge at adapter/dfabric/cli.py and supply a --nodes-root that holds the DF_* node trees.",
+  "bound": false,
+  "candidate_host_surfaces": [
+    "RUN.cmd / RUN",
+    "BUILD.cmd / BUILD",
+    "VERIFY.cmd / VERIFY",
+    "adapter/dfabric/cli.py  (fabric-attest, fabric-run)"
+  ],
+  "host_product": "DF_Fabric",
+  "host_product_kind": "DF scheduling/placement fabric (DF0)",
+  "host_product_root": ".. (relative to PHOTON/)",
+  "integrated_utc": "2026-09-22T16:46:25Z",
+  "integration_profile": "VENDORED_UNBOUND",
+  "originals_modified": [],
+  "photon_version": "1.0.1",
+  "schema": "PHOTON/HOST/1"
+}

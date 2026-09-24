@@ -1,0 +1,32 @@
+{
+  "schema": "VEC1/WINDOWS_NAMESPACE_VALIDATION/1",
+  "version": "0.6.0",
+  "audit_date": "2026-09-18",
+  "input_baseline": {
+    "archive": "VEC1_Electron_Substitute_v0.5.0_Audited_Hardened(4).zip",
+    "sha256": "b58b42733bbaf40c7c93d640ef03da86528f53142ccc76e56fcfb0e9aa11f4a2",
+    "case_insensitive_collision": [
+      "DF_Xtra_Large/vm/QUORUM_LCTL_MSSL_2.1.0/vm/world/evidence/INPUT_PROVENANCE.json",
+      "DF_Xtra_Large/vm/QUORUM_LCTL_MSSL_2.1.0/vm/world/evidence/input_provenance.json"
+    ]
+  },
+  "canonicalization": {
+    "renamed_from": "DF_Xtra_Large/vm/QUORUM_LCTL_MSSL_2.1.0/vm/world/evidence/input_provenance.json",
+    "renamed_to": "DF_Xtra_Large/vm/QUORUM_LCTL_MSSL_2.1.0/vm/world/evidence/INPUT_PROVENANCE_GUIDANCE.json",
+    "content_sha256_preserved": "81d3dff99e186f355c2036c5300506e01083793bb434b8809a247669e8bde108"
+  },
+  "candidate_static_paths_scanned": 7379,
+  "windows_namespace_compatible": true,
+  "case_insensitive_collisions": [],
+  "invalid_windows_components": [],
+  "max_relative_path_chars": 156,
+  "longest_relative_paths": [
+    "DF_Large/vm/BOTTLE_ROCKET_4.7.0_COLUMNED_LCTL_VIRTUAL_DEVICE_IO_SERVICE_ARCHITECTURE_61K/docs/WA450/05_BR-450-05_atomic_update_sequence_PROMPT_A~5dcdb78a.md",
+    "DF_Large/vm/BOTTLE_ROCKET_4.7.0_COLUMNED_LCTL_VIRTUAL_DEVICE_IO_SERVICE_ARCHITECTURE_61K/docs/WA450/02_BR-450-02_dual_slot_image_store_PROMPT_AN~79554b26.md",
+    "DF_Large/vm/BOTTLE_ROCKET_4.7.0_COLUMNED_LCTL_VIRTUAL_DEVICE_IO_SERVICE_ARCHITECTURE_61K/docs/WA450/04_BR-450-04_state_authentication_PROMPT_AND_WORKFLOW.md",
+    "DF_Large/vm/BOTTLE_ROCKET_4.7.0_COLUMNED_LCTL_VIRTUAL_DEVICE_IO_SERVICE_ARCHITECTURE_61K/docs/WA450/06_BR-450-06_power_loss_injection_PROMPT_AND_WORKFLOW.md",
+    "DF_Large/vm/BOTTLE_ROCKET_4.7.0_COLUMNED_LCTL_VIRTUAL_DEVICE_IO_SERVICE_ARCHITECTURE_61K/docs/WA450/09_BR-450-09_filesystem_hardening_PROMPT_AND_WORKFLOW.md"
+  ],
+  "note": "WindowsSafe-r1 path canonicalization reduces the delivered relative-path ceiling to 156 characters; classic MAX_PATH remains compatible when the extracted package root is about 102 characters or shorter.",
+  "windows_safe_repack": "WindowsSafe-r1"
+}

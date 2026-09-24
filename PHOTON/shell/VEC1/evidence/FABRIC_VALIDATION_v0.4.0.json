@@ -1,0 +1,14 @@
+{
+  "schema": "VEC1/FABRIC_VALIDATION/0.4.0",
+  "date": "2026-09-18",
+  "returncode": 0,
+  "verdict": "CROSS_NODE_DIFFERENTIAL_AGREEMENT",
+  "adapter_verdict": "CROSS_NODE_DIFFERENTIAL_AGREEMENT",
+  "nodes_bound": ["N_XLARGE"],
+  "nodes_absent": ["N_SMALL", "N_MEDIUM", "N_LARGE"],
+  "event_log_hash": "2240d7164fa132591735c8c0f319b38c41ad4b4cfab7bca9dba5e21474584f70",
+  "replay": "DETERMINISTIC_REPLAY_PASS",
+  "replica_participants": 1,
+  "replica_unanimous": true,
+  "claim_boundary": "Local diagnostic execution with one bound tier; not a four-node build/qualification result."
+}

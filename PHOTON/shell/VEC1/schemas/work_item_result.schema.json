@@ -1,0 +1,231 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "VEC/WORK_ITEM_RESULT/3.1.0",
+  "title": "VEC Work Item Result v3.1.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "work_item_id",
+    "contract_version",
+    "source_requirement_sha256",
+    "execution_modes",
+    "work_status",
+    "baseline",
+    "changed_artifacts",
+    "checks",
+    "evidence_refs",
+    "blockers",
+    "residual_risks",
+    "review"
+  ],
+  "properties": {
+    "schema": {
+      "const": "VEC/WORK_ITEM_RESULT/3.1.0"
+    },
+    "work_item_id": {
+      "type": "string",
+      "pattern": "^VEC-[0-9]{3}-P[0-9]{3}(?:-[A-T])?$"
+    },
+    "contract_version": {
+      "const": "3.1.0"
+    },
+    "source_requirement_sha256": {
+      "type": "string",
+      "pattern": "^[a-fA-F0-9]{64}$"
+    },
+    "execution_modes": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "ANALYZE",
+          "DESIGN",
+          "DOCUMENT",
+          "IMPLEMENT",
+          "VERIFY",
+          "MIGRATE",
+          "OPERATE",
+          "REVIEW",
+          "GATE",
+          "NO_OP"
+        ]
+      }
+    },
+    "work_status": {
+      "enum": [
+        "PASS",
+        "FAIL",
+        "BLOCKED",
+        "NOT_APPLICABLE"
+      ]
+    },
+    "applicability_rationale": {
+      "type": "string"
+    },
+    "baseline": {
+      "type": "object",
+      "required": [
+        "identity",
+        "sha256"
+      ],
+      "properties": {
+        "identity": {
+          "type": "string"
+        },
+        "sha256": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[a-fA-F0-9]{64}$"
+        }
+      },
+      "additionalProperties": false
+    },
+    "candidate": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "identity": {
+          "type": "string"
+        },
+        "sha256": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[a-fA-F0-9]{64}$"
+        }
+      },
+      "additionalProperties": false
+    },
+    "changed_artifacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "path",
+          "before_sha256",
+          "after_sha256"
+        ],
+        "properties": {
+          "path": {
+            "type": "string"
+          },
+          "before_sha256": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^[a-fA-F0-9]{64}$"
+          },
+          "after_sha256": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^[a-fA-F0-9]{64}$"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "checks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "status"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "PASS",
+              "FAIL",
+              "NOT_RUN",
+              "NOT_APPLICABLE"
+            ]
+          },
+          "evidence_ref": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "rationale": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "blockers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "residual_risks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "review": {
+      "type": "object",
+      "required": [
+        "status",
+        "reviewer_type"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "PASS",
+            "FAIL",
+            "PENDING",
+            "NOT_REQUIRED"
+          ]
+        },
+        "reviewer_type": {
+          "enum": [
+            "SELF",
+            "INDEPENDENT",
+            "HUMAN",
+            "AUTOMATED",
+            "NONE"
+          ]
+        },
+        "reviewer_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "evidence_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

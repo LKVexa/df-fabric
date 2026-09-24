@@ -1,0 +1,12 @@
+{
+  "schema": "VEC1/LOCAL_TEST_RESULTS/1",
+  "version": "0.5.0",
+  "date": "2026-09-18",
+  "tests": 72,
+  "passed": 72,
+  "failed": 0,
+  "errors": 0,
+  "status": "PASS",
+  "command": "PYTHONDONTWRITEBYTECODE=1 python -B -m unittest discover -s VEC1/tests -p test_*.py",
+  "log": "VEC1/evidence/LOCAL_TEST_RESULTS_v0.5.0.txt"
+}

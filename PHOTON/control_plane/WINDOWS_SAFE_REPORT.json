@@ -1,0 +1,26 @@
+{
+  "schema": "VEC1/WINDOWS_PATH_PREFLIGHT/1",
+  "generated": "2026-09-18",
+  "package": "Generic Photon v0.2.0 WindowsSafe-r1",
+  "original_max_relative_path_chars": 267,
+  "rebuilt_max_relative_path_chars": 156,
+  "classic_max_path_string_chars": 259,
+  "classic_max_package_root_chars": 102,
+  "recommended_package_root_chars": 90,
+  "windows_namespace_compatible": true,
+  "case_insensitive_collisions": [],
+  "invalid_windows_components": [],
+  "relative_paths_over_180": 0,
+  "longest_relative_paths": [
+    "DF_Large/vm/BOTTLE_ROCKET_4.7.0_COLUMNED_LCTL_VIRTUAL_DEVICE_IO_SERVICE_ARCHITECTURE_61K/docs/WA450/05_BR-450-05_atomic_update_sequence_PROMPT_A~5dcdb78a.md",
+    "DF_Large/vm/BOTTLE_ROCKET_4.7.0_COLUMNED_LCTL_VIRTUAL_DEVICE_IO_SERVICE_ARCHITECTURE_61K/docs/WA450/02_BR-450-02_dual_slot_image_store_PROMPT_AN~79554b26.md",
+    "DF_Large/vm/BOTTLE_ROCKET_4.7.0_COLUMNED_LCTL_VIRTUAL_DEVICE_IO_SERVICE_ARCHITECTURE_61K/docs/WA450/04_BR-450-04_state_authentication_PROMPT_AND_WORKFLOW.md",
+    "DF_Large/vm/BOTTLE_ROCKET_4.7.0_COLUMNED_LCTL_VIRTUAL_DEVICE_IO_SERVICE_ARCHITECTURE_61K/docs/WA450/06_BR-450-06_power_loss_injection_PROMPT_AND_WORKFLOW.md",
+    "DF_Large/vm/BOTTLE_ROCKET_4.7.0_COLUMNED_LCTL_VIRTUAL_DEVICE_IO_SERVICE_ARCHITECTURE_61K/docs/WA450/09_BR-450-09_filesystem_hardening_PROMPT_AND_WORKFLOW.md"
+  ],
+  "verification": {
+    "package_verify_strict": "PASS",
+    "vecctl_doctor": "PASS",
+    "fabric_attestation": "PASS"
+  }
+}

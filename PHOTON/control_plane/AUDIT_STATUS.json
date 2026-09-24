@@ -1,0 +1,15 @@
+{
+  "schema": "VEC1/AUDIT_STATUS/1",
+  "version": "0.2.0",
+  "date": "2026-09-18",
+  "control_plane_tests": {"total": 30, "active_pass": 29, "optional_integration": 1},
+  "native_build": {"N_SMALL": "PASS", "N_MEDIUM": "PASS", "N_LARGE": "PASS", "N_XLARGE": "PASS"},
+  "strict_full_verify": {
+    "verdict": "PASS",
+    "fabric_exit": 0,
+    "fabric_verdict": "CROSS_NODE_DIFFERENTIAL_AGREEMENT",
+    "deterministic_replay": true,
+    "programs": ["replica", "pipeline", "bsp"]
+  },
+  "release_note": "Host-specific native .build outputs are excluded from the static release seal and may be rebuilt on the target host."
+}

@@ -1,0 +1,10 @@
+{
+  "schema": "VEC1/SINGLE_INSTANCE_VALIDATION/1",
+  "version": "0.5.0",
+  "status": "PASS",
+  "platform": "local POSIX validation environment",
+  "first_shell": "STARTED on loopback and remained active",
+  "second_shell_exit_code": 5,
+  "second_shell_stderr": "REFUSED: another VEC1 shell is already using this runtime_state",
+  "note": "This validates the local advisory-lock behavior. Windows runtime execution remains NOT_RUN in this audit; the Windows lock path is additionally covered by code-level regression tests."
+}

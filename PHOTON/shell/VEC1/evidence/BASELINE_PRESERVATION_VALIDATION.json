@@ -1,0 +1,58 @@
+{
+  "schema": "VEC1/BASELINE_PRESERVATION_VALIDATION/1",
+  "status": "PASS",
+  "method": "SHA-256 every source ZIP file payload against the extracted integrated package path",
+  "trees": [
+    {
+      "source_archive": "DF_Fabric(6).zip",
+      "tree": "DF_Fabric",
+      "files_checked": 130,
+      "source_files": 130,
+      "bytes_checked": 1960017,
+      "missing": [],
+      "mismatches": [],
+      "status": "PASS"
+    },
+    {
+      "source_archive": "DF_Large(20260917-032855).zip",
+      "tree": "DF_Large",
+      "files_checked": 1016,
+      "source_files": 1016,
+      "bytes_checked": 6627893,
+      "missing": [],
+      "mismatches": [],
+      "status": "PASS"
+    },
+    {
+      "source_archive": "DF_Medium(20260917-032854).zip",
+      "tree": "DF_Medium",
+      "files_checked": 365,
+      "source_files": 365,
+      "bytes_checked": 3495832,
+      "missing": [],
+      "mismatches": [],
+      "status": "PASS"
+    },
+    {
+      "source_archive": "DF_Small(20260917-032853).zip",
+      "tree": "DF_Small",
+      "files_checked": 142,
+      "source_files": 142,
+      "bytes_checked": 1891266,
+      "missing": [],
+      "mismatches": [],
+      "status": "PASS"
+    },
+    {
+      "source_archive": "DF_Xtra_Large(7).zip",
+      "tree": "DF_Xtra_Large",
+      "files_checked": 5636,
+      "source_files": 5636,
+      "bytes_checked": 25722967,
+      "missing": [],
+      "mismatches": [],
+      "status": "PASS"
+    }
+  ],
+  "claim": "All supplied DF VM/Fabric source files are byte-identical in the integrated deliverable. VEC1 additions are outside those source trees."
+}

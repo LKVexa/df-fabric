@@ -1,0 +1,1112 @@
+{
+  "package": "VEC1_Prompt_Workflow_Series_Animation_ObjectEdit_OCR",
+  "version": "3.1.0",
+  "source_package": "VEC1_Component_Checklists_Animation_ObjectEdit_OCR_20x_v2.1.1.zip",
+  "components": 110,
+  "parent_items": 24420,
+  "nested_items": 488400,
+  "total_items": 512820,
+  "files": [
+    {
+      "component_number": 1,
+      "component": "Electron Genome",
+      "source_file": "001_Electron_Genome.md",
+      "prompt_workflow_file": "prompt_workflows/001_Electron_Genome_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "e86cd629c676466f3bc2806cc50fa72e2f32242d7076682b720be67d66ab3e78"
+    },
+    {
+      "component_number": 2,
+      "component": "Genome Manifest",
+      "source_file": "002_Genome_Manifest.md",
+      "prompt_workflow_file": "prompt_workflows/002_Genome_Manifest_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "691382bc0266dd97ac3860ea9f6e88bd91aff83e4550010e2dcb913867d7574e"
+    },
+    {
+      "component_number": 3,
+      "component": "Genome SHA-256 Identity",
+      "source_file": "003_Genome_SHA_256_Identity.md",
+      "prompt_workflow_file": "prompt_workflows/003_Genome_SHA_256_Identity_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "d947c7873e3d656aa46c2077c8f702ead0397faa1230b31c0e0172d892e6f57a"
+    },
+    {
+      "component_number": 4,
+      "component": "Canonical PA-LCTL Program",
+      "source_file": "004_Canonical_PA_LCTL_Program.md",
+      "prompt_workflow_file": "prompt_workflows/004_Canonical_PA_LCTL_Program_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "13afe254a7ebb0011f85e655c91b6bba52941a2df6d1c6b282dcc48f60f417e1"
+    },
+    {
+      "component_number": 5,
+      "component": "Electron Intermediate Representation (EIR)",
+      "source_file": "005_Electron_Intermediate_Representation_EIR.md",
+      "prompt_workflow_file": "prompt_workflows/005_Electron_Intermediate_Representation_EIR_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "70e6abf3d04ff7fc0eaba246a168adbed9d77f97b3cee5bf645eff30d399a9b2"
+    },
+    {
+      "component_number": 6,
+      "component": "Electron ID",
+      "source_file": "006_Electron_ID.md",
+      "prompt_workflow_file": "prompt_workflows/006_Electron_ID_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "75db286e3b02e2cc87fd908721440bfea1af9ab461c2d38157ae26f2d1817c67"
+    },
+    {
+      "component_number": 7,
+      "component": "Generation ID",
+      "source_file": "007_Generation_ID.md",
+      "prompt_workflow_file": "prompt_workflows/007_Generation_ID_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "ca50ee8fad950e4a9129127cdae75ebfd9e3c6ab31caf48ebbc93beaa4d8a774"
+    },
+    {
+      "component_number": 8,
+      "component": "Parent ID",
+      "source_file": "008_Parent_ID.md",
+      "prompt_workflow_file": "prompt_workflows/008_Parent_ID_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "400416d5ff2e42e2abf3b29cfec3d11cccc77bb9fdbc5a59885802989022b064"
+    },
+    {
+      "component_number": 9,
+      "component": "Lineage Record",
+      "source_file": "009_Lineage_Record.md",
+      "prompt_workflow_file": "prompt_workflows/009_Lineage_Record_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "b76cd7a604d358247efbf7b6881a395de77eadc2227f729150534eca225cadb0"
+    },
+    {
+      "component_number": 10,
+      "component": "Genesis Record",
+      "source_file": "010_Genesis_Record.md",
+      "prompt_workflow_file": "prompt_workflows/010_Genesis_Record_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "ab62d43271f4993e00a8aac5097e4eb0e057daf2d64333da93a3d2c1c318f235"
+    },
+    {
+      "component_number": 11,
+      "component": "Charge Register",
+      "source_file": "011_Charge_Register.md",
+      "prompt_workflow_file": "prompt_workflows/011_Charge_Register_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "64357bdff04b5ae1da3501baa8c19af68abbd98341ada927623d76920512a011"
+    },
+    {
+      "component_number": 12,
+      "component": "Energy Register",
+      "source_file": "012_Energy_Register.md",
+      "prompt_workflow_file": "prompt_workflows/012_Energy_Register_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "062acdf2d925566d3122425fdafcd23b68ad59f70ba4efaeb22d2482428952b7"
+    },
+    {
+      "component_number": 13,
+      "component": "Orbital Register",
+      "source_file": "013_Orbital_Register.md",
+      "prompt_workflow_file": "prompt_workflows/013_Orbital_Register_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "5491ac3c43f83260f1f25b930da20ceb0ac29022ec8bbc9c0789bf83173602f1"
+    },
+    {
+      "component_number": 14,
+      "component": "State Register",
+      "source_file": "014_State_Register.md",
+      "prompt_workflow_file": "prompt_workflows/014_State_Register_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "8a8475e3096f2339b30c1152b486754733cf611577d5b94958e73e53536f4be3"
+    },
+    {
+      "component_number": 15,
+      "component": "Phase Register",
+      "source_file": "015_Phase_Register.md",
+      "prompt_workflow_file": "prompt_workflows/015_Phase_Register_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "4f32a4ea250ee1838c77597252c6184472c29990d45aadabff05ae3158809702"
+    },
+    {
+      "component_number": 16,
+      "component": "Spin Register",
+      "source_file": "016_Spin_Register.md",
+      "prompt_workflow_file": "prompt_workflows/016_Spin_Register_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "aaad3d894bd89152a5423d5089eec8a8f7499bc3012e890743aa0fbdc5f5034b"
+    },
+    {
+      "component_number": 17,
+      "component": "Momentum Vector",
+      "source_file": "017_Momentum_Vector.md",
+      "prompt_workflow_file": "prompt_workflows/017_Momentum_Vector_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "6bdb00a255ca3049d413ebe1870c5c9666c7663ab7c8a0f1546d8f51c67ac556"
+    },
+    {
+      "component_number": 18,
+      "component": "Position/Node Vector",
+      "source_file": "018_Position_Node_Vector.md",
+      "prompt_workflow_file": "prompt_workflows/018_Position_Node_Vector_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "5d455cd352badd30d757d0a77c266fc782b7732c3b0a73bab1d68e801ebd8448"
+    },
+    {
+      "component_number": 19,
+      "component": "Interaction Radius",
+      "source_file": "019_Interaction_Radius.md",
+      "prompt_workflow_file": "prompt_workflows/019_Interaction_Radius_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "74e629aace93014c00d81acb6b91a763fc9110ba34e0f3a52962ca6ec30ff60a"
+    },
+    {
+      "component_number": 20,
+      "component": "Energy Transition Table",
+      "source_file": "020_Energy_Transition_Table.md",
+      "prompt_workflow_file": "prompt_workflows/020_Energy_Transition_Table_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "3836273dfc6db9e1f233b1e70ad114ec1ef45e67499e42bdda96953269b7b85e"
+    },
+    {
+      "component_number": 21,
+      "component": "Instruction Decoder",
+      "source_file": "021_Instruction_Decoder.md",
+      "prompt_workflow_file": "prompt_workflows/021_Instruction_Decoder_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "69fb9dbadff4f778cb633f44f4f04b916d344e9c6e019f1514b7ca5dca85c966"
+    },
+    {
+      "component_number": 22,
+      "component": "State Transition Engine",
+      "source_file": "022_State_Transition_Engine.md",
+      "prompt_workflow_file": "prompt_workflows/022_State_Transition_Engine_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "2c020cb615f69d030c881a1edb43d06237efad68ae7763947f3cad3a8a85ec9a"
+    },
+    {
+      "component_number": 23,
+      "component": "Register Bank",
+      "source_file": "023_Register_Bank.md",
+      "prompt_workflow_file": "prompt_workflows/023_Register_Bank_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "94138278bf4f82386b67033ee5a900338ac7d858c002ddfc3374f4bb657d9330"
+    },
+    {
+      "component_number": 24,
+      "component": "Local Working Memory",
+      "source_file": "024_Local_Working_Memory.md",
+      "prompt_workflow_file": "prompt_workflows/024_Local_Working_Memory_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "a03fb40aabdcf1573a4434344b84bc31632b6ff8c87f0094a0701a5fc1e7e45e"
+    },
+    {
+      "component_number": 25,
+      "component": "Persistent State Pointer",
+      "source_file": "025_Persistent_State_Pointer.md",
+      "prompt_workflow_file": "prompt_workflows/025_Persistent_State_Pointer_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "007eec405b15c6f0c243294079f00dae40141ca78ea6475382b0e1d538336dd6"
+    },
+    {
+      "component_number": 26,
+      "component": "Deterministic Clock/Tick Counter",
+      "source_file": "026_Deterministic_Clock_Tick_Counter.md",
+      "prompt_workflow_file": "prompt_workflows/026_Deterministic_Clock_Tick_Counter_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "f52bd7880c5d4ef2ed9489252263b80f07abe1cfc58810e660827bea10214083"
+    },
+    {
+      "component_number": 27,
+      "component": "Deterministic PRNG",
+      "source_file": "027_Deterministic_PRNG.md",
+      "prompt_workflow_file": "prompt_workflows/027_Deterministic_PRNG_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "3b85dd33f0d5add3844c1fcd8e9e105715904a28e1461067e82b1a37de2dd66d"
+    },
+    {
+      "component_number": 28,
+      "component": "Instruction Counter",
+      "source_file": "028_Instruction_Counter.md",
+      "prompt_workflow_file": "prompt_workflows/028_Instruction_Counter_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "fc7e55f100b704eec0b670b5ba531fbb7ddf08668ffa70ceed92b5898d349831"
+    },
+    {
+      "component_number": 29,
+      "component": "Resource Meter",
+      "source_file": "029_Resource_Meter.md",
+      "prompt_workflow_file": "prompt_workflows/029_Resource_Meter_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "d570d83f81dfcc6b1ccb42757694da3d3f66ae8d5dcba3b35150987a5db71039"
+    },
+    {
+      "component_number": 30,
+      "component": "Execution Status Register",
+      "source_file": "030_Execution_Status_Register.md",
+      "prompt_workflow_file": "prompt_workflows/030_Execution_Status_Register_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "86f8a98e02569f79680c45af313207fd87ea8c1683c990715406a5f4d9f0addb"
+    },
+    {
+      "component_number": 31,
+      "component": "Mailbox",
+      "source_file": "031_Mailbox.md",
+      "prompt_workflow_file": "prompt_workflows/031_Mailbox_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "fb4c9ea637797b233b1fb1ae571f65052a4205478ad2c50e0a09311aaf4301f0"
+    },
+    {
+      "component_number": 32,
+      "component": "Outbound Queue",
+      "source_file": "032_Outbound_Queue.md",
+      "prompt_workflow_file": "prompt_workflows/032_Outbound_Queue_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "d3a62ccb73740c080e3a199939468b0d6fc9acf084ec785d0dc0525b7992041e"
+    },
+    {
+      "component_number": 33,
+      "component": "Interaction Bus Adapter",
+      "source_file": "033_Interaction_Bus_Adapter.md",
+      "prompt_workflow_file": "prompt_workflows/033_Interaction_Bus_Adapter_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "587756e98cae76a471bb75a6a4e860f4fdf41228cad250851a7bf90b70bc1fcd"
+    },
+    {
+      "component_number": 34,
+      "component": "Peer Address Resolver",
+      "source_file": "034_Peer_Address_Resolver.md",
+      "prompt_workflow_file": "prompt_workflows/034_Peer_Address_Resolver_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "3bf0b5b8f22c4966edb4f7a76a1d81ee1059fb28fa3e248c5f7b905a744218fe"
+    },
+    {
+      "component_number": 35,
+      "component": "Signal Encoder",
+      "source_file": "035_Signal_Encoder.md",
+      "prompt_workflow_file": "prompt_workflows/035_Signal_Encoder_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "33b6423ee703ac5961852270159d2f77b550d2de42ba7742e625185a2a937424"
+    },
+    {
+      "component_number": 36,
+      "component": "Signal Decoder",
+      "source_file": "036_Signal_Decoder.md",
+      "prompt_workflow_file": "prompt_workflows/036_Signal_Decoder_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "68fca3ca2c7ff498bf65972ccb6c71f0d2e463f42ade4b27b5f4b718520fc97a"
+    },
+    {
+      "component_number": 37,
+      "component": "Event Router",
+      "source_file": "037_Event_Router.md",
+      "prompt_workflow_file": "prompt_workflows/037_Event_Router_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "224322ee358c5a0066a569f6cfd6f9493083f7a12f0bacd6c822d5b43bf3bf24"
+    },
+    {
+      "component_number": 38,
+      "component": "Subscription Table",
+      "source_file": "038_Subscription_Table.md",
+      "prompt_workflow_file": "prompt_workflows/038_Subscription_Table_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "5af1c4463132fdebca980bbcf3f20f2feaf4fb64cc18a43cdc229380faa5c28c"
+    },
+    {
+      "component_number": 39,
+      "component": "Binding Table",
+      "source_file": "039_Binding_Table.md",
+      "prompt_workflow_file": "prompt_workflows/039_Binding_Table_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "072028ad45c96d05ce5de9c7a127c9a9a008fa7c0d6bf239a37893109bd3111a"
+    },
+    {
+      "component_number": 40,
+      "component": "Interaction Policy",
+      "source_file": "040_Interaction_Policy.md",
+      "prompt_workflow_file": "prompt_workflows/040_Interaction_Policy_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "1a6d38be4e4293ebf02b0f2fcd6196235497e17f50d1b135315fd1aed5132a89"
+    },
+    {
+      "component_number": 41,
+      "component": "Freeze Controller",
+      "source_file": "041_Freeze_Controller.md",
+      "prompt_workflow_file": "prompt_workflows/041_Freeze_Controller_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "db6d2c9e6efe24f18f0768d2b99b6ef6bda191c9e7ff6e94d29215ab36e63963"
+    },
+    {
+      "component_number": 42,
+      "component": "State Canonicalizer",
+      "source_file": "042_State_Canonicalizer.md",
+      "prompt_workflow_file": "prompt_workflows/042_State_Canonicalizer_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "cb635a27c9e7921f6e46500845372744ed82266f0b5105d015fecfc0e028060a"
+    },
+    {
+      "component_number": 43,
+      "component": "Snapshot Engine",
+      "source_file": "043_Snapshot_Engine.md",
+      "prompt_workflow_file": "prompt_workflows/043_Snapshot_Engine_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "974db5cb9e18458b82e14d9c7b2b6c778fe38b1ee8d13818ae7fbc137b06f059"
+    },
+    {
+      "component_number": 44,
+      "component": "Snapshot Hash",
+      "source_file": "044_Snapshot_Hash.md",
+      "prompt_workflow_file": "prompt_workflows/044_Snapshot_Hash_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "d755b9bc9a556d2f26c1a0514c45c6c54d465167f8c080f5f5e26ffb424eeb41"
+    },
+    {
+      "component_number": 45,
+      "component": "Fork Controller",
+      "source_file": "045_Fork_Controller.md",
+      "prompt_workflow_file": "prompt_workflows/045_Fork_Controller_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "5170783339a2800a841a12637df5be63580101cc171b3d0e79f5961c9b245111"
+    },
+    {
+      "component_number": 46,
+      "component": "Clone-ID Generator",
+      "source_file": "046_Clone_ID_Generator.md",
+      "prompt_workflow_file": "prompt_workflows/046_Clone_ID_Generator_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "ce6b4f08950934b15f6000d7aad494dfb3dfd18feb000662a14e4a82c46fe062"
+    },
+    {
+      "component_number": 47,
+      "component": "Copy-on-Write State Store",
+      "source_file": "047_Copy_on_Write_State_Store.md",
+      "prompt_workflow_file": "prompt_workflows/047_Copy_on_Write_State_Store_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "805af17e172d2962134b99f7512534015c025b4973acb81d367ab4c9f01aa354"
+    },
+    {
+      "component_number": 48,
+      "component": "Clone Manifest",
+      "source_file": "048_Clone_Manifest.md",
+      "prompt_workflow_file": "prompt_workflows/048_Clone_Manifest_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "36648d9009d5aa876bada5c03b546efbb28a1a881583c81ad707ae472e57d016"
+    },
+    {
+      "component_number": 49,
+      "component": "Restore Engine",
+      "source_file": "049_Restore_Engine.md",
+      "prompt_workflow_file": "prompt_workflows/049_Restore_Engine_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "76bb78b77df0bce3c94090b5096cd382a34062d683a7149e048eec6d3d56b1e4"
+    },
+    {
+      "component_number": 50,
+      "component": "Clone Equivalence Tester",
+      "source_file": "050_Clone_Equivalence_Tester.md",
+      "prompt_workflow_file": "prompt_workflows/050_Clone_Equivalence_Tester_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "18703d781551d8cf05a0b9bfdf569282659237585cb35179ea65de9bf1d622a1"
+    },
+    {
+      "component_number": 51,
+      "component": "Canonical State Hash",
+      "source_file": "051_Canonical_State_Hash.md",
+      "prompt_workflow_file": "prompt_workflows/051_Canonical_State_Hash_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "49de5ff21402311dfe961e679edd2f2f86d7ff10d82ba383a31ef04746ef9b43"
+    },
+    {
+      "component_number": 52,
+      "component": "Capability Hash",
+      "source_file": "052_Capability_Hash.md",
+      "prompt_workflow_file": "prompt_workflows/052_Capability_Hash_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "bbf58d9524a66c50723f17170067cc7262c3669d54da00d57522ee8b7248ebbb"
+    },
+    {
+      "component_number": 53,
+      "component": "Configuration Hash",
+      "source_file": "053_Configuration_Hash.md",
+      "prompt_workflow_file": "prompt_workflows/053_Configuration_Hash_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "36cabc12b63b68422522cf0573258103df5a05ffef3a1b6e29393005882bfaf7"
+    },
+    {
+      "component_number": 54,
+      "component": "Execution Receipt",
+      "source_file": "054_Execution_Receipt.md",
+      "prompt_workflow_file": "prompt_workflows/054_Execution_Receipt_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "e93e5dff93b7433e6e729fdfdc202701cc9a43c30b151772ad5ba31e175483a4"
+    },
+    {
+      "component_number": 55,
+      "component": "Attestation Record",
+      "source_file": "055_Attestation_Record.md",
+      "prompt_workflow_file": "prompt_workflows/055_Attestation_Record_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "299054bef08223c4a96c71f70129435e70b75962661310a68089cf7f01b8ebcf"
+    },
+    {
+      "component_number": 56,
+      "component": "Append-Only Event Ledger",
+      "source_file": "056_Append_Only_Event_Ledger.md",
+      "prompt_workflow_file": "prompt_workflows/056_Append_Only_Event_Ledger_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "0dda965282cfb2699c90cb7ae7541e632218b2cd0c609d698fdac16113d76383"
+    },
+    {
+      "component_number": 57,
+      "component": "Replay Engine",
+      "source_file": "057_Replay_Engine.md",
+      "prompt_workflow_file": "prompt_workflows/057_Replay_Engine_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "c11089cd99d6e93afbb31e35e75e7987740a26b08a538cbf695174407535213e"
+    },
+    {
+      "component_number": 58,
+      "component": "Tamper Detector",
+      "source_file": "058_Tamper_Detector.md",
+      "prompt_workflow_file": "prompt_workflows/058_Tamper_Detector_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "fb7851902f4afb092186314b2ea2dd9b7c107ffdecd25eba78edc0b1c08f2140"
+    },
+    {
+      "component_number": 59,
+      "component": "Schema Validator",
+      "source_file": "059_Schema_Validator.md",
+      "prompt_workflow_file": "prompt_workflows/059_Schema_Validator_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "3a7c8dce674147e9aa6cfd68984109c0b8b785edb09ec58b4f2abfd88a3a9939"
+    },
+    {
+      "component_number": 60,
+      "component": "Fail-Closed Gate Controller",
+      "source_file": "060_Fail_Closed_Gate_Controller.md",
+      "prompt_workflow_file": "prompt_workflows/060_Fail_Closed_Gate_Controller_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "20c01c5aee1a2eb74af3c55634acd03a212573484081d71a84df72906c8019f4"
+    },
+    {
+      "component_number": 61,
+      "component": "DF_Small Adapter",
+      "source_file": "061_DF_Small_Adapter.md",
+      "prompt_workflow_file": "prompt_workflows/061_DF_Small_Adapter_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "e91cae1b5d4a8738e37883652c5eff0e41d04b75ac7157c698532ee7607477a6"
+    },
+    {
+      "component_number": 62,
+      "component": "MSSL Lowering Backend",
+      "source_file": "062_MSSL_Lowering_Backend.md",
+      "prompt_workflow_file": "prompt_workflows/062_MSSL_Lowering_Backend_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "ad4c7cc8e1a42d29f5b2b94b7d938c082f320d11168f0c1578e44cb792c8deac"
+    },
+    {
+      "component_number": 63,
+      "component": "DF_Medium Adapter",
+      "source_file": "063_DF_Medium_Adapter.md",
+      "prompt_workflow_file": "prompt_workflows/063_DF_Medium_Adapter_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "1ab4f86898e013e10acbeec01ca56f09c4307883d1ae3eeaca466bfa78c2ca6e"
+    },
+    {
+      "component_number": 64,
+      "component": "Medium LCTLC Backend",
+      "source_file": "064_Medium_LCTLC_Backend.md",
+      "prompt_workflow_file": "prompt_workflows/064_Medium_LCTLC_Backend_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "147b1e30b31ccfe5491ee64fe9940f47bf5da479cb4929064fee8f41b9931a1f"
+    },
+    {
+      "component_number": 65,
+      "component": "DF_Large Adapter",
+      "source_file": "065_DF_Large_Adapter.md",
+      "prompt_workflow_file": "prompt_workflows/065_DF_Large_Adapter_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "2a7a7a97ba80250a6e9e6f5eccc0fd8c37e8cc7e9cf15d1680ff1fc5cd9fc30c"
+    },
+    {
+      "component_number": 66,
+      "component": "Large LCTLC Backend",
+      "source_file": "066_Large_LCTLC_Backend.md",
+      "prompt_workflow_file": "prompt_workflows/066_Large_LCTLC_Backend_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "5e5814902fa9a9eb673246fa43ab904caa360db33080dba78837643bf0ff6591"
+    },
+    {
+      "component_number": 67,
+      "component": "DF_Xtra_Large Adapter",
+      "source_file": "067_DF_Xtra_Large_Adapter.md",
+      "prompt_workflow_file": "prompt_workflows/067_DF_Xtra_Large_Adapter_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "b29656c1d194ae1f1a8548f6e06671a4f289d9555671497a2e7b000c9d6f52df"
+    },
+    {
+      "component_number": 68,
+      "component": "XL/QVM Lowering Backend",
+      "source_file": "068_XL_QVM_Lowering_Backend.md",
+      "prompt_workflow_file": "prompt_workflows/068_XL_QVM_Lowering_Backend_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "85d985a6e5af067b3b852731945912688f0be5472aa91ce3438562414129a16a"
+    },
+    {
+      "component_number": 69,
+      "component": "Result Normalizer",
+      "source_file": "069_Result_Normalizer.md",
+      "prompt_workflow_file": "prompt_workflows/069_Result_Normalizer_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "4d169b50b47fd452f381b03a7ad7b03933ecc578e5e4c1d3d4dd4c78373bd19c"
+    },
+    {
+      "component_number": 70,
+      "component": "Cross-Target Comparator",
+      "source_file": "070_Cross_Target_Comparator.md",
+      "prompt_workflow_file": "prompt_workflows/070_Cross_Target_Comparator_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "b090ab969240a0172673afdc59004ac84c39b0dd030b21427fce1c4e3182b4d8"
+    },
+    {
+      "component_number": 71,
+      "component": "Electron Registry",
+      "source_file": "071_Electron_Registry.md",
+      "prompt_workflow_file": "prompt_workflows/071_Electron_Registry_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "97f2604a841607397431ddb61398fb88757efec6ed16602417686f87ec3d7bc5"
+    },
+    {
+      "component_number": 72,
+      "component": "Fabric Scheduler",
+      "source_file": "072_Fabric_Scheduler.md",
+      "prompt_workflow_file": "prompt_workflows/072_Fabric_Scheduler_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "0f532a299d834530869aebe794dc500c5b618553b1b17cda164b2303935491c9"
+    },
+    {
+      "component_number": 73,
+      "component": "Placement Engine",
+      "source_file": "073_Placement_Engine.md",
+      "prompt_workflow_file": "prompt_workflows/073_Placement_Engine_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "8f5d30bcfe2fa11417fad627b0be09376142c08f9dd8fb47b05bac93f0010aad"
+    },
+    {
+      "component_number": 74,
+      "component": "Replica Manager",
+      "source_file": "074_Replica_Manager.md",
+      "prompt_workflow_file": "prompt_workflows/074_Replica_Manager_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "8946c201e2a013bb96bbfbcaaba94d82796f1e1595f5b9bd982837bc54df75b0"
+    },
+    {
+      "component_number": 75,
+      "component": "Quorum Manager",
+      "source_file": "075_Quorum_Manager.md",
+      "prompt_workflow_file": "prompt_workflows/075_Quorum_Manager_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "0cf1dfbfe5ea44f4628be807b534adf6b394db068b7215c627be9c048125ddf4"
+    },
+    {
+      "component_number": 76,
+      "component": "Differential Verification Engine",
+      "source_file": "076_Differential_Verification_Engine.md",
+      "prompt_workflow_file": "prompt_workflows/076_Differential_Verification_Engine_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "09591e523f9e73d4d698daeb00a5f7896ecdfcc51b0939bae17d4d86c2b6ede2"
+    },
+    {
+      "component_number": 77,
+      "component": "Fabric Event Log",
+      "source_file": "077_Fabric_Event_Log.md",
+      "prompt_workflow_file": "prompt_workflows/077_Fabric_Event_Log_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "2686a5ef92ba876a19e608a83d73b9312d3313ffcddf47789d8a6784942ba946"
+    },
+    {
+      "component_number": 78,
+      "component": "Transport Layer",
+      "source_file": "078_Transport_Layer.md",
+      "prompt_workflow_file": "prompt_workflows/078_Transport_Layer_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "fc3d1fabaad6d348126544e040d57d7a87e1f09b34d54c07a97d778d8d4ad1d6"
+    },
+    {
+      "component_number": 79,
+      "component": "Node Discovery System",
+      "source_file": "079_Node_Discovery_System.md",
+      "prompt_workflow_file": "prompt_workflows/079_Node_Discovery_System_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "2ef52fe3a6740be11152305a2b1bf0afa36c65c9a0ad82058b465bd155aa2ec9"
+    },
+    {
+      "component_number": 80,
+      "component": "Health Monitor",
+      "source_file": "080_Health_Monitor.md",
+      "prompt_workflow_file": "prompt_workflows/080_Health_Monitor_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "7540d96537b4c065c16b1993cd946aaf4ff40b1cc6530b26fef4d62eed0efeae"
+    },
+    {
+      "component_number": 81,
+      "component": "Recovery Coordinator",
+      "source_file": "081_Recovery_Coordinator.md",
+      "prompt_workflow_file": "prompt_workflows/081_Recovery_Coordinator_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "b9514b63ba127becbe368e858340a8b3b40ff4a17b52959e5e5268b4d95218d7"
+    },
+    {
+      "component_number": 82,
+      "component": "Checkpoint Coordinator",
+      "source_file": "082_Checkpoint_Coordinator.md",
+      "prompt_workflow_file": "prompt_workflows/082_Checkpoint_Coordinator_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "2de9a17dc59b6ace85cb4f9e809799ca1914dced62f5b68d59e040e89ee9519f"
+    },
+    {
+      "component_number": 83,
+      "component": "Capability Manifest",
+      "source_file": "083_Capability_Manifest.md",
+      "prompt_workflow_file": "prompt_workflows/083_Capability_Manifest_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "cd96c8c7fea5cc37e49516b5da22c5f7b560b1a7c47de659bb52f33553668b4a"
+    },
+    {
+      "component_number": 84,
+      "component": "Capability Tokens",
+      "source_file": "084_Capability_Tokens.md",
+      "prompt_workflow_file": "prompt_workflows/084_Capability_Tokens_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "bdf7eb4df5461431d56b9aadfb6d904472200fac84667b8c1a53c07d8f7de193"
+    },
+    {
+      "component_number": 85,
+      "component": "Resource Quotas",
+      "source_file": "085_Resource_Quotas.md",
+      "prompt_workflow_file": "prompt_workflows/085_Resource_Quotas_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "ee42cffcb55ba3ef7030ece1857695812d2037e672ffa028ca7de28cb904746a"
+    },
+    {
+      "component_number": 86,
+      "component": "Filesystem Sandbox",
+      "source_file": "086_Filesystem_Sandbox.md",
+      "prompt_workflow_file": "prompt_workflows/086_Filesystem_Sandbox_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "14f30dd50912d2073d076d1571efbf98861abe19667d344addd50b5c99616577"
+    },
+    {
+      "component_number": 87,
+      "component": "Network Sandbox",
+      "source_file": "087_Network_Sandbox.md",
+      "prompt_workflow_file": "prompt_workflows/087_Network_Sandbox_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "8591440056c3788e8732c4ff32f5174fcfe8955959e8f34cfc5764834028cd96"
+    },
+    {
+      "component_number": 88,
+      "component": "Host-Call Gate",
+      "source_file": "088_Host_Call_Gate.md",
+      "prompt_workflow_file": "prompt_workflows/088_Host_Call_Gate_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "64fdfe04f4f836a1447f92dff465845343fb408e3303142df6d12dae7baa9676"
+    },
+    {
+      "component_number": 89,
+      "component": "Plugin Gate",
+      "source_file": "089_Plugin_Gate.md",
+      "prompt_workflow_file": "prompt_workflows/089_Plugin_Gate_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "b272629f3bfd931058d0b113b78d52b6981117a4cedfc587deea82ebc288aed0"
+    },
+    {
+      "component_number": 90,
+      "component": "Privilege Boundary",
+      "source_file": "090_Privilege_Boundary.md",
+      "prompt_workflow_file": "prompt_workflows/090_Privilege_Boundary_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "ed20ef0cfc70ab1370e8581cc3221814b503e0f6e9847e23c5f04beb2c97bc0e"
+    },
+    {
+      "component_number": 91,
+      "component": "Kill/Suspend Switch",
+      "source_file": "091_Kill_Suspend_Switch.md",
+      "prompt_workflow_file": "prompt_workflows/091_Kill_Suspend_Switch_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "0c5de3d34eacf6e82e948169cfcf2ff028fab16248308d42f5387d91fbeac954"
+    },
+    {
+      "component_number": 92,
+      "component": "Recovery Policy",
+      "source_file": "092_Recovery_Policy.md",
+      "prompt_workflow_file": "prompt_workflows/092_Recovery_Policy_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "f01d985fc81f1a922df4594e7301d8157afc147ce32f210c55d6368112f1c14a"
+    },
+    {
+      "component_number": 93,
+      "component": "Orbital Manager",
+      "source_file": "093_Orbital_Manager.md",
+      "prompt_workflow_file": "prompt_workflows/093_Orbital_Manager_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "acaac004b2a1fc07ec6da1fe340fd0c644bfc86b3556eb6c66e6abeb49dcc67d"
+    },
+    {
+      "component_number": 94,
+      "component": "Electron Pool",
+      "source_file": "094_Electron_Pool.md",
+      "prompt_workflow_file": "prompt_workflows/094_Electron_Pool_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "4d58a5e91d0fbbb82d0a4c5ca4e790e3f07b432a1d27d7c3ef71f5e240e1543e"
+    },
+    {
+      "component_number": 95,
+      "component": "Electron Affinity Map",
+      "source_file": "095_Electron_Affinity_Map.md",
+      "prompt_workflow_file": "prompt_workflows/095_Electron_Affinity_Map_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "e75a02695d889f1297a0ca5ffdaf7b32d70c9d929b2b3cc1419280d4ddd845c7"
+    },
+    {
+      "component_number": 96,
+      "component": "Proton Interface",
+      "source_file": "096_Proton_Interface.md",
+      "prompt_workflow_file": "prompt_workflows/096_Proton_Interface_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "3622f06dfd9416b8392f2012e05d14d8418194c6d83fe1a75cb138bf4ec00857"
+    },
+    {
+      "component_number": 97,
+      "component": "Neutron Interface",
+      "source_file": "097_Neutron_Interface.md",
+      "prompt_workflow_file": "prompt_workflows/097_Neutron_Interface_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "3b81c207e557c0ccc48afd4c795acc7812c4758f98a907708c78dc0e25ea594d"
+    },
+    {
+      "component_number": 98,
+      "component": "Atomic Membership Record",
+      "source_file": "098_Atomic_Membership_Record.md",
+      "prompt_workflow_file": "prompt_workflows/098_Atomic_Membership_Record_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "b802ab94edd5034888b9a8c32dc68261f702663dd6814527ac27e6959bb0de00"
+    },
+    {
+      "component_number": 99,
+      "component": "Bond Interface",
+      "source_file": "099_Bond_Interface.md",
+      "prompt_workflow_file": "prompt_workflows/099_Bond_Interface_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "1fa34325916a8520fbfb3e84e33bd431bf0d2765548c3299f5ba325a60ce0978"
+    },
+    {
+      "component_number": 100,
+      "component": "Orbital Transition Controller",
+      "source_file": "100_Orbital_Transition_Controller.md",
+      "prompt_workflow_file": "prompt_workflows/100_Orbital_Transition_Controller_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "685e8ec929e744740dc61e7aefd8f04e8400b31669a39a2eb4c6d448a82591f7"
+    },
+    {
+      "component_number": 101,
+      "component": "Electron Inspector",
+      "source_file": "101_Electron_Inspector.md",
+      "prompt_workflow_file": "prompt_workflows/101_Electron_Inspector_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "c3a0b7ab44b2367caa9fbff699d6a467c8e9a050186d2174dba538aff1234b96"
+    },
+    {
+      "component_number": 102,
+      "component": "Lineage Viewer",
+      "source_file": "102_Lineage_Viewer.md",
+      "prompt_workflow_file": "prompt_workflows/102_Lineage_Viewer_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "0e526632f7e5bbdd1c336b729960ce78189a0da49a3609b9582af1fdf8c9abaa"
+    },
+    {
+      "component_number": 103,
+      "component": "Orbital Viewer",
+      "source_file": "103_Orbital_Viewer.md",
+      "prompt_workflow_file": "prompt_workflows/103_Orbital_Viewer_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "e75efb2c0e23764798f353ebbf19d7769b3459633f5a8b786417fa651492cc18"
+    },
+    {
+      "component_number": 104,
+      "component": "State-Diff Viewer",
+      "source_file": "104_State_Diff_Viewer.md",
+      "prompt_workflow_file": "prompt_workflows/104_State_Diff_Viewer_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "dcb119e0af087cb21d1271cf26464bfb2cb74f80214f22f6f385a8b55f6eb502"
+    },
+    {
+      "component_number": 105,
+      "component": "Execution Trace Viewer",
+      "source_file": "105_Execution_Trace_Viewer.md",
+      "prompt_workflow_file": "prompt_workflows/105_Execution_Trace_Viewer_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "881180837f654a81d1033917ad15cf39d515efe951759506cc747d736f55b27a"
+    },
+    {
+      "component_number": 106,
+      "component": "Fabric Topology View",
+      "source_file": "106_Fabric_Topology_View.md",
+      "prompt_workflow_file": "prompt_workflows/106_Fabric_Topology_View_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "d92ac42698afef971d35d21ad4caff63a43526757481eab414a5e7bd337d7936"
+    },
+    {
+      "component_number": 107,
+      "component": "Quorum Dashboard",
+      "source_file": "107_Quorum_Dashboard.md",
+      "prompt_workflow_file": "prompt_workflows/107_Quorum_Dashboard_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "24bba5d04187608e73bb25e0393f0cd3043be15b69be5421626f859c39ae8f86"
+    },
+    {
+      "component_number": 108,
+      "component": "Resource Dashboard",
+      "source_file": "108_Resource_Dashboard.md",
+      "prompt_workflow_file": "prompt_workflows/108_Resource_Dashboard_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "4579835adf6e51888e316da26456592880b65793cfcbc0b45138e65ac1b54966"
+    },
+    {
+      "component_number": 109,
+      "component": "Attestation Viewer",
+      "source_file": "109_Attestation_Viewer.md",
+      "prompt_workflow_file": "prompt_workflows/109_Attestation_Viewer_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "faa48753852254b9a4671bfbe1fbaad7c3a00342db9d8e8c817df0769bc6096e"
+    },
+    {
+      "component_number": 110,
+      "component": "Clone Laboratory UI",
+      "source_file": "110_Clone_Laboratory_UI.md",
+      "prompt_workflow_file": "prompt_workflows/110_Clone_Laboratory_UI_PROMPT_WORKFLOWS.md",
+      "parent_items": 222,
+      "nested_items": 4440,
+      "total_items": 4662,
+      "sha256": "d6dd1877d4ca99df2d09f4d5f4e6b76b1e1e84bc4b52f1b9a7310e407d0076fb"
+    }
+  ],
+  "hardening_contract": "MASTER_EXECUTION_CONTRACT_v3.1.0.md"
+}

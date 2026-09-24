@@ -1,0 +1,863 @@
+{
+ "df_release": "DF-PA21.2-1.0.0",
+ "event_log": {
+  "events": 43,
+  "hash": "da4b1f0549a1512a510a80267f1b72ee0a1728093bea6eaf8fcd8ced3d0378dc",
+  "metrics_excluded_from_hash": true,
+  "name": "df_fabric",
+  "reconstruction": {
+   "event_count": 43,
+   "events_per_worker": {
+    "-": 20,
+    "W_LARGE": 6,
+    "W_MEDIUM": 6,
+    "W_SMALL": 6,
+    "W_XLARGE": 5
+   },
+   "operations": [
+    "DF_REPLICA_VERDICT",
+    "STATIC_PLACEMENT",
+    "DF_SEGMENT_HANDOFF",
+    "DF_SEGMENT_HANDOFF",
+    "DF_SEGMENT_HANDOFF",
+    "DF_PIPELINE_VERDICT",
+    "BSP_LOCAL_COMPUTE",
+    "BSP_LOCAL_COMPUTE",
+    "BSP_LOCAL_COMPUTE",
+    "BSP_LOCAL_COMPUTE",
+    "BSP_BARRIER",
+    "BSP_BARRIER",
+    "BSP_BARRIER",
+    "BSP_BARRIER",
+    "BSP_SUPERSTEP",
+    "BSP_LOCAL_COMPUTE",
+    "BSP_LOCAL_COMPUTE",
+    "BSP_LOCAL_COMPUTE",
+    "BSP_LOCAL_COMPUTE",
+    "BSP_SEND",
+    "BSP_SEND",
+    "BSP_SEND",
+    "BSP_SEND",
+    "BSP_SEND",
+    "BSP_SEND",
+    "BSP_SEND",
+    "BSP_SEND",
+    "BSP_SEND",
+    "BSP_SEND",
+    "BSP_SEND",
+    "BSP_SEND",
+    "BSP_BARRIER",
+    "BSP_BARRIER",
+    "BSP_BARRIER",
+    "BSP_BARRIER",
+    "BSP_BARRIER",
+    "BSP_BARRIER",
+    "BSP_BARRIER",
+    "BSP_SUPERSTEP",
+    "ALLGATHER",
+    "ALLREDUCE",
+    "ALLREDUCE",
+    "DF_BSP_VERDICT"
+   ]
+  },
+  "replay_self_check": {
+   "actual_hash": "e4598da914e8015026e14f7d7d872451",
+   "events": 43,
+   "expected_hash": "e4598da914e8015026e14f7d7d872451",
+   "mismatches": [],
+   "ok": true,
+   "severity": "PASS",
+   "token": "DETERMINISTIC_REPLAY_PASS"
+  },
+  "schema": "PA-LCTL/EVENTLOG/1"
+ },
+ "fabric_id": "DF0",
+ "federation": {
+  "domains": [
+   "D_BR",
+   "D_QVM"
+  ],
+  "id": "DF0",
+  "workers": [
+   "W_LARGE",
+   "W_SMALL",
+   "W_MEDIUM",
+   "W_XLARGE"
+  ]
+ },
+ "nodes_absent": [],
+ "nodes_bound": [
+  "N_SMALL",
+  "N_MEDIUM",
+  "N_LARGE",
+  "N_XLARGE"
+ ],
+ "profile": {
+  "deterministic": true,
+  "may_reorder": false,
+  "profile": "single_process_deterministic",
+  "replay_trace_required": true,
+  "uses_processes": false,
+  "uses_threads": false
+ },
+ "program_seal": "60d028267ebe6c42f59a2799c9e1afb8261fd7bdefd1683f760063492048ca0d",
+ "programs": {
+  "bsp": {
+   "collectives": {
+    "allgather": {
+     "choice": {
+      "algorithm": "recursive_doubling",
+      "considered": [
+       "tree",
+       "ring",
+       "recursive_doubling",
+       "pairwise",
+       "linear"
+      ],
+      "explanation": "worker count 4 is a power of two and the message is latency-bound, so recursive doubling completes in log2(n) rounds with no remainder repair",
+      "inputs": {
+       "message_size_bytes": 8,
+       "op": "ALLGATHER",
+       "topology": "fully_connected",
+       "workers": 4
+      },
+      "op": "ALLGATHER",
+      "rule_id": "R5"
+     },
+     "consistent": true,
+     "result": {
+      "algorithm": "recursive_doubling",
+      "bytes": 96,
+      "messages": 8,
+      "op": "ALLGATHER",
+      "steps": 2,
+      "sync_count": 2,
+      "transfers": [
+       {
+        "bytes": 8,
+        "dst": 1,
+        "src": 0,
+        "step": 0
+       },
+       {
+        "bytes": 8,
+        "dst": 0,
+        "src": 1,
+        "step": 0
+       },
+       {
+        "bytes": 8,
+        "dst": 3,
+        "src": 2,
+        "step": 0
+       },
+       {
+        "bytes": 8,
+        "dst": 2,
+        "src": 3,
+        "step": 0
+       },
+       {
+        "bytes": 16,
+        "dst": 2,
+        "src": 0,
+        "step": 1
+       },
+       {
+        "bytes": 16,
+        "dst": 3,
+        "src": 1,
+        "step": 1
+       },
+       {
+        "bytes": 16,
+        "dst": 0,
+        "src": 2,
+        "step": 1
+       },
+       {
+        "bytes": 16,
+        "dst": 1,
+        "src": 3,
+        "step": 1
+       }
+      ],
+      "value_hash": "0e1a3471f17621ea127f147799ffbf07",
+      "workers": 4
+     }
+    },
+    "allreduce_max": {
+     "choice": {
+      "algorithm": "recursive_doubling",
+      "considered": [
+       "tree",
+       "ring",
+       "recursive_doubling",
+       "pairwise",
+       "linear"
+      ],
+      "explanation": "worker count 4 is a power of two and the message is latency-bound, so recursive doubling completes in log2(n) rounds with no remainder repair",
+      "inputs": {
+       "message_size_bytes": 8,
+       "op": "ALLREDUCE",
+       "topology": "fully_connected",
+       "workers": 4
+      },
+      "op": "ALLREDUCE",
+      "rule_id": "R5"
+     },
+     "result": {
+      "algorithm": "recursive_doubling",
+      "bytes": 64,
+      "messages": 8,
+      "op": "ALLREDUCE",
+      "steps": 2,
+      "sync_count": 2,
+      "transfers": [
+       {
+        "bytes": 8,
+        "dst": 1,
+        "src": 0,
+        "step": 0
+       },
+       {
+        "bytes": 8,
+        "dst": 0,
+        "src": 1,
+        "step": 0
+       },
+       {
+        "bytes": 8,
+        "dst": 3,
+        "src": 2,
+        "step": 0
+       },
+       {
+        "bytes": 8,
+        "dst": 2,
+        "src": 3,
+        "step": 0
+       },
+       {
+        "bytes": 8,
+        "dst": 2,
+        "src": 0,
+        "step": 1
+       },
+       {
+        "bytes": 8,
+        "dst": 3,
+        "src": 1,
+        "step": 1
+       },
+       {
+        "bytes": 8,
+        "dst": 0,
+        "src": 2,
+        "step": 1
+       },
+       {
+        "bytes": 8,
+        "dst": 1,
+        "src": 3,
+        "step": 1
+       }
+      ],
+      "value_hash": "d3de44704e7b3c11b0200ca538e5ec4b",
+      "workers": 4
+     }
+    },
+    "allreduce_min": {
+     "choice": {
+      "algorithm": "recursive_doubling",
+      "considered": [
+       "tree",
+       "ring",
+       "recursive_doubling",
+       "pairwise",
+       "linear"
+      ],
+      "explanation": "worker count 4 is a power of two and the message is latency-bound, so recursive doubling completes in log2(n) rounds with no remainder repair",
+      "inputs": {
+       "message_size_bytes": 8,
+       "op": "ALLREDUCE",
+       "topology": "fully_connected",
+       "workers": 4
+      },
+      "op": "ALLREDUCE",
+      "rule_id": "R5"
+     },
+     "result": {
+      "algorithm": "recursive_doubling",
+      "bytes": 64,
+      "messages": 8,
+      "op": "ALLREDUCE",
+      "steps": 2,
+      "sync_count": 2,
+      "transfers": [
+       {
+        "bytes": 8,
+        "dst": 1,
+        "src": 0,
+        "step": 0
+       },
+       {
+        "bytes": 8,
+        "dst": 0,
+        "src": 1,
+        "step": 0
+       },
+       {
+        "bytes": 8,
+        "dst": 3,
+        "src": 2,
+        "step": 0
+       },
+       {
+        "bytes": 8,
+        "dst": 2,
+        "src": 3,
+        "step": 0
+       },
+       {
+        "bytes": 8,
+        "dst": 2,
+        "src": 0,
+        "step": 1
+       },
+       {
+        "bytes": 8,
+        "dst": 3,
+        "src": 1,
+        "step": 1
+       },
+       {
+        "bytes": 8,
+        "dst": 0,
+        "src": 2,
+        "step": 1
+       },
+       {
+        "bytes": 8,
+        "dst": 1,
+        "src": 3,
+        "step": 1
+       }
+      ],
+      "value_hash": "d3de44704e7b3c11b0200ca538e5ec4b",
+      "workers": 4
+     }
+    },
+    "min_equals_max": true
+   },
+   "program": "bsp",
+   "reference_witness": 4102983261209585326,
+   "rows": 240,
+   "supersteps": [
+    {
+     "barrier_level": "worker_group",
+     "barrier_time_s": 8.0859e-05,
+     "barriers": [
+      {
+       "level": "worker_group",
+       "logical_time": 39,
+       "participants": [
+        "W_LARGE"
+       ],
+       "scope": "G_BR11"
+      },
+      {
+       "level": "worker_group",
+       "logical_time": 40,
+       "participants": [
+        "W_SMALL"
+       ],
+       "scope": "G_BR3"
+      },
+      {
+       "level": "worker_group",
+       "logical_time": 41,
+       "participants": [
+        "W_MEDIUM"
+       ],
+       "scope": "G_ISA41"
+      },
+      {
+       "level": "worker_group",
+       "logical_time": 42,
+       "participants": [
+        "W_XLARGE"
+       ],
+       "scope": "G_QVM1"
+      }
+     ],
+     "bytes": 0,
+     "communication_time_s": 4.15e-07,
+     "idle_time_s": 1.706255515,
+     "local_compute_time_s": 1.762457473,
+     "messages": 0,
+     "participants": [
+      "W_LARGE",
+      "W_MEDIUM",
+      "W_SMALL",
+      "W_XLARGE"
+     ],
+     "per_worker_compute_s": {
+      "W_LARGE": 0.547585132,
+      "W_MEDIUM": 0.095641385,
+      "W_SMALL": 0.252052709,
+      "W_XLARGE": 0.867178247
+     },
+     "phases": [
+      "local_compute",
+      "communication",
+      "barrier"
+     ],
+     "result_hash": "ee2949dd7ff3b5d4984368d0214d6056",
+     "superstep": 0
+    },
+    {
+     "barrier_level": "federation",
+     "barrier_time_s": 0.000170636,
+     "barriers": [
+      {
+       "level": "worker_group",
+       "logical_time": 60,
+       "participants": [
+        "W_LARGE"
+       ],
+       "scope": "G_BR11"
+      },
+      {
+       "level": "worker_group",
+       "logical_time": 61,
+       "participants": [
+        "W_SMALL"
+       ],
+       "scope": "G_BR3"
+      },
+      {
+       "level": "worker_group",
+       "logical_time": 62,
+       "participants": [
+        "W_MEDIUM"
+       ],
+       "scope": "G_ISA41"
+      },
+      {
+       "level": "worker_group",
+       "logical_time": 63,
+       "participants": [
+        "W_XLARGE"
+       ],
+       "scope": "G_QVM1"
+      },
+      {
+       "level": "domain",
+       "logical_time": 64,
+       "participants": [
+        "W_LARGE",
+        "W_MEDIUM",
+        "W_SMALL"
+       ],
+       "scope": "D_BR"
+      },
+      {
+       "level": "domain",
+       "logical_time": 65,
+       "participants": [
+        "W_XLARGE"
+       ],
+       "scope": "D_QVM"
+      },
+      {
+       "level": "federation",
+       "logical_time": 66,
+       "participants": [
+        "W_LARGE",
+        "W_MEDIUM",
+        "W_SMALL",
+        "W_XLARGE"
+       ],
+       "scope": "DF0"
+      }
+     ],
+     "bytes": 318,
+     "communication_time_s": 0.000204204,
+     "idle_time_s": 1.1323e-05,
+     "local_compute_time_s": 1.0889e-05,
+     "messages": 12,
+     "participants": [
+      "W_LARGE",
+      "W_MEDIUM",
+      "W_SMALL",
+      "W_XLARGE"
+     ],
+     "per_worker_compute_s": {
+      "W_LARGE": 5.553e-06,
+      "W_MEDIUM": 2.22e-06,
+      "W_SMALL": 1.679e-06,
+      "W_XLARGE": 1.437e-06
+     },
+     "phases": [
+      "local_compute",
+      "communication",
+      "barrier"
+     ],
+     "result_hash": "2001e847d299f487e11ebd6ba82eb85e",
+     "superstep": 1
+    }
+   ],
+   "token": "CROSS_NODE_DIFFERENTIAL_AGREEMENT",
+   "totals": {
+    "barrier_time_s": 0.000251495,
+    "bytes": 318,
+    "communication_time_s": 0.000204619,
+    "idle_time_s": 1.706266838,
+    "local_compute_time_s": 1.762468362,
+    "messages": 12,
+    "supersteps": 2
+   },
+   "unanimous": true,
+   "votes": {
+    "W_LARGE": true,
+    "W_MEDIUM": true,
+    "W_SMALL": true,
+    "W_XLARGE": true
+   },
+   "wall_s": 1.7637,
+   "witnesses": {
+    "W_LARGE": 4102983261209585326,
+    "W_MEDIUM": 4102983261209585326,
+    "W_SMALL": 4102983261209585326,
+    "W_XLARGE": 4102983261209585326
+   }
+  },
+  "pipeline": {
+   "chain": [
+    {
+     "acc_in": 1469598103934665603,
+     "acc_out": 8982744179472129473,
+     "image_sha256": "5e316c15ab09a23bba3f3c247be1f2c78887a1d92ac205fcafda3ee47bba7a7c",
+     "node_id": "N_SMALL",
+     "placement_mode": "STATIC",
+     "placement_score": 0.25,
+     "rows": 84,
+     "segment": 0,
+     "worker": "W_SMALL"
+    },
+    {
+     "acc_in": 8982744179472129473,
+     "acc_out": 18007711105767010748,
+     "image_sha256": "44714bc9c10ec492eeef2e89a0fee47134b835d78e0fe8885dadcabefd312e4d",
+     "node_id": "N_MEDIUM",
+     "placement_mode": "STATIC",
+     "placement_score": 0.25,
+     "rows": 84,
+     "segment": 1,
+     "worker": "W_MEDIUM"
+    },
+    {
+     "acc_in": 18007711105767010748,
+     "acc_out": 4102983261209585326,
+     "image_sha256": "29453d3d0442da414adf389e3a4f9c3ccc33c3cc48ac48b3bb57720fa5146f29",
+     "node_id": "N_LARGE",
+     "placement_mode": "STATIC",
+     "placement_score": 0.25,
+     "rows": 72,
+     "segment": 2,
+     "worker": "W_LARGE"
+    }
+   ],
+   "differential_agreement": true,
+   "family": "TASK_PARALLEL",
+   "final_witness": 4102983261209585326,
+   "load_balance_ledger": {
+    "decision_count": 3,
+    "decisions": [
+     {
+      "alternatives": [
+       [
+        "W_MEDIUM",
+        0.25
+       ],
+       [
+        "W_LARGE",
+        0.25
+       ],
+       [
+        "W_XLARGE",
+        0.25
+       ]
+      ],
+      "components": {
+       "capacity_share": 0.25
+      },
+      "mode": "STATIC",
+      "rule": "weighted round-robin over declared cpu_slots",
+      "score": 0.25,
+      "task_id": "df.pipeline.place.s000",
+      "worker_id": "W_SMALL"
+     },
+     {
+      "alternatives": [
+       [
+        "W_SMALL",
+        0.25
+       ],
+       [
+        "W_LARGE",
+        0.25
+       ],
+       [
+        "W_XLARGE",
+        0.25
+       ]
+      ],
+      "components": {
+       "capacity_share": 0.25
+      },
+      "mode": "STATIC",
+      "rule": "weighted round-robin over declared cpu_slots",
+      "score": 0.25,
+      "task_id": "df.pipeline.place.s001",
+      "worker_id": "W_MEDIUM"
+     },
+     {
+      "alternatives": [
+       [
+        "W_SMALL",
+        0.25
+       ],
+       [
+        "W_MEDIUM",
+        0.25
+       ],
+       [
+        "W_XLARGE",
+        0.25
+       ]
+      ],
+      "components": {
+       "capacity_share": 0.25
+      },
+      "mode": "STATIC",
+      "rule": "weighted round-robin over declared cpu_slots",
+      "score": 0.25,
+      "task_id": "df.pipeline.place.s002",
+      "worker_id": "W_LARGE"
+     }
+    ],
+    "federation": "DF0",
+    "imbalance_ratio": 0.0,
+    "ledger": "LOAD_BALANCE_LEDGER",
+    "ledger_hash": "680ef7f9e524d22262560030dfb34aea",
+    "tasks_per_worker": {
+     "W_LARGE": 1,
+     "W_MEDIUM": 1,
+     "W_SMALL": 1
+    },
+    "weights": {
+     "affinity": 0.7,
+     "communication_cost": 0.6,
+     "failure_exposure": 1.2,
+     "memory_pressure": 0.8,
+     "predicted_cost": 0.5,
+     "queue_delay": 0.9,
+     "throughput": 1.0
+    }
+   },
+   "note": "a dependency chain: segment k+1 consumes segment k's accumulator; span == work, no parallel speedup is claimed",
+   "placement": "static",
+   "program": "pipeline",
+   "reference_witness": 4102983261209585326,
+   "rows": 240,
+   "segment_rows": 84,
+   "segments": 3,
+   "token": "CROSS_NODE_DIFFERENTIAL_AGREEMENT",
+   "wall_s": 0.2867
+  },
+  "replica": {
+   "absent_nodes": [],
+   "family": "CLASSICAL_REPLICA_PARALLEL",
+   "native_witnesses": {
+    "N_LARGE": 4102983261209585326,
+    "N_MEDIUM": 4102983261209585326,
+    "N_SMALL": 4102983261209585326,
+    "N_XLARGE": 4102983261209585326
+   },
+   "nodes": {
+    "N_LARGE": {
+     "differential_agreement": true,
+     "max_rows_per_segment": 84,
+     "native_witness": 4102983261209585326,
+     "node_id": "N_LARGE",
+     "reference_witness": 4102983261209585326,
+     "rows": 240,
+     "segment_records": [
+      {
+       "acc_in": 1469598103934665603,
+       "acc_out": 8982744179472129473,
+       "image_sha256": "061c36956090db1b3c71280b93dd15cfc073c480052d60803680a4734daa53f3",
+       "instructions": 256,
+       "rows": 84,
+       "segment": 0,
+       "source_sha256": "f6426d340478e734fabe9191bdc4b97f964a3dbfaf962c64e03d76693a95e8c2"
+      },
+      {
+       "acc_in": 8982744179472129473,
+       "acc_out": 18007711105767010748,
+       "image_sha256": "b83c75c1889f8e938f2549206523d25890b3b8d4c4f3251c26dbc511368e10de",
+       "instructions": 256,
+       "rows": 84,
+       "segment": 1,
+       "source_sha256": "bb8e014e9c3089d1b941135eff731aa5aea310eea51d3269380f0711d9923c3e"
+      },
+      {
+       "acc_in": 18007711105767010748,
+       "acc_out": 4102983261209585326,
+       "image_sha256": "a35747079eac0419be0def497f06e0ea7781b478a2424be3bdc883abb70bd1b9",
+       "instructions": 220,
+       "rows": 72,
+       "segment": 2,
+       "source_sha256": "d0ae07281386acc9dcea2dca3ca0fdcecc8696d65116c07136299d05d74ff79d"
+      }
+     ],
+     "segments": 3
+    },
+    "N_MEDIUM": {
+     "differential_agreement": true,
+     "max_rows_per_segment": 84,
+     "native_witness": 4102983261209585326,
+     "node_id": "N_MEDIUM",
+     "reference_witness": 4102983261209585326,
+     "rows": 240,
+     "segment_records": [
+      {
+       "acc_in": 1469598103934665603,
+       "acc_out": 8982744179472129473,
+       "image_sha256": "50f5f7aed8d1edc5db230cb10e5f74702056453c4308292897493da59bc41062",
+       "instructions": 256,
+       "rows": 84,
+       "segment": 0,
+       "source_sha256": "bf5f628f66df9cbb408a18c8b1fca433d6825b5273dfec8e1907b1dfb9651569"
+      },
+      {
+       "acc_in": 8982744179472129473,
+       "acc_out": 18007711105767010748,
+       "image_sha256": "324d685f012feb3fd1781ce84a7aeeec860461a8d33d5abc36c027ec028c9b20",
+       "instructions": 256,
+       "rows": 84,
+       "segment": 1,
+       "source_sha256": "3a37346a4b82b5c4366dfc2600813c0903f70d06c0cef066ae2cda43c11180a9"
+      },
+      {
+       "acc_in": 18007711105767010748,
+       "acc_out": 4102983261209585326,
+       "image_sha256": "7314cf222d01ce001b16cc5f5e2af6155539f5988cd74a1ee1c72c380ed004f5",
+       "instructions": 220,
+       "rows": 72,
+       "segment": 2,
+       "source_sha256": "c7888ed0e7e3bb17d4b47aa7642e9dbb4f2c3bad6449afbbb29ab781c12db884"
+      }
+     ],
+     "segments": 3
+    },
+    "N_SMALL": {
+     "differential_agreement": true,
+     "max_rows_per_segment": 84,
+     "native_witness": 4102983261209585326,
+     "node_id": "N_SMALL",
+     "reference_witness": 4102983261209585326,
+     "rows": 240,
+     "segment_records": [
+      {
+       "acc_in": 1469598103934665603,
+       "acc_out": 8982744179472129473,
+       "image_sha256": "5e316c15ab09a23bba3f3c247be1f2c78887a1d92ac205fcafda3ee47bba7a7c",
+       "instructions": 256,
+       "rows": 84,
+       "segment": 0,
+       "source_sha256": "9b404057ee6774de32e7a2032e1e44c597dcb835e67ec30da14d254004b0dfc1"
+      },
+      {
+       "acc_in": 8982744179472129473,
+       "acc_out": 18007711105767010748,
+       "image_sha256": "09333b061cf5d751f08f002d8e1fcd527e8db33f1019a5adef2db58ab0e8b035",
+       "instructions": 256,
+       "rows": 84,
+       "segment": 1,
+       "source_sha256": "f86e6eeb1369bfc82130225120920159e8b9d7ffce5e1975f630295e3d03f8fc"
+      },
+      {
+       "acc_in": 18007711105767010748,
+       "acc_out": 4102983261209585326,
+       "image_sha256": "d9fbb931a1638f0d9997f4a7ae512bf1cde7e97e6c9ed54c30f51fdcd68b5fae",
+       "instructions": 220,
+       "rows": 72,
+       "segment": 2,
+       "source_sha256": "48e904e95908cdba417762476086f0af9af8ce4eb36ad24cb1ef563eb398883b"
+      }
+     ],
+     "segments": 3
+    },
+    "N_XLARGE": {
+     "differential_agreement": true,
+     "max_rows_per_segment": 21843,
+     "native_witness": 4102983261209585326,
+     "node_id": "N_XLARGE",
+     "reference_witness": 4102983261209585326,
+     "rows": 240,
+     "segment_records": [
+      {
+       "acc_in": 1469598103934665603,
+       "acc_out": 4102983261209585326,
+       "image_sha256": "694fdc1ea68d498efbc7b734b11efaa7d1e956c282ed22f79266ec3bc0c11437",
+       "instructions": 724,
+       "rows": 240,
+       "segment": 0,
+       "source_sha256": "c7fd05e59dfe2b7356238ecbe29ca551d9f4cdc86694343a609e522ab12138b0"
+      }
+     ],
+     "segments": 1
+    }
+   },
+   "participants": 4,
+   "program": "replica",
+   "reference_witness": 4102983261209585326,
+   "rows": 240,
+   "token": "CROSS_NODE_DIFFERENTIAL_AGREEMENT",
+   "unanimous": true,
+   "wall_s": 1.6437
+  }
+ },
+ "provenance": {
+  "backend": "none",
+  "distributed_state": "LOGICAL_DISTRIBUTED",
+  "distributed_state_ceiling": "DISTRIBUTED_CLASSICAL_EMULATION",
+  "execution_class": "CLASSICAL_FABRIC_OF_LOCAL_VMS",
+  "host": {
+   "cpu_count": 2,
+   "platform": "Linux-6.18.5-fc-v20-x86_64-with-glibc2.39",
+   "python": "3.11.15"
+  },
+  "language": "PA-LCTL",
+  "network": "deny",
+  "parallel_state": "SERIAL",
+  "physical_distributed": false,
+  "physical_parallel": false,
+  "physical_qpu": false,
+  "physical_release_outputs": {
+   "PHYSICAL_DISTRIBUTED_QPU_EXECUTION": "BLOCKED_EXTERNAL_AUTHORITY",
+   "PHYSICAL_PARALLEL_QPU_EXECUTION": "BLOCKED_EXTERNAL_AUTHORITY"
+  },
+  "profile": "single_process_deterministic",
+  "quantum_boundary": "QUANTUM_BOUNDARY_NOT_CROSSED",
+  "target_verified": false
+ },
+ "rows": 240,
+ "schema": "DF/FABRIC_RUN/1",
+ "source": "df_long_chain_240.pal",
+ "verdict": "CROSS_NODE_DIFFERENTIAL_AGREEMENT",
+ "wall_s": 3.6948
+}

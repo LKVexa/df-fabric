@@ -1,0 +1,1145 @@
+{
+  "schema": "VEC1/COMPONENT_REGISTRY/1",
+  "version": "0.5.0",
+  "claim": "Evidence-bounded implementation registry. Maturity labels distinguish direct VEC1 implementations, partial surfaces, delegated DF implementations, and declared-only concepts; no claim is made that all source work items are implemented.",
+  "components": [
+    {
+      "number": 1,
+      "name": "Electron Genome",
+      "group": "identity/provenance",
+      "implementation": [
+        "runtime/model.py",
+        "runtime/service.py"
+      ],
+      "maturity": "PARTIAL",
+      "notes": "A bounded subset is present; full named-component semantics are not claimed."
+    },
+    {
+      "number": 2,
+      "name": "Genome Manifest",
+      "group": "identity/provenance",
+      "implementation": [],
+      "maturity": "DECLARED_ONLY",
+      "notes": "Architecture/source-corpus concept only in v0.5.0; no dedicated executable VEC1 implementation is claimed."
+    },
+    {
+      "number": 3,
+      "name": "Genome SHA-256 Identity",
+      "group": "identity/provenance",
+      "implementation": [
+        "runtime/model.py",
+        "runtime/service.py"
+      ],
+      "maturity": "PARTIAL",
+      "notes": "A bounded subset is present; full named-component semantics are not claimed."
+    },
+    {
+      "number": 4,
+      "name": "Canonical PA-LCTL Program",
+      "group": "identity/provenance",
+      "implementation": [],
+      "maturity": "DECLARED_ONLY",
+      "notes": "Architecture/source-corpus concept only in v0.5.0; no dedicated executable VEC1 implementation is claimed."
+    },
+    {
+      "number": 5,
+      "name": "Electron Intermediate Representation (EIR)",
+      "group": "identity/provenance",
+      "implementation": [
+        "runtime/model.py",
+        "runtime/service.py"
+      ],
+      "maturity": "PARTIAL",
+      "notes": "A bounded subset is present; full named-component semantics are not claimed."
+    },
+    {
+      "number": 6,
+      "name": "Electron ID",
+      "group": "identity/provenance",
+      "implementation": [
+        "runtime/model.py",
+        "runtime/service.py"
+      ],
+      "maturity": "REFERENCE_IMPLEMENTED",
+      "notes": "Direct reference implementation; scope remains bounded by the package claim boundary."
+    },
+    {
+      "number": 7,
+      "name": "Generation ID",
+      "group": "identity/provenance",
+      "implementation": [
+        "runtime/model.py",
+        "runtime/service.py"
+      ],
+      "maturity": "REFERENCE_IMPLEMENTED",
+      "notes": "Direct reference implementation; scope remains bounded by the package claim boundary."
+    },
+    {
+      "number": 8,
+      "name": "Parent ID",
+      "group": "identity/provenance",
+      "implementation": [
+        "runtime/model.py",
+        "runtime/service.py"
+      ],
+      "maturity": "REFERENCE_IMPLEMENTED",
+      "notes": "Direct reference implementation; scope remains bounded by the package claim boundary."
+    },
+    {
+      "number": 9,
+      "name": "Lineage Record",
+      "group": "identity/provenance",
+      "implementation": [
+        "runtime/model.py",
+        "runtime/service.py"
+      ],
+      "maturity": "REFERENCE_IMPLEMENTED",
+      "notes": "Direct reference implementation; scope remains bounded by the package claim boundary."
+    },
+    {
+      "number": 10,
+      "name": "Genesis Record",
+      "group": "identity/provenance",
+      "implementation": [
+        "runtime/model.py",
+        "runtime/service.py"
+      ],
+      "maturity": "PARTIAL",
+      "notes": "A bounded subset is present; full named-component semantics are not claimed."
+    },
+    {
+      "number": 11,
+      "name": "Charge Register",
+      "group": "execution/state",
+      "implementation": [],
+      "maturity": "DECLARED_ONLY",
+      "notes": "Architecture/source-corpus concept only in v0.5.0; no dedicated executable VEC1 implementation is claimed."
+    },
+    {
+      "number": 12,
+      "name": "Energy Register",
+      "group": "execution/state",
+      "implementation": [],
+      "maturity": "DECLARED_ONLY",
+      "notes": "Architecture/source-corpus concept only in v0.5.0; no dedicated executable VEC1 implementation is claimed."
+    },
+    {
+      "number": 13,
+      "name": "Orbital Register",
+      "group": "execution/state",
+      "implementation": [
+        "runtime/model.py",
+        "runtime/service.py"
+      ],
+      "maturity": "REFERENCE_IMPLEMENTED",
+      "notes": "Direct reference implementation; scope remains bounded by the package claim boundary."
+    },
+    {
+      "number": 14,
+      "name": "State Register",
+      "group": "execution/state",
+      "implementation": [
+        "runtime/model.py",
+        "runtime/service.py"
+      ],
+      "maturity": "PARTIAL",
+      "notes": "A bounded subset is present; full named-component semantics are not claimed."
+    },
+    {
+      "number": 15,
+      "name": "Phase Register",
+      "group": "execution/state",
+      "implementation": [],
+      "maturity": "DECLARED_ONLY",
+      "notes": "Architecture/source-corpus concept only in v0.5.0; no dedicated executable VEC1 implementation is claimed."
+    },
+    {
+      "number": 16,
+      "name": "Spin Register",
+      "group": "execution/state",
+      "implementation": [],
+      "maturity": "DECLARED_ONLY",
+      "notes": "Architecture/source-corpus concept only in v0.5.0; no dedicated executable VEC1 implementation is claimed."
+    },
+    {
+      "number": 17,
+      "name": "Momentum Vector",
+      "group": "execution/state",
+      "implementation": [],
+      "maturity": "DECLARED_ONLY",
+      "notes": "Architecture/source-corpus concept only in v0.5.0; no dedicated executable VEC1 implementation is claimed."
+    },
+    {
+      "number": 18,
+      "name": "Position/Node Vector",
+      "group": "execution/state",
+      "implementation": [],
+      "maturity": "DECLARED_ONLY",
+      "notes": "Architecture/source-corpus concept only in v0.5.0; no dedicated executable VEC1 implementation is claimed."
+    },
+    {
+      "number": 19,
+      "name": "Interaction Radius",
+      "group": "execution/state",
+      "implementation": [],
+      "maturity": "DECLARED_ONLY",
+      "notes": "Architecture/source-corpus concept only in v0.5.0; no dedicated executable VEC1 implementation is claimed."
+    },
+    {
+      "number": 20,
+      "name": "Energy Transition Table",
+      "group": "execution/state",
+      "implementation": [],
+      "maturity": "DECLARED_ONLY",
+      "notes": "Architecture/source-corpus concept only in v0.5.0; no dedicated executable VEC1 implementation is claimed."
+    },
+    {
+      "number": 21,
+      "name": "Instruction Decoder",
+      "group": "execution/state",
+      "implementation": [
+        "runtime/fabric_bridge.py",
+        "DF_Fabric"
+      ],
+      "maturity": "DELEGATED_TO_DF",
+      "notes": "Primary semantics are supplied by the sealed DF baseline; VEC1 provides a bounded bridge/normalization surface."
+    },
+    {
+      "number": 22,
+      "name": "State Transition Engine",
+      "group": "execution/state",
+      "implementation": [
+        "runtime/model.py",
+        "runtime/service.py"
+      ],
+      "maturity": "REFERENCE_IMPLEMENTED",
+      "notes": "Direct reference implementation; scope remains bounded by the package claim boundary."
+    },
+    {
+      "number": 23,
+      "name": "Register Bank",
+      "group": "execution/state",
+      "implementation": [
+        "runtime/fabric_bridge.py",
+        "DF_Fabric"
+      ],
+      "maturity": "DELEGATED_TO_DF",
+      "notes": "Primary semantics are supplied by the sealed DF baseline; VEC1 provides a bounded bridge/normalization surface."
+    },
+    {
+      "number": 24,
+      "name": "Local Working Memory",
+      "group": "execution/state",
+      "implementation": [
+        "runtime/model.py",
+        "runtime/service.py"
+      ],
+      "maturity": "PARTIAL",
+      "notes": "A bounded subset is present; full named-component semantics are not claimed."
+    },
+    {
+      "number": 25,
+      "name": "Persistent State Pointer",
+      "group": "execution/state",
+      "implementation": [
+        "runtime/model.py",
+        "runtime/service.py"
+      ],
+      "maturity": "PARTIAL",
+      "notes": "A bounded subset is present; full named-component semantics are not claimed."
+    },
+    {
+      "number": 26,
+      "name": "Deterministic Clock/Tick Counter",
+      "group": "execution/state",
+      "implementation": [
+        "runtime/model.py",
+        "runtime/service.py"
+      ],
+      "maturity": "REFERENCE_IMPLEMENTED",
+      "notes": "Direct reference implementation; scope remains bounded by the package claim boundary."
+    },
+    {
+      "number": 27,
+      "name": "Deterministic PRNG",
+      "group": "execution/state",
+      "implementation": [],
+      "maturity": "DECLARED_ONLY",
+      "notes": "Architecture/source-corpus concept only in v0.5.0; no dedicated executable VEC1 implementation is claimed."
+    },
+    {
+      "number": 28,
+      "name": "Instruction Counter",
+      "group": "execution/state",
+      "implementation": [
+        "runtime/fabric_bridge.py",
+        "DF_Fabric"
+      ],
+      "maturity": "DELEGATED_TO_DF",
+      "notes": "Primary semantics are supplied by the sealed DF baseline; VEC1 provides a bounded bridge/normalization surface."
+    },
+    {
+      "number": 29,
+      "name": "Resource Meter",
+      "group": "execution/state",
+      "implementation": [
+        "runtime/model.py",
+        "runtime/service.py"
+      ],
+      "maturity": "PARTIAL",
+      "notes": "A bounded subset is present; full named-component semantics are not claimed."
+    },
+    {
+      "number": 30,
+      "name": "Execution Status Register",
+      "group": "execution/state",
+      "implementation": [
+        "runtime/model.py",
+        "runtime/service.py"
+      ],
+      "maturity": "REFERENCE_IMPLEMENTED",
+      "notes": "Direct reference implementation; scope remains bounded by the package claim boundary."
+    },
+    {
+      "number": 31,
+      "name": "Mailbox",
+      "group": "messaging/interaction",
+      "implementation": [],
+      "maturity": "DECLARED_ONLY",
+      "notes": "Architecture/source-corpus concept only in v0.5.0; no dedicated executable VEC1 implementation is claimed."
+    },
+    {
+      "number": 32,
+      "name": "Outbound Queue",
+      "group": "messaging/interaction",
+      "implementation": [],
+      "maturity": "DECLARED_ONLY",
+      "notes": "Architecture/source-corpus concept only in v0.5.0; no dedicated executable VEC1 implementation is claimed."
+    },
+    {
+      "number": 33,
+      "name": "Interaction Bus Adapter",
+      "group": "messaging/interaction",
+      "implementation": [],
+      "maturity": "DECLARED_ONLY",
+      "notes": "Architecture/source-corpus concept only in v0.5.0; no dedicated executable VEC1 implementation is claimed."
+    },
+    {
+      "number": 34,
+      "name": "Peer Address Resolver",
+      "group": "messaging/interaction",
+      "implementation": [],
+      "maturity": "DECLARED_ONLY",
+      "notes": "Architecture/source-corpus concept only in v0.5.0; no dedicated executable VEC1 implementation is claimed."
+    },
+    {
+      "number": 35,
+      "name": "Signal Encoder",
+      "group": "messaging/interaction",
+      "implementation": [],
+      "maturity": "DECLARED_ONLY",
+      "notes": "Architecture/source-corpus concept only in v0.5.0; no dedicated executable VEC1 implementation is claimed."
+    },
+    {
+      "number": 36,
+      "name": "Signal Decoder",
+      "group": "messaging/interaction",
+      "implementation": [],
+      "maturity": "DECLARED_ONLY",
+      "notes": "Architecture/source-corpus concept only in v0.5.0; no dedicated executable VEC1 implementation is claimed."
+    },
+    {
+      "number": 37,
+      "name": "Event Router",
+      "group": "messaging/interaction",
+      "implementation": [
+        "runtime/model.py",
+        "runtime/service.py"
+      ],
+      "maturity": "PARTIAL",
+      "notes": "A bounded subset is present; full named-component semantics are not claimed."
+    },
+    {
+      "number": 38,
+      "name": "Subscription Table",
+      "group": "messaging/interaction",
+      "implementation": [],
+      "maturity": "DECLARED_ONLY",
+      "notes": "Architecture/source-corpus concept only in v0.5.0; no dedicated executable VEC1 implementation is claimed."
+    },
+    {
+      "number": 39,
+      "name": "Binding Table",
+      "group": "messaging/interaction",
+      "implementation": [],
+      "maturity": "DECLARED_ONLY",
+      "notes": "Architecture/source-corpus concept only in v0.5.0; no dedicated executable VEC1 implementation is claimed."
+    },
+    {
+      "number": 40,
+      "name": "Interaction Policy",
+      "group": "messaging/interaction",
+      "implementation": [
+        "runtime/model.py",
+        "runtime/service.py"
+      ],
+      "maturity": "PARTIAL",
+      "notes": "A bounded subset is present; full named-component semantics are not claimed."
+    },
+    {
+      "number": 41,
+      "name": "Freeze Controller",
+      "group": "snapshot/replay/verification",
+      "implementation": [
+        "runtime/model.py",
+        "runtime/service.py"
+      ],
+      "maturity": "PARTIAL",
+      "notes": "A bounded subset is present; full named-component semantics are not claimed."
+    },
+    {
+      "number": 42,
+      "name": "State Canonicalizer",
+      "group": "snapshot/replay/verification",
+      "implementation": [
+        "runtime/model.py",
+        "runtime/service.py"
+      ],
+      "maturity": "REFERENCE_IMPLEMENTED",
+      "notes": "Direct reference implementation; scope remains bounded by the package claim boundary."
+    },
+    {
+      "number": 43,
+      "name": "Snapshot Engine",
+      "group": "snapshot/replay/verification",
+      "implementation": [
+        "runtime/model.py",
+        "runtime/service.py"
+      ],
+      "maturity": "REFERENCE_IMPLEMENTED",
+      "notes": "Direct reference implementation; scope remains bounded by the package claim boundary."
+    },
+    {
+      "number": 44,
+      "name": "Snapshot Hash",
+      "group": "snapshot/replay/verification",
+      "implementation": [
+        "runtime/model.py",
+        "runtime/service.py"
+      ],
+      "maturity": "REFERENCE_IMPLEMENTED",
+      "notes": "Direct reference implementation; scope remains bounded by the package claim boundary."
+    },
+    {
+      "number": 45,
+      "name": "Fork Controller",
+      "group": "snapshot/replay/verification",
+      "implementation": [
+        "runtime/model.py",
+        "runtime/service.py"
+      ],
+      "maturity": "REFERENCE_IMPLEMENTED",
+      "notes": "Direct reference implementation; scope remains bounded by the package claim boundary."
+    },
+    {
+      "number": 46,
+      "name": "Clone-ID Generator",
+      "group": "snapshot/replay/verification",
+      "implementation": [
+        "runtime/model.py",
+        "runtime/service.py"
+      ],
+      "maturity": "REFERENCE_IMPLEMENTED",
+      "notes": "Direct reference implementation; scope remains bounded by the package claim boundary."
+    },
+    {
+      "number": 47,
+      "name": "Copy-on-Write State Store",
+      "group": "snapshot/replay/verification",
+      "implementation": [],
+      "maturity": "DECLARED_ONLY",
+      "notes": "Architecture/source-corpus concept only in v0.5.0; no dedicated executable VEC1 implementation is claimed."
+    },
+    {
+      "number": 48,
+      "name": "Clone Manifest",
+      "group": "snapshot/replay/verification",
+      "implementation": [
+        "runtime/model.py",
+        "runtime/service.py"
+      ],
+      "maturity": "PARTIAL",
+      "notes": "A bounded subset is present; full named-component semantics are not claimed."
+    },
+    {
+      "number": 49,
+      "name": "Restore Engine",
+      "group": "snapshot/replay/verification",
+      "implementation": [
+        "runtime/model.py",
+        "runtime/service.py"
+      ],
+      "maturity": "REFERENCE_IMPLEMENTED",
+      "notes": "Direct reference implementation; scope remains bounded by the package claim boundary."
+    },
+    {
+      "number": 50,
+      "name": "Clone Equivalence Tester",
+      "group": "snapshot/replay/verification",
+      "implementation": [],
+      "maturity": "DECLARED_ONLY",
+      "notes": "Architecture/source-corpus concept only in v0.5.0; no dedicated executable VEC1 implementation is claimed."
+    },
+    {
+      "number": 51,
+      "name": "Canonical State Hash",
+      "group": "snapshot/replay/verification",
+      "implementation": [
+        "runtime/model.py",
+        "runtime/service.py"
+      ],
+      "maturity": "REFERENCE_IMPLEMENTED",
+      "notes": "Direct reference implementation; scope remains bounded by the package claim boundary."
+    },
+    {
+      "number": 52,
+      "name": "Capability Hash",
+      "group": "snapshot/replay/verification",
+      "implementation": [
+        "runtime/security.py",
+        "runtime/service.py"
+      ],
+      "maturity": "REFERENCE_IMPLEMENTED",
+      "notes": "Direct reference implementation; scope remains bounded by the package claim boundary."
+    },
+    {
+      "number": 53,
+      "name": "Configuration Hash",
+      "group": "snapshot/replay/verification",
+      "implementation": [],
+      "maturity": "DECLARED_ONLY",
+      "notes": "Architecture/source-corpus concept only in v0.5.0; no dedicated executable VEC1 implementation is claimed."
+    },
+    {
+      "number": 54,
+      "name": "Execution Receipt",
+      "group": "snapshot/replay/verification",
+      "implementation": [
+        "runtime/model.py",
+        "runtime/service.py"
+      ],
+      "maturity": "PARTIAL",
+      "notes": "A bounded subset is present; full named-component semantics are not claimed."
+    },
+    {
+      "number": 55,
+      "name": "Attestation Record",
+      "group": "snapshot/replay/verification",
+      "implementation": [
+        "runtime/fabric_bridge.py",
+        "DF_Fabric"
+      ],
+      "maturity": "DELEGATED_TO_DF",
+      "notes": "Primary semantics are supplied by the sealed DF baseline; VEC1 provides a bounded bridge/normalization surface."
+    },
+    {
+      "number": 56,
+      "name": "Append-Only Event Ledger",
+      "group": "snapshot/replay/verification",
+      "implementation": [
+        "runtime/ledger.py",
+        "runtime/service.py"
+      ],
+      "maturity": "REFERENCE_IMPLEMENTED",
+      "notes": "Direct reference implementation; scope remains bounded by the package claim boundary."
+    },
+    {
+      "number": 57,
+      "name": "Replay Engine",
+      "group": "snapshot/replay/verification",
+      "implementation": [],
+      "maturity": "DECLARED_ONLY",
+      "notes": "Architecture/source-corpus concept only in v0.5.0; no dedicated executable VEC1 implementation is claimed."
+    },
+    {
+      "number": 58,
+      "name": "Tamper Detector",
+      "group": "snapshot/replay/verification",
+      "implementation": [
+        "runtime/ledger.py",
+        "runtime/service.py"
+      ],
+      "maturity": "REFERENCE_IMPLEMENTED",
+      "notes": "Direct reference implementation; scope remains bounded by the package claim boundary."
+    },
+    {
+      "number": 59,
+      "name": "Schema Validator",
+      "group": "snapshot/replay/verification",
+      "implementation": [
+        "runtime/model.py",
+        "runtime/service.py"
+      ],
+      "maturity": "REFERENCE_IMPLEMENTED",
+      "notes": "Direct reference implementation; scope remains bounded by the package claim boundary."
+    },
+    {
+      "number": 60,
+      "name": "Fail-Closed Gate Controller",
+      "group": "snapshot/replay/verification",
+      "implementation": [
+        "runtime/model.py",
+        "runtime/service.py"
+      ],
+      "maturity": "PARTIAL",
+      "notes": "A bounded subset is present; full named-component semantics are not claimed."
+    },
+    {
+      "number": 61,
+      "name": "DF_Small Adapter",
+      "group": "vm adapters/lowering",
+      "implementation": [
+        "runtime/fabric_bridge.py",
+        "DF_Small"
+      ],
+      "maturity": "DELEGATED_TO_DF",
+      "notes": "Primary semantics are supplied by the sealed DF baseline; VEC1 provides a bounded bridge/normalization surface."
+    },
+    {
+      "number": 62,
+      "name": "MSSL Lowering Backend",
+      "group": "vm adapters/lowering",
+      "implementation": [
+        "runtime/fabric_bridge.py",
+        "DF_Small"
+      ],
+      "maturity": "DELEGATED_TO_DF",
+      "notes": "Primary semantics are supplied by the sealed DF baseline; VEC1 provides a bounded bridge/normalization surface."
+    },
+    {
+      "number": 63,
+      "name": "DF_Medium Adapter",
+      "group": "vm adapters/lowering",
+      "implementation": [
+        "runtime/fabric_bridge.py",
+        "DF_Medium"
+      ],
+      "maturity": "DELEGATED_TO_DF",
+      "notes": "Primary semantics are supplied by the sealed DF baseline; VEC1 provides a bounded bridge/normalization surface."
+    },
+    {
+      "number": 64,
+      "name": "Medium LCTLC Backend",
+      "group": "vm adapters/lowering",
+      "implementation": [
+        "runtime/fabric_bridge.py",
+        "DF_Medium"
+      ],
+      "maturity": "DELEGATED_TO_DF",
+      "notes": "Primary semantics are supplied by the sealed DF baseline; VEC1 provides a bounded bridge/normalization surface."
+    },
+    {
+      "number": 65,
+      "name": "DF_Large Adapter",
+      "group": "vm adapters/lowering",
+      "implementation": [
+        "runtime/fabric_bridge.py",
+        "DF_Large"
+      ],
+      "maturity": "DELEGATED_TO_DF",
+      "notes": "Primary semantics are supplied by the sealed DF baseline; VEC1 provides a bounded bridge/normalization surface."
+    },
+    {
+      "number": 66,
+      "name": "Large LCTLC Backend",
+      "group": "vm adapters/lowering",
+      "implementation": [
+        "runtime/fabric_bridge.py",
+        "DF_Large"
+      ],
+      "maturity": "DELEGATED_TO_DF",
+      "notes": "Primary semantics are supplied by the sealed DF baseline; VEC1 provides a bounded bridge/normalization surface."
+    },
+    {
+      "number": 67,
+      "name": "DF_Xtra_Large Adapter",
+      "group": "vm adapters/lowering",
+      "implementation": [
+        "runtime/fabric_bridge.py",
+        "DF_Xtra_Large"
+      ],
+      "maturity": "DELEGATED_TO_DF",
+      "notes": "Primary semantics are supplied by the sealed DF baseline; VEC1 provides a bounded bridge/normalization surface."
+    },
+    {
+      "number": 68,
+      "name": "XL/QVM Lowering Backend",
+      "group": "vm adapters/lowering",
+      "implementation": [
+        "runtime/fabric_bridge.py",
+        "DF_Xtra_Large"
+      ],
+      "maturity": "DELEGATED_TO_DF",
+      "notes": "Primary semantics are supplied by the sealed DF baseline; VEC1 provides a bounded bridge/normalization surface."
+    },
+    {
+      "number": 69,
+      "name": "Result Normalizer",
+      "group": "vm adapters/lowering",
+      "implementation": [
+        "runtime/vm_lowering.py",
+        "runtime/fabric_bridge.py"
+      ],
+      "maturity": "REFERENCE_IMPLEMENTED",
+      "notes": "Direct reference implementation; scope remains bounded by the package claim boundary."
+    },
+    {
+      "number": 70,
+      "name": "Cross-Target Comparator",
+      "group": "vm adapters/lowering",
+      "implementation": [
+        "runtime/vm_lowering.py",
+        "runtime/fabric_bridge.py"
+      ],
+      "maturity": "REFERENCE_IMPLEMENTED",
+      "notes": "Direct reference implementation; scope remains bounded by the package claim boundary."
+    },
+    {
+      "number": 71,
+      "name": "Electron Registry",
+      "group": "fabric/orchestration",
+      "implementation": [
+        "runtime/model.py",
+        "runtime/service.py"
+      ],
+      "maturity": "REFERENCE_IMPLEMENTED",
+      "notes": "Direct reference implementation; scope remains bounded by the package claim boundary."
+    },
+    {
+      "number": 72,
+      "name": "Fabric Scheduler",
+      "group": "fabric/orchestration",
+      "implementation": [
+        "runtime/fabric_bridge.py",
+        "DF_Fabric"
+      ],
+      "maturity": "DELEGATED_TO_DF",
+      "notes": "Primary semantics are supplied by the sealed DF baseline; VEC1 provides a bounded bridge/normalization surface."
+    },
+    {
+      "number": 73,
+      "name": "Placement Engine",
+      "group": "fabric/orchestration",
+      "implementation": [
+        "runtime/scheduler.py",
+        "runtime/service.py"
+      ],
+      "maturity": "REFERENCE_IMPLEMENTED",
+      "notes": "Direct reference implementation; scope remains bounded by the package claim boundary."
+    },
+    {
+      "number": 74,
+      "name": "Replica Manager",
+      "group": "fabric/orchestration",
+      "implementation": [
+        "runtime/fabric_bridge.py",
+        "DF_Fabric"
+      ],
+      "maturity": "DELEGATED_TO_DF",
+      "notes": "Primary semantics are supplied by the sealed DF baseline; VEC1 provides a bounded bridge/normalization surface."
+    },
+    {
+      "number": 75,
+      "name": "Quorum Manager",
+      "group": "fabric/orchestration",
+      "implementation": [
+        "runtime/fabric_bridge.py",
+        "DF_Fabric"
+      ],
+      "maturity": "DELEGATED_TO_DF",
+      "notes": "Primary semantics are supplied by the sealed DF baseline; VEC1 provides a bounded bridge/normalization surface."
+    },
+    {
+      "number": 76,
+      "name": "Differential Verification Engine",
+      "group": "fabric/orchestration",
+      "implementation": [
+        "runtime/fabric_bridge.py",
+        "runtime/service.py"
+      ],
+      "maturity": "PARTIAL",
+      "notes": "A bounded subset is present; full named-component semantics are not claimed."
+    },
+    {
+      "number": 77,
+      "name": "Fabric Event Log",
+      "group": "fabric/orchestration",
+      "implementation": [
+        "runtime/fabric_bridge.py",
+        "DF_Fabric"
+      ],
+      "maturity": "DELEGATED_TO_DF",
+      "notes": "Primary semantics are supplied by the sealed DF baseline; VEC1 provides a bounded bridge/normalization surface."
+    },
+    {
+      "number": 78,
+      "name": "Transport Layer",
+      "group": "fabric/orchestration",
+      "implementation": [
+        "runtime/fabric_bridge.py",
+        "DF_Fabric"
+      ],
+      "maturity": "DELEGATED_TO_DF",
+      "notes": "Primary semantics are supplied by the sealed DF baseline; VEC1 provides a bounded bridge/normalization surface."
+    },
+    {
+      "number": 79,
+      "name": "Node Discovery System",
+      "group": "fabric/orchestration",
+      "implementation": [
+        "runtime/fabric_bridge.py",
+        "DF_Fabric"
+      ],
+      "maturity": "DELEGATED_TO_DF",
+      "notes": "Primary semantics are supplied by the sealed DF baseline; VEC1 provides a bounded bridge/normalization surface."
+    },
+    {
+      "number": 80,
+      "name": "Health Monitor",
+      "group": "fabric/orchestration",
+      "implementation": [
+        "runtime/fabric_bridge.py",
+        "runtime/service.py"
+      ],
+      "maturity": "PARTIAL",
+      "notes": "A bounded subset is present; full named-component semantics are not claimed."
+    },
+    {
+      "number": 81,
+      "name": "Recovery Coordinator",
+      "group": "fabric/orchestration",
+      "implementation": [
+        "runtime/fabric_bridge.py",
+        "runtime/service.py"
+      ],
+      "maturity": "PARTIAL",
+      "notes": "A bounded subset is present; full named-component semantics are not claimed."
+    },
+    {
+      "number": 82,
+      "name": "Checkpoint Coordinator",
+      "group": "fabric/orchestration",
+      "implementation": [
+        "runtime/service.py",
+        "runtime/model.py"
+      ],
+      "maturity": "REFERENCE_IMPLEMENTED",
+      "notes": "Direct reference implementation; scope remains bounded by the package claim boundary."
+    },
+    {
+      "number": 83,
+      "name": "Capability Manifest",
+      "group": "security/policy",
+      "implementation": [
+        "runtime/security.py",
+        "runtime/service.py"
+      ],
+      "maturity": "REFERENCE_IMPLEMENTED",
+      "notes": "Direct reference implementation; scope remains bounded by the package claim boundary."
+    },
+    {
+      "number": 84,
+      "name": "Capability Tokens",
+      "group": "security/policy",
+      "implementation": [
+        "runtime/security.py",
+        "runtime/service.py"
+      ],
+      "maturity": "PARTIAL",
+      "notes": "A bounded subset is present; full named-component semantics are not claimed."
+    },
+    {
+      "number": 85,
+      "name": "Resource Quotas",
+      "group": "security/policy",
+      "implementation": [
+        "runtime/security.py",
+        "runtime/service.py"
+      ],
+      "maturity": "PARTIAL",
+      "notes": "A bounded subset is present; full named-component semantics are not claimed."
+    },
+    {
+      "number": 86,
+      "name": "Filesystem Sandbox",
+      "group": "security/policy",
+      "implementation": [
+        "runtime/security.py",
+        "runtime/service.py"
+      ],
+      "maturity": "REFERENCE_IMPLEMENTED",
+      "notes": "Direct reference implementation; scope remains bounded by the package claim boundary."
+    },
+    {
+      "number": 87,
+      "name": "Network Sandbox",
+      "group": "security/policy",
+      "implementation": [
+        "runtime/security.py",
+        "runtime/service.py"
+      ],
+      "maturity": "PARTIAL",
+      "notes": "A bounded subset is present; full named-component semantics are not claimed."
+    },
+    {
+      "number": 88,
+      "name": "Host-Call Gate",
+      "group": "security/policy",
+      "implementation": [
+        "runtime/security.py",
+        "runtime/service.py"
+      ],
+      "maturity": "PARTIAL",
+      "notes": "A bounded subset is present; full named-component semantics are not claimed."
+    },
+    {
+      "number": 89,
+      "name": "Plugin Gate",
+      "group": "security/policy",
+      "implementation": [
+        "runtime/security.py",
+        "runtime/service.py"
+      ],
+      "maturity": "PARTIAL",
+      "notes": "A bounded subset is present; full named-component semantics are not claimed."
+    },
+    {
+      "number": 90,
+      "name": "Privilege Boundary",
+      "group": "security/policy",
+      "implementation": [
+        "runtime/security.py",
+        "runtime/service.py"
+      ],
+      "maturity": "PARTIAL",
+      "notes": "A bounded subset is present; full named-component semantics are not claimed."
+    },
+    {
+      "number": 91,
+      "name": "Kill/Suspend Switch",
+      "group": "security/policy",
+      "implementation": [
+        "runtime/security.py",
+        "runtime/service.py"
+      ],
+      "maturity": "REFERENCE_IMPLEMENTED",
+      "notes": "Direct reference implementation; scope remains bounded by the package claim boundary."
+    },
+    {
+      "number": 92,
+      "name": "Recovery Policy",
+      "group": "security/policy",
+      "implementation": [
+        "runtime/model.py",
+        "runtime/service.py"
+      ],
+      "maturity": "PARTIAL",
+      "notes": "A bounded subset is present; full named-component semantics are not claimed."
+    },
+    {
+      "number": 93,
+      "name": "Orbital Manager",
+      "group": "orbital/atomic interfaces",
+      "implementation": [
+        "runtime/model.py",
+        "runtime/service.py"
+      ],
+      "maturity": "PARTIAL",
+      "notes": "A bounded subset is present; full named-component semantics are not claimed."
+    },
+    {
+      "number": 94,
+      "name": "Electron Pool",
+      "group": "orbital/atomic interfaces",
+      "implementation": [
+        "runtime/model.py",
+        "runtime/service.py"
+      ],
+      "maturity": "REFERENCE_IMPLEMENTED",
+      "notes": "Direct reference implementation; scope remains bounded by the package claim boundary."
+    },
+    {
+      "number": 95,
+      "name": "Electron Affinity Map",
+      "group": "orbital/atomic interfaces",
+      "implementation": [],
+      "maturity": "DECLARED_ONLY",
+      "notes": "Architecture/source-corpus concept only in v0.5.0; no dedicated executable VEC1 implementation is claimed."
+    },
+    {
+      "number": 96,
+      "name": "Proton Interface",
+      "group": "orbital/atomic interfaces",
+      "implementation": [],
+      "maturity": "DECLARED_ONLY",
+      "notes": "Architecture/source-corpus concept only in v0.5.0; no dedicated executable VEC1 implementation is claimed."
+    },
+    {
+      "number": 97,
+      "name": "Neutron Interface",
+      "group": "orbital/atomic interfaces",
+      "implementation": [],
+      "maturity": "DECLARED_ONLY",
+      "notes": "Architecture/source-corpus concept only in v0.5.0; no dedicated executable VEC1 implementation is claimed."
+    },
+    {
+      "number": 98,
+      "name": "Atomic Membership Record",
+      "group": "orbital/atomic interfaces",
+      "implementation": [],
+      "maturity": "DECLARED_ONLY",
+      "notes": "Architecture/source-corpus concept only in v0.5.0; no dedicated executable VEC1 implementation is claimed."
+    },
+    {
+      "number": 99,
+      "name": "Bond Interface",
+      "group": "orbital/atomic interfaces",
+      "implementation": [],
+      "maturity": "DECLARED_ONLY",
+      "notes": "Architecture/source-corpus concept only in v0.5.0; no dedicated executable VEC1 implementation is claimed."
+    },
+    {
+      "number": 100,
+      "name": "Orbital Transition Controller",
+      "group": "orbital/atomic interfaces",
+      "implementation": [],
+      "maturity": "DECLARED_ONLY",
+      "notes": "Architecture/source-corpus concept only in v0.5.0; no dedicated executable VEC1 implementation is claimed."
+    },
+    {
+      "number": 101,
+      "name": "Electron Inspector",
+      "group": "inspection/operator UI",
+      "implementation": [
+        "ui/index.html",
+        "ui/app.js",
+        "ui/styles.css"
+      ],
+      "maturity": "REFERENCE_IMPLEMENTED",
+      "notes": "Direct reference implementation; scope remains bounded by the package claim boundary."
+    },
+    {
+      "number": 102,
+      "name": "Lineage Viewer",
+      "group": "inspection/operator UI",
+      "implementation": [
+        "ui/index.html",
+        "ui/app.js",
+        "ui/styles.css"
+      ],
+      "maturity": "PARTIAL",
+      "notes": "A bounded subset is present; full named-component semantics are not claimed."
+    },
+    {
+      "number": 103,
+      "name": "Orbital Viewer",
+      "group": "inspection/operator UI",
+      "implementation": [
+        "ui/index.html",
+        "ui/app.js",
+        "ui/styles.css"
+      ],
+      "maturity": "PARTIAL",
+      "notes": "A bounded subset is present; full named-component semantics are not claimed."
+    },
+    {
+      "number": 104,
+      "name": "State-Diff Viewer",
+      "group": "inspection/operator UI",
+      "implementation": [],
+      "maturity": "DECLARED_ONLY",
+      "notes": "Architecture/source-corpus concept only in v0.5.0; no dedicated executable VEC1 implementation is claimed."
+    },
+    {
+      "number": 105,
+      "name": "Execution Trace Viewer",
+      "group": "inspection/operator UI",
+      "implementation": [
+        "ui/index.html",
+        "ui/app.js",
+        "ui/styles.css"
+      ],
+      "maturity": "PARTIAL",
+      "notes": "A bounded subset is present; full named-component semantics are not claimed."
+    },
+    {
+      "number": 106,
+      "name": "Fabric Topology View",
+      "group": "inspection/operator UI",
+      "implementation": [
+        "ui/index.html",
+        "ui/app.js",
+        "ui/styles.css"
+      ],
+      "maturity": "PARTIAL",
+      "notes": "A bounded subset is present; full named-component semantics are not claimed."
+    },
+    {
+      "number": 107,
+      "name": "Quorum Dashboard",
+      "group": "inspection/operator UI",
+      "implementation": [
+        "ui/index.html",
+        "ui/app.js",
+        "ui/styles.css"
+      ],
+      "maturity": "PARTIAL",
+      "notes": "A bounded subset is present; full named-component semantics are not claimed."
+    },
+    {
+      "number": 108,
+      "name": "Resource Dashboard",
+      "group": "inspection/operator UI",
+      "implementation": [],
+      "maturity": "DECLARED_ONLY",
+      "notes": "Architecture/source-corpus concept only in v0.5.0; no dedicated executable VEC1 implementation is claimed."
+    },
+    {
+      "number": 109,
+      "name": "Attestation Viewer",
+      "group": "inspection/operator UI",
+      "implementation": [
+        "ui/index.html",
+        "ui/app.js",
+        "ui/styles.css"
+      ],
+      "maturity": "PARTIAL",
+      "notes": "A bounded subset is present; full named-component semantics are not claimed."
+    },
+    {
+      "number": 110,
+      "name": "Clone Laboratory UI",
+      "group": "inspection/operator UI",
+      "implementation": [
+        "ui/index.html",
+        "ui/app.js",
+        "ui/styles.css"
+      ],
+      "maturity": "PARTIAL",
+      "notes": "A bounded subset is present; full named-component semantics are not claimed."
+    }
+  ],
+  "maturity_definitions": {
+    "REFERENCE_IMPLEMENTED": "Dedicated executable VEC1 behavior exists and is exercised by the local reference implementation.",
+    "PARTIAL": "A usable subset or adjacent mechanism exists, but the named component is not implemented to its full prompt/workflow semantics.",
+    "DELEGATED_TO_DF": "Primary execution semantics reside in the sealed DF VM/Fabric baseline; VEC1 exposes or bridges them rather than reimplementing them.",
+    "DECLARED_ONLY": "Named in the source architecture/registry but no dedicated executable VEC1 implementation is claimed in this release."
+  },
+  "maturity_summary": {
+    "REFERENCE_IMPLEMENTED": 29,
+    "PARTIAL": 32,
+    "DELEGATED_TO_DF": 18,
+    "DECLARED_ONLY": 31,
+    "total": 110
+  }
+}

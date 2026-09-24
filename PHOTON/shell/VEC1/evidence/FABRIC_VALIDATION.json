@@ -1,0 +1,23 @@
+{
+  "schema": "VEC1/FABRIC_VALIDATION/1",
+  "status": "PASS",
+  "source": "DF_Fabric/examples/01_bell_pair.pal",
+  "nodes_bound": [
+    "N_SMALL",
+    "N_MEDIUM",
+    "N_LARGE",
+    "N_XLARGE"
+  ],
+  "nodes_absent": [],
+  "verdict": "CROSS_NODE_DIFFERENTIAL_AGREEMENT",
+  "replica_participants": 4,
+  "replica_unanimous": true,
+  "bsp_votes": {
+    "W_LARGE": true,
+    "W_MEDIUM": true,
+    "W_SMALL": true,
+    "W_XLARGE": true
+  },
+  "event_log_hash": "e38b438e4d65a2069696201da9ca6e36c091beb7f6851d3b0ad988166ba2e181",
+  "replay": "DETERMINISTIC_REPLAY_PASS"
+}

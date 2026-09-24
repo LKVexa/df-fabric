@@ -1,0 +1,63 @@
+# VEC1 Electron Substitute v0.2.0 — Audit, Hardening, and Verification Report
+
+Date: 2026-09-18
+
+## Scope
+
+The supplied `VEC1 Electron Substitute v0.1.1-candidate` package was audited across its top-level control plane, integrity model, lifecycle rules, package sealing, Windows launchers, DF bridge, static data corpus, and four-node DF execution path. The supplied DF Small / Medium / Large / Xtra-Large and DF_Fabric implementation payloads were preserved semantically; hardening changes are concentrated in the VEC1 orchestration/control layer and package verification surfaces.
+
+## Material findings corrected
+
+1. **Fork quota bypass** — `create()` enforced `max_electrons`, while `fork()` did not. Repeated cloning could exceed the declared resource limit. `fork()` now checks the same quota.
+2. **Fail-closed cloning bypass** — a suspended, faulted, or blocked parent could be forked and the child reset to `READY`. Fork now requires an operable parent; retired, suspended, faulted, and blocked instances cannot be cloned into an executable child.
+3. **Deleted-ledger false pass** — a missing ledger was interpreted as a valid empty chain, so deleting an entire ledger could still allow `audit` to pass. Every ledger append now seals its event count and head hash into canonical electron state; audit cross-checks that anchor and requires a genesis event.
+4. **Receipt existence-only audit** — the old audit only checked whether `last_receipt` existed. Audit now verifies receipt SHA-256, electron/tick identity, event-log hash, ledger reference, and inherited receipt provenance for clones.
+5. **Snapshot injection gap** — a self-consistent content-addressed snapshot file could be introduced without proving that VEC1 had actually created it. Restore now requires the snapshot hash to be referenced by a verified `SNAPSHOT` event in the source electron ledger.
+6. **Bidirectional lineage restore** — an ancestor could restore a descendant snapshot. Restore is now directional: self/ancestor snapshots are permitted; descendant snapshots are refused.
+7. **Schema/policy drift on state load** — canonical hashing detected ordinary edits but did not enforce the documented state/security schema. State loads now validate schema, IDs, lineage, counters, status coherence, deny-network/filesystem rules, quota-shaped queues, and hash shapes.
+8. **Derived hash fields not verified** — genome and capability hashes were recorded but not checked. They are now re-derived and verified on every state check.
+9. **Existing snapshot filename trust** — if a snapshot path already existed, creation skipped writing it without first re-verifying its contents. Existing content-addressed snapshots are now revalidated before reuse.
+10. **Windows zero-length lock edge case** — the `msvcrt.locking` path could operate on an empty lock file. The lock file is now initialized to one byte before the Windows byte-range lock is taken.
+11. **Atomic-replace durability gap** — atomic JSON/text writes fsync'd the file but not the containing directory on POSIX. Parent-directory fsync is now attempted after replacement.
+12. **Windows Python discovery brittleness** — top-level launchers assumed `python` was available. `VEC1_PYTHON.cmd` now honors explicit `PYTHON`, then tries `py -3`, `python`, and `python3`, with explicit exit 127 if none is available.
+13. **Manifest trust/normalization gaps** — package verification now rejects duplicate, absolute, traversal, backslash/non-normalized manifest paths and static symlinks; it also cross-checks `SHA256SUMS.txt` against the manifest and verifies the manifest's own checksum entry. Exclusion matching is package-root anchored so top-level `runtime/**` and `SHA256SUMS.txt` rules cannot accidentally exclude nested static evidence/seals.
+14. **Verification did not include top-level package seal** — `vecctl verify` now includes strict package-integrity verification as part of `static_ok`.
+15. **Doctor could succeed despite failed fabric attestation** — doctor now exposes and requires `fabric_attestation_ok` for its overall `ok` result.
+16. **Unbounded/invalid timeout environment values** — `VEC1_TIMEOUT` is now parsed safely and constrained to 1–86,400 seconds.
+
+## Added regression coverage
+
+The hermetic control-plane suite now contains 30 tests: 29 active tests plus one opt-in strict integration test. Added cases cover quota-bypass cloning, suspended/faulted cloning, descendant restore, complete ledger deletion, forged snapshots, receipt tampering, rehashed network-policy escalation, and mailbox quota enforcement.
+
+## Static corpus audit
+
+- JSON files parsed: 3,779; malformed: 0.
+- Python files parsed: 225 before the added reseal utility; malformed: 0.
+- Repository symlinks in the supplied package: 0.
+- Suspicious control-surface scan found no `shell=True`, `eval`, `exec`, unsafe pickle, or equivalent dynamic-code execution in the VEC1 control plane.
+- Final package seal is regenerated by `RESEAL_PACKAGE.py` and validated by `VERIFY_PACKAGE.py --strict`.
+
+## Build and strict execution verification
+
+On the audit host, `vecctl build` successfully produced/bound all four required node adapters:
+
+- `N_SMALL`: bound
+- `N_MEDIUM`: bound
+- `N_LARGE`: bound
+- `N_XLARGE`: bound
+
+`python -B vec1/vecctl.py verify --full` then completed successfully with:
+
+- package integrity: `PASS`
+- static checks: `PASS`
+- four-node readiness: `true`
+- fabric exit: `0`
+- fabric verdict: `CROSS_NODE_DIFFERENTIAL_AGREEMENT`
+- deterministic replay self-check: `PASS`
+- replica + pipeline + BSP verification: `PASS`
+
+Host-specific native `.build` products generated for this audit are not part of the static release seal and should be rebuilt on the target machine with `BUILD_VEC1.cmd`/`BUILD_VEC1`.
+
+## Remaining boundary
+
+This hardening verifies the classical VEC1 software substrate and its supplied DF execution stack. It does not convert the platform into physical electron hardware, a quantum processor, or a cryptographically trusted environment against an attacker who can rewrite both all runtime state and every local integrity/seal file. The runtime integrity model is fail-closed tamper evidence and cross-artifact consistency, not a hardware-backed signature/TPM trust root.

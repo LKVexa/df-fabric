@@ -1,0 +1,26 @@
+{
+  "accepted_fabric_verdict": "CROSS_NODE_DIFFERENTIAL_AGREEMENT",
+  "default_profile": "single_process_deterministic",
+  "default_program": "programs/fabric_probe.pal",
+  "evidence_schema": "VEC1-EVIDENCE/1.0",
+  "fabric_id": "DF0",
+  "hardening_profile": "VEC1-HARDENING/1.3",
+  "host_call_allowlist": [],
+  "host_product": "DF_Fabric",
+  "integration_profile": "VENDORED_UNBOUND",
+  "network_policy": "deny",
+  "placement": "static",
+  "plugin_allowlist": [],
+  "required_nodes": [],
+  "resource_quotas": {
+    "max_electrons": 128,
+    "max_execution_receipts": 10000,
+    "max_mailbox": 256,
+    "max_outbound": 256,
+    "max_program_bytes": 2097152
+  },
+  "schema": "VEC1/CONFIG/1",
+  "strict_four_node_execution": false,
+  "unbound_note": "No host node set is declared while unbound; promotion to VERIFIED remains impossible because attest() binds nothing.",
+  "version": "0.2.0"
+}

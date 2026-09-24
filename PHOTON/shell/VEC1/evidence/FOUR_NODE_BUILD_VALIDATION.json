@@ -1,0 +1,32 @@
+{
+  "schema": "VEC1/ISOLATED_FOUR_NODE_BUILD_VALIDATION/1",
+  "status": "PASS",
+  "environment": {
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+    "python": "3.13.5"
+  },
+  "note": "Executed in an isolated validation copy. Native build artifacts are intentionally not copied into the distributable package so the supplied DF package checksum baselines remain unchanged.",
+  "nodes": {
+    "N_LARGE": {
+      "present": true,
+      "bound": true,
+      "sums_match": true
+    },
+    "N_MEDIUM": {
+      "present": true,
+      "bound": true,
+      "sums_match": true
+    },
+    "N_SMALL": {
+      "present": true,
+      "bound": true,
+      "sums_match": true
+    },
+    "N_XLARGE": {
+      "present": true,
+      "bound": true,
+      "sums_match": true
+    }
+  },
+  "all_four_bound": true
+}

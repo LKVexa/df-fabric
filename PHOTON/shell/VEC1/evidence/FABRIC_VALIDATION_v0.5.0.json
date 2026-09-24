@@ -1,0 +1,18 @@
+{
+  "schema": "VEC1/FABRIC_VALIDATION/1",
+  "version": "0.5.0",
+  "status": "PASS",
+  "normalized_verdict": "PASS",
+  "adapter_verdict": "CROSS_NODE_DIFFERENTIAL_AGREEMENT",
+  "replay": "DETERMINISTIC_REPLAY_PASS",
+  "bound_nodes": [
+    "N_XLARGE"
+  ],
+  "absent_nodes": [
+    "N_SMALL",
+    "N_MEDIUM",
+    "N_LARGE"
+  ],
+  "event_log_hash": "2240d7164fa132591735c8c0f319b38c41ad4b4cfab7bca9dba5e21474584f70",
+  "claim_boundary": "Single-bound-node local diagnostic; not four-node native requalification."
+}

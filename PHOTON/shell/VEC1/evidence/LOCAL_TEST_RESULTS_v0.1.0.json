@@ -1,0 +1,8 @@
+{
+  "schema": "VEC1/LOCAL_TEST_RESULTS/1",
+  "status": "PASS",
+  "returncode": 0,
+  "command": "python3 -B -m unittest discover -s VEC1/tests -p 'test_*.py' -v",
+  "tests_run": 6,
+  "output": "test_animation_interpolation (test_vec1.Tests.test_animation_interpolation) ... ok\ntest_canonical_hash_order (test_vec1.Tests.test_canonical_hash_order) ... ok\ntest_ledger_chain (test_vec1.Tests.test_ledger_chain) ... ok\ntest_lowerers_embed_same_witness (test_vec1.Tests.test_lowerers_embed_same_witness) ... ok\ntest_sandbox (test_vec1.Tests.test_sandbox) ... ok\ntest_scheduler (test_vec1.Tests.test_scheduler) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.001s\n\nOK"
+}

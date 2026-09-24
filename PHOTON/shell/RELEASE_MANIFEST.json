@@ -1,0 +1,31 @@
+{
+  "audit_report": "VEC1/docs/AUDIT_UPGRADE_REPORT_v0.6.0.md",
+  "build_status": "BUILD_STATUS.json",
+  "changelog": "VEC1/CHANGELOG.md",
+  "checksum_file": "PACKAGE_SHA256SUMS.txt",
+  "checksum_file_sha256": "ce969e32dacab80a7eab285236a045846377cb19b432bee90ebcd3bea5d7178d",
+  "claim": "Photon-vendored subset of the VEC1 reference implementation. The DF VM suite and DF_Fabric are intentionally absent; Fabric-dependent surfaces are BLOCKED, not stubbed. Dynamic runtime state is excluded from the static inventory; in-package hashes are integrity evidence, not an external authenticity signature.",
+  "dynamic_exclusions": [
+    "VEC1/runtime_state/**",
+    "PACKAGE_SHA256SUMS.txt",
+    "RELEASE_MANIFEST.json"
+  ],
+  "entrypoints": {
+    "fabric_diagnostic_windows": "FABRIC_DIAGNOSTIC.cmd",
+    "posix": "START_VEC1.sh",
+    "powershell": "START_VEC1.ps1",
+    "powershell_preflight": "WINDOWS_CHECK.ps1",
+    "verify_posix": "VERIFY_VEC1.sh",
+    "verify_powershell": "VERIFY_VEC1.ps1",
+    "verify_windows": "VERIFY_VEC1.cmd",
+    "windows": "START_VEC1.cmd",
+    "windows_preflight": "WINDOWS_CHECK.cmd"
+  },
+  "evidence": "VEC1/evidence",
+  "photon_host_product": "DF_Fabric",
+  "product": "VEC1 Electron Substitute",
+  "schema": "VEC1/RELEASE_MANIFEST/1",
+  "static_bytes": 469886,
+  "static_file_count": 86,
+  "version": "0.6.0"
+}

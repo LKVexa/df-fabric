@@ -1,0 +1,10 @@
+{
+  "schema": "VEC1/DIRECT_INVOCATION_VALIDATION/1",
+  "version": "0.5.0",
+  "status": "PASS",
+  "command": "python VEC1/app.py --preflight",
+  "launcher_minus_B_deliberately_omitted": true,
+  "preflight_ok": true,
+  "vec_pycache_directories_after": 0,
+  "note": "app.py disables bytecode writes before importing VEC runtime modules, so direct invocation does not self-create unexpected static files before the release gate."
+}

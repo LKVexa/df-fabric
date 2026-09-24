@@ -1,0 +1,74 @@
+{
+  "schema": "VEC1/BASELINE_PRESERVATION/0.3.0",
+  "source_archive": "VEC1_Electron_Substitute_v0.2.0(1).zip",
+  "source_archive_sha256": "53414b9205a6547193163c497daea9cd07fe48689556f130be2e487603bbf214",
+  "trees": {
+    "DF_Fabric": {
+      "source": {
+        "files": 132,
+        "bytes": 1986636,
+        "tree_digest_sha256": "a1f18499685d871001022997385e589a4bd6419af619d1538a5f54f1b9ded665"
+      },
+      "candidate": {
+        "files": 132,
+        "bytes": 1986636,
+        "tree_digest_sha256": "a1f18499685d871001022997385e589a4bd6419af619d1538a5f54f1b9ded665"
+      },
+      "identical": true
+    },
+    "DF_Small": {
+      "source": {
+        "files": 142,
+        "bytes": 1891266,
+        "tree_digest_sha256": "f1a8f4ccd487112b0a385195414cb3feb804d56cfe0ffa7003de4365a7bcef12"
+      },
+      "candidate": {
+        "files": 142,
+        "bytes": 1891266,
+        "tree_digest_sha256": "f1a8f4ccd487112b0a385195414cb3feb804d56cfe0ffa7003de4365a7bcef12"
+      },
+      "identical": true
+    },
+    "DF_Medium": {
+      "source": {
+        "files": 365,
+        "bytes": 3495832,
+        "tree_digest_sha256": "e15dbe6014d819a01bbfbe97bd7f55bc75e3308ab8654be68367f4383c150988"
+      },
+      "candidate": {
+        "files": 365,
+        "bytes": 3495832,
+        "tree_digest_sha256": "e15dbe6014d819a01bbfbe97bd7f55bc75e3308ab8654be68367f4383c150988"
+      },
+      "identical": true
+    },
+    "DF_Large": {
+      "source": {
+        "files": 1016,
+        "bytes": 6627893,
+        "tree_digest_sha256": "0d66ce3758a8c2129ff7645ef2fd586a56af2f0d5bd1ec9803842cd43b030c9a"
+      },
+      "candidate": {
+        "files": 1016,
+        "bytes": 6627893,
+        "tree_digest_sha256": "0d66ce3758a8c2129ff7645ef2fd586a56af2f0d5bd1ec9803842cd43b030c9a"
+      },
+      "identical": true
+    },
+    "DF_Xtra_Large": {
+      "source": {
+        "files": 5637,
+        "bytes": 25728520,
+        "tree_digest_sha256": "341174f9bed9d9f6bbe3f9de797b45853a62ae0c929725f31d09272941747643"
+      },
+      "candidate": {
+        "files": 5637,
+        "bytes": 25728520,
+        "tree_digest_sha256": "341174f9bed9d9f6bbe3f9de797b45853a62ae0c929725f31d09272941747643"
+      },
+      "identical": true
+    }
+  },
+  "all_identical": true,
+  "method": "SHA-256 over sorted relative-path + per-file-SHA256 records; source and candidate compared bytewise by digest map."
+}

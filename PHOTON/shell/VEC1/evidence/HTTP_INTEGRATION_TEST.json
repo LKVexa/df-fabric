@@ -1,0 +1,101 @@
+{
+  "schema": "VEC1/HTTP_INTEGRATION_TEST/1",
+  "status": "PASS",
+  "server": "127.0.0.1:8877 loopback only",
+  "steps": [
+    {
+      "name": "status",
+      "status": "PASS",
+      "http_status": 200
+    },
+    {
+      "name": "static_shell",
+      "status": "PASS",
+      "http_status": 200,
+      "csp": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'"
+    },
+    {
+      "name": "electron_create",
+      "status": "PASS",
+      "http_status": 200
+    },
+    {
+      "name": "object_upsert",
+      "status": "PASS",
+      "http_status": 200
+    },
+    {
+      "name": "animation_keyframe_0",
+      "status": "PASS",
+      "http_status": 200
+    },
+    {
+      "name": "animation_keyframe_10",
+      "status": "PASS",
+      "http_status": 200
+    },
+    {
+      "name": "animation_tick",
+      "status": "PASS",
+      "http_status": 200
+    },
+    {
+      "name": "ocr_observe",
+      "status": "PASS",
+      "http_status": 200
+    },
+    {
+      "name": "ocr_commit",
+      "status": "PASS",
+      "http_status": 200
+    },
+    {
+      "name": "checkpoint",
+      "status": "PASS",
+      "http_status": 200
+    },
+    {
+      "name": "clone",
+      "status": "PASS",
+      "http_status": 200
+    },
+    {
+      "name": "cross_target_verify_degraded",
+      "status": "PASS",
+      "http_status": 200,
+      "bound_nodes": [
+        "N_XLARGE"
+      ],
+      "witness_low64": 3647178413
+    },
+    {
+      "name": "fabric_diagnostic_degraded",
+      "status": "PASS",
+      "http_status": 200,
+      "nodes_bound": [
+        "N_XLARGE"
+      ],
+      "nodes_absent": [
+        "N_SMALL",
+        "N_MEDIUM",
+        "N_LARGE"
+      ],
+      "verdict": "CROSS_NODE_DIFFERENTIAL_AGREEMENT"
+    },
+    {
+      "name": "event_ledger",
+      "status": "PASS",
+      "http_status": 200
+    },
+    {
+      "name": "electron_readback",
+      "status": "PASS",
+      "http_status": 200
+    }
+  ],
+  "checkpoint_hash": "0dd76deee8646e7f4d3bbb7ccd67afc9ec5b02296c9c342fdeb8fbe08c75a3c2",
+  "clone_id": "e-f80224b1d3f35e7b",
+  "events_observed": 11,
+  "final_state_hash": "cf8d8888e4a035bcf723de099c0a63f7bb315d4e9e7ea79151b3a1b1c93459e4",
+  "note": "Test runtime state is removed after this evidence record is written; this record remains as the evidence artifact."
+}

@@ -1,0 +1,18 @@
+{
+  "added_at_product_root": [
+    "PHOTON/",
+    "PHOTON.cmd",
+    "PHOTON.sh"
+  ],
+  "bound": false,
+  "control_plane_version": "0.2.0",
+  "host_product": "DF_Fabric",
+  "host_product_root": ".. (relative to PHOTON/)",
+  "integrated_utc": "2026-09-22T16:46:25Z",
+  "integration_profile": "VENDORED_UNBOUND",
+  "inventory_file": "SHA256SUMS.txt",
+  "originals_modified": [],
+  "photon_version": "1.0.1",
+  "schema": "PHOTON/MANIFEST/1",
+  "shell_version": "0.6.0"
+}

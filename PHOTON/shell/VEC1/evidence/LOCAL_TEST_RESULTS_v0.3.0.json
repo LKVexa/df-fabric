@@ -1,0 +1,15 @@
+{
+  "schema": "VEC1/LOCAL_TEST_RESULTS/2",
+  "version": "0.3.0",
+  "date": "2026-09-18",
+  "runner": "python -B -m unittest discover -s VEC1/tests -p test_*.py -v",
+  "tests_run": 43,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "status": "PASS",
+  "wall_seconds_reported": 0.558,
+  "log": "VEC1/evidence/LOCAL_TEST_RESULTS_v0.3.0.txt",
+  "log_sha256": "0242cf8538e677c4d6db3c9ef2a06c26159f9c1569127d07035e682eb3c94895",
+  "environment_note": "Executed in the analysis sandbox on Linux; Windows launcher behavior is statically regression-tested but Windows-native execution remains NOT_RUN."
+}

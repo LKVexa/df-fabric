@@ -1,0 +1,15 @@
+{
+  "schema": "VEC1/CROSS_TARGET_WITNESS_VALIDATION/1",
+  "version": "0.5.0",
+  "status": "PASS",
+  "bound_nodes": [
+    "N_XLARGE"
+  ],
+  "results": {
+    "N_SMALL": "NOT_RUN",
+    "N_MEDIUM": "NOT_RUN",
+    "N_LARGE": "NOT_RUN",
+    "N_XLARGE": "PASS"
+  },
+  "claim_boundary": "Single locally bound Xtra-Large witness probe; not four-node requalification."
+}

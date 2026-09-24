@@ -1,0 +1,20 @@
+{
+ "container": "DF_Xtra_Large",
+ "node_id": "N_XLARGE",
+ "reason": "The DF_Xtra_Large container delivered in this folder is the documented Windows-safe repack (WINDOWS_SAFE_README.md / WINDOWS_SAFE_AUDIT.json / WINDOWS_PATH_MAP.json): 673 delivered paths were shortened and 541 text files rewritten so the tree extracts under the legacy Windows MAX_PATH budget (the release tree's longest internal path is 239 chars, which cannot be extracted at any realistic Windows root). The repack re-sealed its own MANIFEST.json and SHA256SUMS.txt, so DF_Fabric gate F0 failed against the release pins. These pins now name the container that is actually present. The release pins are retained below and the release zip digests (zip_sha256 / source_zip_sha256) are unchanged.",
+ "release_copy_available_at": "Unikernel Containership/Unikernel_Containership_blank/Unikernel_Containership/hold/DF_Xtra_Large.zip",
+ "release_pins": {
+  "manifest_sha256": "151ec87a0fd3c76389cfa85a6b357cba6367b09728efd438d9e715a51f3b7194",
+  "payload_tree_sha256": "f782f75c8cd8d1818e7c5348efb050a0c1aff221dd421f233e528ffeca068a42",
+  "sums_sha256": "46f68fdb5d0382e0e996bdae69673d2d0062963d93a3846fdb87b9359d28795b"
+ },
+ "release_zip_sha256_unchanged": "c0432c148083baf01cc8dbf159a5f742cf1f9b9d4780f89db5a0a8870fec9a83",
+ "repacked_pins": {
+  "manifest_sha256": "c3667c733d14fa0f7969936525e7211878d4a165a1db7dc247c8da0ba99ab286",
+  "payload_tree_sha256": "ab99e5dcc48e4375ae65c81d6d479ef244bfd860a0560e9ee57da2eab7910830",
+  "sums_sha256": "b2bc6e962cf8ef00d646048f75931d02339d91fecf0d560b97c8a13ca5f3138a"
+ },
+ "repinned_at_utc": "2026-08-20T18:30:10.372328Z",
+ "schema": "DF/NODE_REPIN_RECORD/1",
+ "verified": "DF_Xtra_Large ./VERIFY 19/19 PASS on the repacked tree; DF_Fabric ./VERIFY 16/16 PASS after this re-pin"
+}

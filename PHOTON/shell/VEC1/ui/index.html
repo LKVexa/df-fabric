@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="vec1-token" content="__VEC1_SESSION_TOKEN__">
+<meta name="color-scheme" content="dark">
+<title>VEC1 Electron Substitute</title>
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header>
+  <div>
+    <div class="eyebrow">DF FABRIC / VEC1</div>
+    <h1>Electron Substitute</h1>
+    <p>Deterministic local reference shell for VM-backed application state, animation, object editing, OCR provenance, cloning, and cross-target verification.</p>
+  </div>
+  <div class="status-pill" id="globalStatus" role="status" aria-live="polite">loading…</div>
+</header>
+<main>
+  <section class="panel">
+    <div class="section-head"><h2>Fabric</h2><button id="refresh">Refresh</button></div>
+    <div id="nodes" class="cards"></div>
+    <div class="actions"><button id="fabricDiag">Run Fabric diagnostic</button><span id="fabricResult" aria-live="polite"></span></div>
+  </section>
+
+  <section class="panel">
+    <div class="section-head"><h2>Electron Pool</h2><div><input id="newName" value="Workspace Electron" maxlength="128" aria-label="New electron name"><button id="createElectron">Create</button></div></div>
+    <div id="electrons" class="electron-list"></div>
+  </section>
+
+  <section class="panel two-col">
+    <div>
+      <h2>Inspector</h2>
+      <pre id="inspector">Select an electron.</pre>
+      <div class="actions">
+        <button id="cloneBtn" disabled>Clone</button>
+        <button id="checkpointBtn" disabled>Checkpoint</button>
+        <button id="verifyBtn" disabled>Cross-target verify</button>
+      </div>
+      <div class="actions">
+        <button id="suspendBtn" disabled>Suspend</button>
+        <button id="resumeBtn" disabled>Resume</button>
+        <button id="retireBtn" class="danger" disabled>Retire</button>
+      </div>
+      <div class="actions"><label class="inline">Checkpoint <select id="checkpointSelect" disabled><option value="">none</option></select></label><button id="restoreBtn" disabled>Restore</button></div>
+      <pre id="opResult" class="result" aria-live="polite"></pre>
+    </div>
+    <div>
+      <h2>Object Editing</h2>
+      <label>Object ID <input id="objId" value="title"></label>
+      <label>Type <input id="objType" value="text"></label>
+      <label>Text <input id="objText" value="Hello VEC1"></label>
+      <div class="grid2"><label>X <input id="objX" type="number" value="40"></label><label>Y <input id="objY" type="number" value="40"></label></div>
+      <button id="saveObject" disabled>Upsert object</button>
+
+      <h2>Animation</h2>
+      <div class="grid2"><label>Property <input id="animProp" value="x"></label><label>Tick <input id="animTick" type="number" min="0" step="1" value="60"></label></div>
+      <div class="grid2"><label>Value <input id="animValue" type="number" value="400"></label><label>Interpolation <select id="animInterp"><option>linear</option><option>step</option></select></label></div>
+      <button id="keyframeBtn" disabled>Set keyframe</button>
+      <div class="grid2"><label>Advance to tick <input id="tickValue" type="number" value="30"></label><button id="tickBtn" disabled>Evaluate</button></div>
+    </div>
+  </section>
+
+  <section class="panel two-col">
+    <div>
+      <h2>OCR Bridge</h2>
+      <p class="muted">OCR arrives as a non-authoritative observation. Commit is a separate explicit edit.</p>
+      <label>Source SHA-256 <input id="ocrHash" value="0000000000000000000000000000000000000000000000000000000000000000"></label>
+      <label>Observed text <textarea id="ocrText">Sample OCR observation</textarea></label>
+      <div class="grid2"><label>Confidence <input id="ocrConfidence" type="number" step="0.01" min="0" max="1" value="0.95"></label><label>Target object <input id="ocrTarget" value="ocr-text"></label></div>
+      <div class="actions"><button id="ocrObserve" disabled>Record observation</button>
+      <button id="ocrCommit" disabled>Commit last observation to object</button></div>
+    </div>
+    <div>
+      <h2>Event Ledger</h2>
+      <pre id="events">No events yet.</pre>
+    </div>
+  </section>
+</main>
+<footer>VEC1 v__VEC1_VERSION__ reference implementation · local loopback only · no Node.js integration</footer>
+<script src="/app.js"></script>
+</body>
+</html>

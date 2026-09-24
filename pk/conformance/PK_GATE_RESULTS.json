@@ -1,0 +1,1342 @@
+{
+  "schema": "PK_GATE_RESULTS/1",
+  "verdict": "CONDITIONAL_GO",
+  "generated_at": "2026-09-22T19:00:49.942899+00:00",
+  "element_count": 95,
+  "blockers": [],
+  "conditions": [
+    "GAP-07: 1 partial requirements (GAP-07-C049)"
+  ],
+  "elements": [
+    {
+      "element": "GAP-01",
+      "name": "Edge Node Supervisor",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "72b70fe3a31c9c096f56a15bf7b91b82a8f4689b32a5c86fa4a6b0cb1b23543d"
+    },
+    {
+      "element": "GAP-02",
+      "name": "Hardware capability discovery",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "bd138e3a6803fc1be37af247c712cb76d421b71e7ba8464f908058f441b6af13"
+    },
+    {
+      "element": "GAP-03",
+      "name": "Topology-aware scheduler",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "a607b3d6bcfc48440eb96367d8278857aab7ba0d336cba537f3acefce54561b6"
+    },
+    {
+      "element": "GAP-04",
+      "name": "Disconnected-operation controller",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "25977deef52fab56dc3417c05e593f03b671a1b37ccef93681feddd299179a9a"
+    },
+    {
+      "element": "GAP-05",
+      "name": "State replication/consistency model",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "3a5f49a4e750006dd580d7acbcf48eab9b66fa0c271c5c9b3f319c9e6b682e8a"
+    },
+    {
+      "element": "GAP-06",
+      "name": "Device identity and attestation",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "73eca342afcd99185d29e7f2077eb0a4e1649e45125ea50522c30205fd1f2c23"
+    },
+    {
+      "element": "GAP-07",
+      "name": "Artifact provenance/signing",
+      "certified": true,
+      "coverage": 0.99,
+      "counts": {
+        "satisfied": 99,
+        "partial": 1,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "c4c86746cc674aefc9d7de3a490c62509950bf149e6e9d1d17b6b566e2cb5183"
+    },
+    {
+      "element": "GAP-08",
+      "name": "OTA lifecycle/rollback",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "e5a4aded188314c05d1b5fdcf980cb5221cd9e80f747d45cf1720dfa6c0610ba"
+    },
+    {
+      "element": "GAP-09",
+      "name": "Unified observability",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "e03dd9d3d6d60df835e95c5ad5c9c89ff7e19823a4fa7e4ac69ffb1f0333940e"
+    },
+    {
+      "element": "GAP-10",
+      "name": "Power/thermal-aware scheduling",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "c8a276d87640b6df9ed11e290630e973023093d9067f7c134564e759ab4481d3"
+    },
+    {
+      "element": "GAP-11",
+      "name": "Accelerator scheduling",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "a282aab978112530c0e44146e7ed31d6589f75db125342fb3110ce8a8e56011c"
+    },
+    {
+      "element": "GAP-12",
+      "name": "WAN resilience and NAT traversal",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "3e02973e0b154b8eda47a981bce93fce86e4725fa7c8747a57d72a2b297b1fbf"
+    },
+    {
+      "element": "GAP-13",
+      "name": "Policy engine",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "f7308fb2d2a705356da7f1cbc70fbde8b9ef9e16eed00b8630f978a56ba8602e"
+    },
+    {
+      "element": "GAP-14",
+      "name": "Data-gravity manager",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "9b7b2e3d0c337afbb7c397eb3b57863d7eeb59787b7ff17ccba294ffaaec4f05"
+    },
+    {
+      "element": "GAP-15",
+      "name": "Runtime compatibility certification",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "6978885396a8d1056a6b0edb9d6ea01e2542861933fbbb74e29d16071214419b"
+    },
+    {
+      "element": "INV-01",
+      "name": "Legacy infrastructure substrate",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "312dfc11bb84df886682e5bd122b8cde5f8c2bf056ee7a1b055a9821384f54af"
+    },
+    {
+      "element": "INV-02",
+      "name": "Container substrate",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "1d788c67a295abfe56ec4f64bc5efb0ffb9249343b64c5e21e3585cbf868d958"
+    },
+    {
+      "element": "INV-03",
+      "name": "Container hardening",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "9bf7e37c717aca7c13471eca423636c1fe06c576074539a6a59686c911841edd"
+    },
+    {
+      "element": "INV-04",
+      "name": "Current orchestration",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "5d13f97c53e81f2a4b58e876f39ed68acea3e4f3b4c8b058d35c8cefc26f29be"
+    },
+    {
+      "element": "INV-05",
+      "name": "Current control-state system",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "da68545a0f21161e70c920cb9d4ccd141738a128ac516a0e2afad905113b4ca5"
+    },
+    {
+      "element": "INV-06",
+      "name": "Traditional IaC",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "4a913a633922cf00a26248f52cc2aa48a0a355c300afa07f2792b1f409b5d781"
+    },
+    {
+      "element": "INV-07",
+      "name": "GitOps transition layer",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "8f6b49c191775d85ba34ed6178becf6a159ea64d65becdb6e7a27e77ce4e6a2b"
+    },
+    {
+      "element": "INV-08",
+      "name": "Dynamic infrastructure model",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "0642cace1c5727ade194ce2ad2a023e79d97fbecc3cdd3f944a32f997324f997"
+    },
+    {
+      "element": "INV-09",
+      "name": "Portable compute ISA",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "dfc3776b3c0ad65d9700607de6a841ddd314a04cd8aad0c44e69d758cc3f6d04"
+    },
+    {
+      "element": "INV-10",
+      "name": "Component composition system",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "8050eb09788a786b1d59a16cd419e1e41e6ef58d1b6ca0348a47217ece4f3dfa"
+    },
+    {
+      "element": "INV-11",
+      "name": "Interface contract language",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "a1ecf72cc775ba6aa0b6a9e306b7094de40e64ce12fbe76b8768c67449dc3abf"
+    },
+    {
+      "element": "INV-12",
+      "name": "Language interoperability",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "b37ee123f4603e94e0441081af1f76377e18989eaa0e593172b145b967ad7fee"
+    },
+    {
+      "element": "INV-13",
+      "name": "System interface",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "736661d9f02ebe86d809887e0d85ced9973e3d9d0b087906419ec949fa8d24b8"
+    },
+    {
+      "element": "INV-14",
+      "name": "Previous asynchronous model",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "e17950df9c2cad2ce9dc7f30cbf7af8d7021bb870789929ddba09e1b77b8cca0"
+    },
+    {
+      "element": "INV-15",
+      "name": "New asynchronous ABI",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "27a52d4892f319fbeae0b4765f38ed02bf6f6366f1ee210c35c352481123b44e"
+    },
+    {
+      "element": "INV-16",
+      "name": "Async component functions",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "9a0716fe5ffdbfe8e20991666f604d172c783e971ddfa1231f23ccaf26ccc5e0"
+    },
+    {
+      "element": "INV-17",
+      "name": "Streaming primitive",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "0ada87c1b885d70284c47559185c2acd748d6c859e047425b123119a9becd2f2"
+    },
+    {
+      "element": "INV-18",
+      "name": "Completion primitive",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "2758f86505010d18a49f3e628a5f6bc9cee0fba5b4c216b47b00f678211d1a23"
+    },
+    {
+      "element": "INV-19",
+      "name": "OS asynchronous analogues",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "5f7768ba8ad7d12f78be0a57d6a9047b6d6718c8738f9fc90bda52b719229706"
+    },
+    {
+      "element": "INV-20",
+      "name": "HTTP component worlds",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "6ec0b89a521fedc119ff8def765bb92bbaf322200b1ce766ef3f7cc54c710ddd"
+    },
+    {
+      "element": "INV-21",
+      "name": "Local service chaining",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "78254292b489ada7b4015572fce0b550df471bf9b8c37fa1c21891973acfb9b2"
+    },
+    {
+      "element": "INV-22",
+      "name": "Alternative WASI branch",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "1574ce110f78666932e94d5d7f558c6e14a18a41874e8924c8fe9acbd640b6ed"
+    },
+    {
+      "element": "INV-23",
+      "name": "Hardware virtualization primitive",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "87568f9bfe64ba42fc8e1fca74fc8b097467e4126809605bd35cfdd22d070d26"
+    },
+    {
+      "element": "INV-24",
+      "name": "MicroVM runtime",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "99cddc72cff3b140a182546d06bb9e198d9cbe9702779c901d613dc264ded346"
+    },
+    {
+      "element": "INV-25",
+      "name": "MicroVM devices",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "225127bafb2125a43ecad6066ac5b90ea1b459bf5178a36b14c06b371e328528"
+    },
+    {
+      "element": "INV-26",
+      "name": "MicroVM snapshotting",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "e0a1767dda6f67eccf86e8a2fc1296fabce06e8c8b30825324e7b28776e9e3a6"
+    },
+    {
+      "element": "INV-27",
+      "name": "Unikernel execution",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "b4939470549620c11da72d38d3252a52e5fcf6333831933741cbb1385a67fa2e"
+    },
+    {
+      "element": "INV-28",
+      "name": "Unikernel implementations",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "62c1645b9c8e57b7de735a1c43e69d1d07924f321cda91c9d68f4502bd8f1ea5"
+    },
+    {
+      "element": "INV-29",
+      "name": "Hybrid Wasm/unikernel",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "7c71ec684a54c72678e4554dce121ef6cebb24ba85d2e0faca2e68121f196241"
+    },
+    {
+      "element": "INV-30",
+      "name": "Capability hardware sandbox",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "d169bf0ce9be53e11440afe9ca3c1ac0a1a4bd43d541a8b95f290abc7026f946"
+    },
+    {
+      "element": "INV-31",
+      "name": "Function execution architecture",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "75f9952c8efa4c0d5d89372fe19b4b1edbd9b1ec24d0520c58a4c8b4311b9c5c"
+    },
+    {
+      "element": "INV-32",
+      "name": "Elastic virtualization",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "d6e09eb7796b41642e64c838ff206bee008053af5112ee96290731c27fedd0e1"
+    },
+    {
+      "element": "INV-33",
+      "name": "Virtualization controller",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "79d3654efbed96b6c469c62f01fe86144e2e1a1e04134da9e986e9cdd12f2524"
+    },
+    {
+      "element": "INV-34",
+      "name": "Legacy CPU expansion path",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "1648c857f0ccb1275c4b4a97d5aaa01348d9166c5091fb66e1901842481cc2d7"
+    },
+    {
+      "element": "INV-35",
+      "name": "High-performance VM I/O",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "79cd8a9ff1a0cd08f0042ad1572c67e3e9352c611aa514723443adbfcdfbdc51"
+    },
+    {
+      "element": "INV-36",
+      "name": "Control transport",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "31e41de0aa12a5aac103cdbd5fa2696387ad9e39cf316b97ae448655226f9c16"
+    },
+    {
+      "element": "INV-37",
+      "name": "Bulk data plane",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "494f7d5b0114c3b95e533c98734e9b42662379a8c0a0d2226d44c4bcc6ce29cb"
+    },
+    {
+      "element": "INV-38",
+      "name": "Kernel-bypass transport",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "ed991cafa10e7a907a3e2f4a4cbb9336492807266c48491df900a31753f001eb"
+    },
+    {
+      "element": "INV-39",
+      "name": "Process sandbox tier",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "28a0975f17d978b6111d83fae663a3097af1b5a981e85df8526f97a8fff28a76"
+    },
+    {
+      "element": "INV-40",
+      "name": "Full virtualization tier",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "7edbce85dcf1f255945004fcf74e20b911922d636c1df432fbff70d11fc5e6b4"
+    },
+    {
+      "element": "INV-41",
+      "name": "Capability security",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "14b8876ac49472275287f30395b00c6c20f66bfd1b6ee20eb830da4f7a988258"
+    },
+    {
+      "element": "INV-42",
+      "name": "Capability descriptors",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "e604c7a8a13faa84b0342cdb894b8c8cebe8b33371a0268e027c9832d1651fd0"
+    },
+    {
+      "element": "INV-43",
+      "name": "Transient-execution defense",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "caeb76f081c76ffe1048d853e7a7d60d3549f9615c4e40b302485757046c7099"
+    },
+    {
+      "element": "INV-44",
+      "name": "Wasm hardening system",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "0cbf503845f70f4390b3e5c8b0dbc5ed0ad4e38db2cdddf173fdaf795d09c7ff"
+    },
+    {
+      "element": "INV-45",
+      "name": "SFI mechanisms",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "37e8537220cca013867d4ced2e0f40f80a27d707a48208956f4dddd5d5a14d70"
+    },
+    {
+      "element": "INV-46",
+      "name": "Distributed application runtime",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "541c2c31e22815d8e28eede5ed628a582ed3c6de1c48b14c0cbc1d4775e614c1"
+    },
+    {
+      "element": "INV-47",
+      "name": "Dapr deployment model",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "08547d4ec6dbb2e44fe60441cfe642a500dc8675cc58e792945cbb58bc29dfe7"
+    },
+    {
+      "element": "INV-48",
+      "name": "Service communication APIs",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "094c512040ad3a173017cf95e299648ce51647fe6cccdee7ed8cfe5a5fe3fd77"
+    },
+    {
+      "element": "INV-49",
+      "name": "Pluggable infrastructure adapters",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "53d60a5bd506003694c07ee2407f101fbc1aee84338ce902be95fb78a6bee116"
+    },
+    {
+      "element": "INV-50",
+      "name": "State abstraction",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "ccd5c55fb286fbb0cd9c703f978bd0edde8354508041e4dc1df3aaffba446cd1"
+    },
+    {
+      "element": "INV-51",
+      "name": "Example state stores",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "fc37c0deba2765590072fd0fd741eee695d4578f272643b9109c62cf131fa8d2"
+    },
+    {
+      "element": "INV-52",
+      "name": "Messaging abstraction",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "d778b634256ca33e77f286661e6cbc2f6c5c23c17d59af279bef7e07a5eea7fd"
+    },
+    {
+      "element": "INV-53",
+      "name": "Message reliability",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "d985f973acfc2d0e14a4980889020a30a7969dc61405093de0949a95478194c9"
+    },
+    {
+      "element": "INV-54",
+      "name": "Broker implementations",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "d5a8b93bc22d3e75eff843d45451fbedba7071cff0e8f01f855a46d8ae2dc9d4"
+    },
+    {
+      "element": "INV-55",
+      "name": "Secrets integration",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "c543ebc7ea622a3bfc196a37e95dd050536c7d4854e2b074ad563148c24a133e"
+    },
+    {
+      "element": "INV-56",
+      "name": "Distributed stateful compute",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "7c7df053d51657db12338f0a60534370a7a0678c02e9583f12ae396eab72bfee"
+    },
+    {
+      "element": "INV-57",
+      "name": "Durable execution",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "5ab9c51582e3a6623347df3bfe641a1251cfa0ef4952d047d9c72adcd2176b20"
+    },
+    {
+      "element": "INV-58",
+      "name": "Existing service-mesh layer",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "709d8a7e04e6065eaf5fd44a99b291c264281413acff7da47c0066cadcb0f3ce"
+    },
+    {
+      "element": "INV-59",
+      "name": "Application authorization",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "3beec21f750945bbce863bec5b0b5aaf40dc3ed1155a8885a665f9e7e7a9687a"
+    },
+    {
+      "element": "INV-60",
+      "name": "Wasm application fabric",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "9d5d6abe3e0e178050840ffe78f7f5dc9efe26a47257ce4a4c1f4c9117675ee2"
+    },
+    {
+      "element": "INV-61",
+      "name": "Distributed WIT RPC",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "a16f613b8b0860baa58f9f08edf8b9c950a7c312a7b9c8aa39543f1acf51485b"
+    },
+    {
+      "element": "INV-62",
+      "name": "Edge topology",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "0c4d533665db940a007dfb8947b44b995f4cb8f4b385559feef6c69444c5405e"
+    },
+    {
+      "element": "INV-63",
+      "name": "Wasm deployment manager",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "598496a6f7d0647bcee5b61da74f09d9c187407780c6259ff623bb3c71fb0310"
+    },
+    {
+      "element": "INV-64",
+      "name": "Application model",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "3f40a1f2ff510c84f816c65b6bd9f5685e7b302a754e002e0e8475f8c29b7b26"
+    },
+    {
+      "element": "INV-65",
+      "name": "Capability providers",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "6eed2911de42ff3a666d613a21e5fbf3ddedee0d9fbe073e3c6026d0f43695c6"
+    },
+    {
+      "element": "INV-66",
+      "name": "Enterprise Wasm control plane",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "b94cbcb47bd655e48ffbbbe28db17a6ad8c6287eb890661d5ee305a3e5984004"
+    },
+    {
+      "element": "INV-67",
+      "name": "Kubernetes integration mechanism",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "7a59404b169fc5d872de995f898850d27c8a5d800dffa2e28459a2e22a3e2fbd"
+    },
+    {
+      "element": "INV-68",
+      "name": "Resource packing",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "28ab78d86f3c7e4f2efe2277d0548aaaa57b2dd1a78526937263afdb46068c84"
+    },
+    {
+      "element": "INV-69",
+      "name": "Agentic workload layer",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "f30976f74c8021e1f610cc99962e2aba11d6851ae82fb47f9fc848fd0faf15c7"
+    },
+    {
+      "element": "INV-70",
+      "name": "Fast agent sandbox",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "2085a9b6e81540fa8b33dce510d10f7be7dc91f462d8ee9260e7ec07a60c18bb"
+    },
+    {
+      "element": "INV-71",
+      "name": "Heavy agent sandbox",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "cd6f8b769a80d7ec5b2720266733b2036b6ce4f2300d9b70253b08aafedb5c83"
+    },
+    {
+      "element": "INV-72",
+      "name": "Accelerated workload requirement",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "1780c4eeeca4ff324e564979dfecdcf4aac835a79ec82615e709dbdf529bad7c"
+    },
+    {
+      "element": "PLN-01",
+      "name": "Intent plane",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "9b4cc822481fe14d5587b7b948e948dea4bf5b9b66a72c81144eb582a1b553aa"
+    },
+    {
+      "element": "PLN-02",
+      "name": "Application plane",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "fe4d0b55fa231e2ee7ac15d3977d1cb13c158fcbe94458e6b148563838e143cd"
+    },
+    {
+      "element": "PLN-03",
+      "name": "Distributed runtime plane",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "9ccb0aecd70244d5de93441e2fd8578871b8760bbd1a9129fc68e3179e53a924"
+    },
+    {
+      "element": "PLN-04",
+      "name": "Execution plane",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "37b43b9489cb57f67c3f3d6e68334f577294724f5cad70034799b8a951ada4b5"
+    },
+    {
+      "element": "PLN-05",
+      "name": "Elasticity plane",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "994df815b97d4abdd9e8836d05e4b4959e1b77eeece5670b98d58f21b6fda316"
+    },
+    {
+      "element": "PLN-06",
+      "name": "Data plane",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "0b31ab3083046668e93cd373069424e7efa538c661c1a1f18e089ef9d2352584"
+    },
+    {
+      "element": "PLN-07",
+      "name": "Security plane",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "2bf79eb06cd997d8a5f19f2eb24deaaa8da948fdd26b99d6e196da5911959372"
+    },
+    {
+      "element": "SCH-01",
+      "name": "Workload Classification and Runtime Placement Engine",
+      "certified": true,
+      "coverage": 1.0,
+      "counts": {
+        "satisfied": 100,
+        "partial": 0,
+        "blocked": 0,
+        "not_applicable": 0
+      },
+      "failed_stages": [],
+      "evidence_head": "8784bc56fb348815befb624a4d08d02322feee2502d1e7754869aaa359024325"
+    }
+  ]
+}

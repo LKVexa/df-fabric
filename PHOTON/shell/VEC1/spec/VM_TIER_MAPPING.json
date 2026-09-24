@@ -1,0 +1,64 @@
+{
+  "schema": "VEC1/VM_TIER_MAPPING/1",
+  "version": "0.1.0",
+  "tiers": {
+    "N_SMALL": {
+      "root": "../DF_Small",
+      "role": "minimal/reference VEC execution; interactive state/object/animation operations; MSSL lowering",
+      "components": [
+        61,
+        62
+      ]
+    },
+    "N_MEDIUM": {
+      "root": "../DF_Medium",
+      "role": "semantic/compiler validation; OCR bridge validation; checkpoints and policy-sensitive state",
+      "components": [
+        63,
+        64
+      ]
+    },
+    "N_LARGE": {
+      "root": "../DF_Large",
+      "role": "service/device/external-interface execution behind explicit host-call and filesystem gates",
+      "components": [
+        65,
+        66
+      ]
+    },
+    "N_XLARGE": {
+      "root": "../DF_Xtra_Large",
+      "role": "large-state, long-running, quorum/reference workloads; QVM lowering",
+      "components": [
+        67,
+        68
+      ]
+    }
+  },
+  "cross_target": {
+    "components": [
+      69,
+      70
+    ],
+    "canonical_rule": "Compare normalized logical result_low64 and canonical VEC state hashes, never raw ABI/register layouts."
+  },
+  "fabric": {
+    "root": "../DF_Fabric",
+    "components": [
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82
+    ],
+    "network_policy": "deny",
+    "execution": "local-process federation"
+  }
+}

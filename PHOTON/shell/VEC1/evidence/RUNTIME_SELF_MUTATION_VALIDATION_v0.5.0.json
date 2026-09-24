@@ -1,0 +1,83 @@
+{
+  "schema": "VEC1/RUNTIME_IMMUTABILITY_VALIDATION/1",
+  "version": "0.5.0",
+  "status": "PASS",
+  "cross_target": {
+    "status": "PASS",
+    "bound_nodes": [
+      "N_XLARGE"
+    ],
+    "N_SMALL": "NOT_RUN",
+    "N_MEDIUM": "NOT_RUN",
+    "N_LARGE": "NOT_RUN",
+    "N_XLARGE": "PASS"
+  },
+  "fabric_diagnostic": {
+    "verdict": "PASS",
+    "adapter_verdict": "CROSS_NODE_DIFFERENTIAL_AGREEMENT",
+    "replay": "DETERMINISTIC_REPLAY_PASS",
+    "participants": 1
+  },
+  "sealed_trees_before": {
+    "DF_Fabric": {
+      "sha256": "b4a165f65526f3a5b33c6e2262a33028fe9e99ecfe6299cb88db8b6c5c645b81",
+      "files": 133,
+      "bytes": 1999926
+    },
+    "DF_Small": {
+      "sha256": "954096465de24a5d34c748a3a86cd975765f1e20b42f2c937148da3f382d6567",
+      "files": 142,
+      "bytes": 1891266
+    },
+    "DF_Medium": {
+      "sha256": "1787aefbf8369a43aaa1e851ea54ed9926454a588fd1f22e3aac78f548984bd8",
+      "files": 365,
+      "bytes": 3495832
+    },
+    "DF_Large": {
+      "sha256": "42e21a495e2a86f70648824d49f9ff35e5f338f5dace67fa8e1cb9b1a3229ed3",
+      "files": 1016,
+      "bytes": 6627893
+    },
+    "DF_Xtra_Large": {
+      "sha256": "101d834dff58207a5204febb5586aebcaabdc0721d512e1d33b09303f9579e0e",
+      "files": 5640,
+      "bytes": 25875709
+    }
+  },
+  "sealed_trees_after": {
+    "DF_Fabric": {
+      "sha256": "b4a165f65526f3a5b33c6e2262a33028fe9e99ecfe6299cb88db8b6c5c645b81",
+      "files": 133,
+      "bytes": 1999926
+    },
+    "DF_Small": {
+      "sha256": "954096465de24a5d34c748a3a86cd975765f1e20b42f2c937148da3f382d6567",
+      "files": 142,
+      "bytes": 1891266
+    },
+    "DF_Medium": {
+      "sha256": "1787aefbf8369a43aaa1e851ea54ed9926454a588fd1f22e3aac78f548984bd8",
+      "files": 365,
+      "bytes": 3495832
+    },
+    "DF_Large": {
+      "sha256": "42e21a495e2a86f70648824d49f9ff35e5f338f5dace67fa8e1cb9b1a3229ed3",
+      "files": 1016,
+      "bytes": 6627893
+    },
+    "DF_Xtra_Large": {
+      "sha256": "101d834dff58207a5204febb5586aebcaabdc0721d512e1d33b09303f9579e0e",
+      "files": 5640,
+      "bytes": 25875709
+    }
+  },
+  "all_identical_after_execution": true,
+  "v0_4_reproduction": {
+    "release_before": true,
+    "cross_target_status": "PASS",
+    "release_after": false,
+    "cause": "unexpected DF_Xtra_Large/_runs/RUN_<timestamp>_n_xlarge.lctlc.json"
+  },
+  "note": "Probe executed on a disposable candidate copy. Adapter output was redirected and bytecode writes disabled for child Python processes."
+}

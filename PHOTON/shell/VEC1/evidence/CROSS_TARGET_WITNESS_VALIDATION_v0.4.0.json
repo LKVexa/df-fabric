@@ -1,0 +1,18 @@
+{
+  "schema": "VEC1/CROSS_TARGET_WITNESS_VALIDATION/0.4.0",
+  "date": "2026-09-18",
+  "probe_payload": {"probe": "v0.4.0-low64", "n": 1},
+  "payload_sha256": "e68ba77b438f86758357d3e5d04dfe02c1dc5d240910428686b30e2dc197be28",
+  "witness_low64": 9706117211597815336,
+  "bound_nodes": ["N_XLARGE"],
+  "results": {
+    "N_SMALL": "NOT_RUN",
+    "N_MEDIUM": "NOT_RUN",
+    "N_LARGE": "NOT_RUN",
+    "N_XLARGE": "PASS"
+  },
+  "xlarge_normalized_result_low64": 9706117211597815336,
+  "status": "PASS",
+  "claim_boundary": "Validates the corrected 64-bit witness through the locally bound Xtra-Large adapter only; it is not four-node requalification or full semantic lowering evidence.",
+  "packaging_note": "The adapter probe produced transient run/cache files in sealed trees. Those trees were restored from the v0.3.0 baseline after the probe and aggregate-byte identity was re-verified."
+}

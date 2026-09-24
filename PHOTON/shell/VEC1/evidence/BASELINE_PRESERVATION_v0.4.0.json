@@ -1,0 +1,72 @@
+{
+  "schema": "VEC1/BASELINE_PRESERVATION/0.4.0",
+  "baseline": "v0.3.0",
+  "trees": {
+    "DF_Fabric": {
+      "source": {
+        "sha256": "822133f79f2e009fbd9c28b8b8aedbf48723dda8a246ac045a11ffeffc955bf7",
+        "files": 133,
+        "bytes": 1999926
+      },
+      "candidate": {
+        "sha256": "822133f79f2e009fbd9c28b8b8aedbf48723dda8a246ac045a11ffeffc955bf7",
+        "files": 133,
+        "bytes": 1999926
+      },
+      "identical": true
+    },
+    "DF_Small": {
+      "source": {
+        "sha256": "e3faa6a1a8a3cea6352665aa3ff7f19286dc21c3fd376a34cdcf456d83a1eed5",
+        "files": 142,
+        "bytes": 1891266
+      },
+      "candidate": {
+        "sha256": "e3faa6a1a8a3cea6352665aa3ff7f19286dc21c3fd376a34cdcf456d83a1eed5",
+        "files": 142,
+        "bytes": 1891266
+      },
+      "identical": true
+    },
+    "DF_Medium": {
+      "source": {
+        "sha256": "a7f2f164266b172e5009c1994790f2fbaef16b30ef34995c49cb483e4c0ab7a1",
+        "files": 365,
+        "bytes": 3495832
+      },
+      "candidate": {
+        "sha256": "a7f2f164266b172e5009c1994790f2fbaef16b30ef34995c49cb483e4c0ab7a1",
+        "files": 365,
+        "bytes": 3495832
+      },
+      "identical": true
+    },
+    "DF_Large": {
+      "source": {
+        "sha256": "f81a7bf8dfc42996af9ced86b4a438e2ebac79535164798dd89bb1d72ad99a5a",
+        "files": 1016,
+        "bytes": 6627893
+      },
+      "candidate": {
+        "sha256": "f81a7bf8dfc42996af9ced86b4a438e2ebac79535164798dd89bb1d72ad99a5a",
+        "files": 1016,
+        "bytes": 6627893
+      },
+      "identical": true
+    },
+    "DF_Xtra_Large": {
+      "source": {
+        "sha256": "4284857ec7e3a4065922a732437ad5222530d81b8f8dffb3d43728a7c73e4794",
+        "files": 5640,
+        "bytes": 25875709
+      },
+      "candidate": {
+        "sha256": "4284857ec7e3a4065922a732437ad5222530d81b8f8dffb3d43728a7c73e4794",
+        "files": 5640,
+        "bytes": 25875709
+      },
+      "identical": true
+    }
+  },
+  "all_identical": true
+}

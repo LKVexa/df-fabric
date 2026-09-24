@@ -1,0 +1,37 @@
+{
+  "schema": "VEC1/SOURCE_PROVENANCE/1",
+  "created_for": "VEC1 Electron Substitute reference implementation",
+  "version": "0.1.0",
+  "sources": {
+    "DF_VM_Technical_Institute_v2.1.2(3).zip": {
+      "sha256": "869c73c23486a632058439505b64a4d00d2dbba9d315d49fd9dbc0fb9a89ec19",
+      "bytes": 134870
+    },
+    "VEC1_Prompt_Workflow_Series_Animation_ObjectEdit_OCR_v3.1.0(1).zip": {
+      "sha256": "ea968637806f929d024d056325b1eb97efd1cdb1673a00ca0b3b2d77eee82f49",
+      "bytes": 141682305
+    },
+    "DF_Fabric(6).zip": {
+      "sha256": "68190339251b5faa98d16f010b400b97e182cd825e7ee29a5985cc662400c718",
+      "bytes": 608267
+    },
+    "DF_Large(20260917-032855).zip": {
+      "sha256": "7acac542729a118c58e02ad85918391a02d50f09aec04a1c07a9aa2e401e1ab9",
+      "bytes": 2067527
+    },
+    "DF_Medium(20260917-032854).zip": {
+      "sha256": "7c57c6ce49f7ff4c492cc53c3177778d04adfa96f3a96525c57c3c9f4ef2cda4",
+      "bytes": 1211714
+    },
+    "DF_Small(20260917-032853).zip": {
+      "sha256": "d64085ac90f44b24196b0d0ed1b2859bb974723f8644a7258d1347550b9a5e07",
+      "bytes": 615735
+    },
+    "DF_Xtra_Large(7).zip": {
+      "sha256": "c0432c148083baf01cc8dbf159a5f742cf1f9b9d4780f89db5a0a8870fec9a83",
+      "bytes": 9573100
+    }
+  },
+  "assembly_rule": "DF VM/Fabric trees copied byte-for-byte from supplied ZIPs; VEC1 integration is added as a sibling layer so source package seals remain untouched.",
+  "prompt_contract": "VEC1 Prompt & Workflow Master Execution Contract v3.1.0"
+}
