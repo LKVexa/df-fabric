@@ -24,8 +24,8 @@
     },
     {
       "path": ".github/workflows/ci.yml",
-      "bytes": 871,
-      "sha256": "cdd001bc972f3e38fb5ee55907c754ea88a6fc4651bc28b40bf6174360c008a6"
+      "bytes": 892,
+      "sha256": "8017415cb614cad11fd30268aecbfd472277cf73b62c3c5d70fc2f46fdcf909f"
     },
     {
       "path": ".github/workflows/import-source.yml",
@@ -4944,6 +4944,6 @@
     "pacore_tree_sha256": "046a9930c61b1d5a8a98de87b65feb933f8c5979351289953ea72dead5e304a0",
     "root": "Desktop/PA21.2"
   },
-  "total_bytes": 19394447,
+  "total_bytes": 19394468,
   "release_note": "Full static tree inventoried including Photon and PK; original native evidence remains historical."
 }
