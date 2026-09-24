@@ -18,7 +18,8 @@ jobs:
           python-version: ${{ matrix.python }}
       - name: Verify hashes and run portable suites
         run: python -B tools/validate_release.py
-      - name: Check available fabric gates
-        run: python -m pip install --only-binary=:all: -r REQUIREMENTS.txt
+      - name: Install declared fabric dependencies
+        run: >-
+          python -m pip install --only-binary=:all: -r REQUIREMENTS.txt
       - name: Run available fabric gates with declared dependencies
         run: python -B adapter/dfabric/cli.py fabric-verify
